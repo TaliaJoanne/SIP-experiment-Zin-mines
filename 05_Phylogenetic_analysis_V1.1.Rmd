@@ -1,0 +1,136 @@
+---
+title: "Zin restoration SIP"
+subtitle: "05 Phylogentic analysis"
+description: "V1.1"
+author: "Roey Angel"
+date: "`r Sys.Date()`"
+bibliography: references.bib
+link-citations: yes
+csl: fems-microbiology-ecology.csl
+output:
+  rmarkdown::html_document:
+    toc: true
+    toc_float: true
+    keep_md: true
+    number_sections: false
+    highlight: "pygments"
+    theme: "flatly"
+    dev: "png"
+    df_print: "kable"
+    fig_caption: true
+    code_folding: "show"
+---
+
+```{r libraries, include=F}
+Sys.setenv(R_LIBS_USER = "~/R/library") # Uncomment if you have no write access to R path change to local library dir
+.libPaths(c(Sys.getenv("R_LIBS_USER"), .libPaths())) # Uncomment if you have no write access to R path
+library(svglite) # An 'SVG' Graphics Device, CRAN v2.0.0 
+library(ragg) # Graphic Devices Based on AGG, CRAN v1.1.2 
+library(extrafont) # Tools for using fonts, CRAN v0.17
+library(tidyverse) # Easily Install and Load the 'Tidyverse', CRAN v1.3.0
+library(scales) # Scale Functions for Visualization, CRAN v1.1.1
+library(magrittr) # A Forward-Pipe Operator for R, CRAN v2.0.1
+library(Biostrings) # Efficient manipulation of biological strings, Bioconductor v2.56.0
+library(gridExtra) # Miscellaneous Functions for "Grid" Graphics, CRAN v2.3 
+library(phyloseq) # Handling and analysis of high-throughput microbiome census data, Bioconductor v1.36.0
+library(speedyseq) # Faster implementations of phyloseq functions, [github::mikemc/speedyseq] v0.5.3.9018
+```
+
+```{r style settings, echo=FALSE, message=FALSE, warning=FALSE, results="asis"}
+options(width = 90, knitr.table.format = "html") 
+knitr::opts_chunk$set(
+  warning = FALSE,
+  message = FALSE,
+  cache = TRUE,
+  #dev = "ragg_png",
+  #fig.ext = "png",
+  dev = c("svglite", "ragg_png"),
+  dev.args = list(svglite = list(bg = 'white', fix_text_size = FALSE), ragg_png = list(bg = 'white')),
+  dpi = 300,
+  cache.path = "05_Phylogeny_cache/",
+  fig.path = "05_Phylogeny_figures/"
+)
+f_name <- "DejaVu Sans" #sub("\\s//", "", f_name)
+f_size <- 14
+font_import(pattern = "DejaVuSans\\.", prompt = FALSE)
+loadfonts() # registers fonts
+theme_set(theme_bw(base_size = f_size, base_family = f_name)) 
+```
+
+```{r functions, include=F}
+```
+[roey.angel@bc.cas.cz](mailto: roey.angel@bc.cas.cz)  
+
+## Phylogenetic analysis
+This analysis explores the phylogenetic distribution patters in the different samples, based on the DADA2-produced sequences. Large parts of this script are based on [this protocol](https://f1000research.com/articles/5-1492/v2) and the accompanying publication by Callahan and colleagues [-@callahan_bioconductor_2016]. This script should be run after [05_calc_tree_V2.0.sh](05_calc_tree_V2.0.sh).
+
+### Setting general parameters:
+```{r general parameters}
+set.seed(1000)
+min_lib_size <- 2500
+data_path <- "./DADA2_pseudo/"
+Proj_name <- "Zin_SIP"
+Ps_file <- paste0(Proj_name, "_seq_prev_filt.Rds")
+Tree_file <- "Tree/DADA2_reps_seq_prev_filt.filtered.align.treefile"
+```
+
+### Reading in raw data
+Read abundance table, taxonomic classification and metadata into a phyloseq object.
+
+```{r load data, cache=T}
+# read phyloseq object from data file
+Ps_obj <- readRDS(paste0(data_path, Ps_file))
+
+# Load phylogenetic tree
+Tree <- read_tree(paste0(data_path, Tree_file))
+
+# generate phyloseq object
+Ps_obj <- merge_phyloseq(Ps_obj,
+                        phy_tree(Tree)
+                        )
+```
+
+### Exploring dataset features
+
+### Plot phylogenetic trees
+Now let's try to simplify the phylogenetic tree by agglomerating genera
+```{r tree, cache=T}
+Ps_obj_subset <-
+  subset_samples(Ps_obj, sample_sums(Ps_obj) > min_lib_size)
+Ps_obj_subset <-
+  filter_taxa(Ps_obj_subset, function(x)
+    sum(x) > 0, TRUE)
+
+# How many genera would be present after filtering?
+length(get_taxa_unique(Ps_obj_subset, taxonomic.rank = "Genus"))
+Ps_obj_glom <- tax_glom(Ps_obj_subset, 
+                             "Genus", 
+                             NArm = TRUE)
+
+multiPlotTitleTextSize = 8
+p2tree <- plot_tree(Ps_obj_subset, method = "treeonly",
+                     ladderize = "left",
+                     title = "Before Agglomeration") +
+  theme(plot.title = element_text(size = multiPlotTitleTextSize))
+p3tree <- plot_tree(Ps_obj_glom, method = "treeonly",
+                     ladderize = "left", title = "By Genus") +
+  theme(plot.title = element_text(size = multiPlotTitleTextSize))
+
+# group plots together
+grid.arrange(nrow = 1, p2tree, p3tree)
+```
+
+#### Save filtered phyloseq object
+```{r save phyloseq, cache=T}
+saveRDS(Ps_obj, file = paste0(data_path, Proj_name, "_filt_wTree.Rds"))
+saveRDS(Ps_obj_glom, file = paste0(data_path, Proj_name, "_filt_glom_wTree.Rds"))
+```
+
+```{r colophon, eval=T}
+sessioninfo::session_info() %>%
+  details::details(
+    summary = 'Current session info',
+    open    = TRUE
+  )
+
+## References

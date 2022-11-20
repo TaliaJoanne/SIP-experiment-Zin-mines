@@ -1,0 +1,798 @@
+---
+title: "Zin restoration SIP"
+subtitle: "03 Taxonomical analysis"
+description: "V1.2"   
+author: "Roey Angel"
+date: "`r Sys.Date()`"
+bibliography: references.bib
+link-citations: yes
+csl: fems-microbiology-ecology.csl
+output:
+  rmarkdown::html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 5
+    keep_md: true
+    number_sections: false
+    highlight: "pygments"
+    theme: "flatly"
+    dev: "png"
+    df_print: "kable"
+    fig_caption: true
+    code_folding: "show"
+---
+
+```{r libraries, include=F}
+# .libPaths(c('~/R/library', .libPaths())) # Uncomment if you have no write access to R path
+library(extrafont) # Tools for using fonts, CRAN v0.17
+library(kableExtra) # Construct Complex Table with 'kable' and Pipe Syntax
+library(tidyverse) # Easily Install and Load the 'Tidyverse', CRAN v1.3.0
+library(scales) # Generic plot scaling methods
+library(cowplot) # wrappers for ggplot
+library(magrittr) # A Forward-Pipe Operator for R, CRAN v2.0.1
+library(phyloseq) # Handling and analysis of high-throughput microbiome census data, Bioconductor v1.32.0
+library(speedyseq) # Faster implementations of phyloseq functions, [github::mikemc/speedyseq] v0.5.3.9018 
+library(Biostrings) # Efficient manipulation of biological strings, Bioconductor v2.56.0
+library(svglite) # An 'SVG' Graphics Device, CRAN v1.2.3.2 
+library(vegan) # Community Ecology Package, CRAN v2.5-7
+```
+
+```{r style settings, echo=FALSE, message=FALSE, warning=FALSE, results="asis"}
+options(width = 90, knitr.table.format = "html") 
+knitr::opts_chunk$set(
+  warning = FALSE,
+  message = FALSE,
+  cache = TRUE,
+  #dev = "ragg_png",
+  #fig.ext = "png",
+  dev = c("svglite", "ragg_png"),
+  dev.args = list(svglite = list(bg = 'white', fix_text_size = FALSE), ragg_png = list(bg = 'white')),
+  dpi = 300,
+  cache.path = "03_Taxonomy_cache/",
+  fig.path = "03_Taxonomy_figures/"
+)
+f_name <- "DejaVu Sans" #sub("\\s//", "", f_name)
+f_size <- 14
+font_import(pattern = "DejaVuSans\\.", prompt = FALSE)
+loadfonts() # registers fonts
+theme_set(theme_bw(base_size = f_size, base_family = f_name)) 
+```
+
+```{r functions, include=F}
+plot_abundance <- function(physeq,
+                          title = "",
+                          taxa = "Firmicutes",
+                          Facet = "Order",
+                          Color = "Phylum",
+                          xvar = Var2) {
+  # Arbitrary subset, based on Phylum, for plotting
+  taxa <<- taxa
+  p1f <- subset_taxa(physeq, Phylum %in% taxa)
+  mphyseq <- psmelt(p1f)
+  mphyseq <- subset(mphyseq, Abundance > 0)
+  ggplot(
+    data = mphyseq,
+    mapping = aes_string(
+      x = xvar,
+      y = "Abundance",
+      color = Color,
+      fill = Color
+    )
+  ) +
+    geom_violin(fill = NA) +
+    geom_point(size = 1,
+               alpha = 0.3,
+               position = position_jitter(width = 0.3)) +
+    facet_wrap(facets = Facet) + scale_y_log10() +
+    ylab("Rel. abundance (%)") +
+    theme(legend.position = "none")
+}
+
+order_taxa <- function(ps_obj, rank = "Phylum", rel_abund = TRUE){
+  require(dplyr)
+  require(phyloseq)
+  require(speedyseq)
+  
+  ps_obj %>%
+    tax_glom(taxrank = rank) %>%                     # agglomerate at 'Rank' level
+    {if (rel_abund) transform_sample_counts(., function(x) x / sum(x)) else .} %>% # convert to rel abundance 
+    psmelt() %>%                                        # Melt to long format
+    arrange(rank) %>%                                  # arrange by 'Rank'
+    group_by(across(all_of(rank))) %>% 
+    summarise(Abundance = sum(Abundance)) %>%
+    arrange(desc(Abundance)) %>% 
+    mutate(across(all_of(rank), ~factor(., levels = fct_inorder(.)))) %>%  
+    mutate(across(all_of(rank), ~fct_expand(., "Rare"))) %>% # just in case it doesn't exist
+    mutate(across(all_of(rank), ~fct_relevel(., "Rare", after = Inf))) ->
+    Taxa_order 
+  
+  return(Taxa_order)
+}
+
+mark_rare_taxa <- function(ps_obj, rank = "Phylum", rare_thresh = 0.01){
+  require(dplyr)
+  require(phyloseq)
+  require(speedyseq)
+  
+  # glomerate to the "Rank" level
+  ps_obj_glom <- tax_glom(ps_obj, 
+                          rank, 
+                          NArm = TRUE) 
+  
+  ps_obj_glom_rel <- transform_sample_counts(ps_obj_glom, 
+                                             function(x) x / sum(x)) # transform to rel. ab.
+  
+  # convert to df
+  ps_obj_df <- speedyseq::psmelt(ps_obj_glom_rel) # generate a df
+  ps_obj_df %<>%
+    mutate(Rank = as.character(!!sym(rank)))
+   
+  # group dataframe by Phylum, calculate sum rel. abundance
+  ps_obj_df %>%
+    group_by(!!sym(rank)) %>%
+    summarise(Sum = sum(Abundance) / nsamples(ps_obj)) %>% 
+    filter(Sum < rare_thresh) %>% # find Taxa whose mean rel. abund. is less than thresh
+    pull(rank) -> 
+    Rare_phyla 
+  
+  # change their name to "Rare"
+  tax_table(ps_obj) %>% 
+    as.data.frame() %>%  
+    rownames_to_column("OTU") %>% 
+    mutate(across(rank, 
+                  ~if_else(!!sym(rank) %in% Rare_phyla, "Rare", !!sym(rank)))) %>% 
+    column_to_rownames("OTU") %>% 
+    as.matrix() %>% 
+    tax_table()
+    return(ps_obj)
+}
+
+plot_tax_violin <- function(ps_obj, rank = "Phylum", grouping_var1 = ".", grouping_var2 = '.', taxa_order) {
+  require(phyloseq)
+  require(speedyseq)
+  require(see)
+  require(cowplot)
+  # Order by abundance
+  ps_obj %>% 
+    tax_glom(., rank) %>% 
+    transform_sample_counts(., function(x) x / sum(x) * 100) %>% 
+    psmelt() %>%  
+    mutate_if(is.character, as.factor) %>% 
+    mutate(Taxa = factor(pull(., rank), levels = levels(pull(taxa_order, rank)))) %>% 
+    mutate(Taxa = fct_other(Taxa, drop = pull(taxa_order, rank)[taxa_order$Abundance < 0.1], other_level = "Rare")) %>% 
+    ggplot(aes(x = Taxa, y = Abundance)) +
+    geom_violin(aes(group = interaction(Taxa, !!sym(grouping_var2))),
+                scale = "width") +
+    geom_point2(aes(colour = Taxa), 
+                position = position_jitter(width = 0.2),
+                alpha = 1/4,
+                stroke = 0, 
+                size = 2) +
+    theme_cowplot() +
+    theme(axis.text = element_text(angle = 45.0), 
+          axis.text.x = element_text(vjust = 1, hjust = 1) ) + 
+    background_grid(major = "xy",
+                    minor = "none") +
+    # scale_fill_locuszoom() +
+    # scale_color_manual(values = pal("d3js")[c(3, 4, 2)]) +
+    labs(x = NULL, y = "Abundance (%)", colour = rank) + 
+    guides(colour = guide_legend(override.aes = list(size = 5, alpha = 1))) + 
+    facet_grid(get(grouping_var1) ~ get(grouping_var2)) %>% 
+    identity() ->
+    # facet_wrap(~get(grouping_var), ncol = 2) ->
+    violin_plot
+  return(violin_plot)
+}
+```
+[roey.angel@bc.cas.cz](mailto: roey.angel@bc.cas.cz)  
+
+## Taxonomical analysis
+This analysis explores the taxonomical distribution patters in the different samples, based on the DADA2-produced sequences. Large parts of this script are based on [this protocol](https://f1000research.com/articles/5-1492/v2) and the accompanying publication by Callahan and colleagues [-@callahan_bioconductor_2016].
+
+### Setting general parameters:
+```{r general parameters}
+set.seed(1000)
+min_lib_size <- 2500
+data_path <- "./DADA2_pseudo/"
+# Metadata_table <- "./AMetadata_decontam.csv"
+# Seq_table <- "DADA2.seqtab_nochim_decontam.tsv"
+# Tax_table <- "DADA2_taxa_silva_decontam.tsv"
+Proj_name <- "Zin_SIP"
+Ps_file <- paste0(Proj_name, "_decontam.Rds")
+Seq_file <- "DADA2.reps_decontam.fa"
+Var1 = "Density..g.ml.1." # e.g sampling point / replicate
+Var2 = "Treatment" # e.g. a treatment or a manipulation
+Var3 <- "Label..18O." # e.g. a treatment/manipulation or an important covariant
+Var4 = "" # e.g. an important covariant
+```
+
+### Load phyloseq object
+Read a decontaminated phyloseq object generated by [02_Decontamination.html](02_Decontamination.html). 
+Alternatively read raw data and generate a phyloseq object if 02_Decontamination.html was not run.
+
+```{r load data, cache=T}
+# # Uncomment if Decontamination wasn't run
+# 
+# # read OTU mat from data file
+# read_tsv(paste0(data_path, Seq_table),
+#          trim_ws = TRUE) %>%
+#   rename_with(., ~ str_remove(.x, "_L001")) %>%
+#   identity() ->
+#   abundance_mat # in tibble format
+# 
+# # get short names of samples
+# # abundance_mat %>%
+# #   rownames() %>%
+# #   str_remove("^Roey[0-9]{3,}-?") %>%
+# #   str_split("_", simplify = T) %>%
+# #   .[, 1] ->
+# #   short_names
+# 
+# # Read metadata file
+# read_csv(Metadata_table,
+#                         trim_ws = TRUE) %>%
+#   mutate(`ng DNA g-1` = replace(`ng DNA g-1`, which(`ng DNA g-1` == 0 | is.na(`ng DNA g-1`)), 1)) %>%  # add pseudo count
+#   filter(str_remove(Read1_file, "_R1_001_noPrimers.fastq.gz") %in% colnames(abundance_mat)) %>% # remove metadata rows if the samples did not go through qual processing
+#   mutate(`Library size` = colSums(select(abundance_mat, -ASV))) %>% # Add lib size
+#   mutate(to_names = str_remove(Read1_file, "_R1_001_noPrimers.fastq.gz"), .before = 1) %>%
+#   mutate(across(c(!!sym(Var1),
+#                   !!sym(Var2),
+#                   !!sym(Var3),
+#                   !!sym(Var4)), ~factor(.))) %>%
+#   # mutate(Identifier = paste(Site,
+#   #                           `Plant species`,
+#   #                           `Preservation method`,
+#                             # Replicate,
+#   #                           sep = "_"))  %>%   # optional. For merging samples
+#   identity() ->
+#   Metadata
+# 
+# # Order abundance_mat samples according to the metadata
+# sample_order <- match(Metadata$to_names, str_remove(colnames(select(abundance_mat, -ASV)), "_L001"))
+# abundance_mat %<>% select(c(1, sample_order + 1))
+# 
+# # read taxonomy from data file
+# Raw_tax_data <- read_tsv(paste0(data_path, Tax_table),
+#                         trim_ws = TRUE, col_names = TRUE)
+# Raw_tax_data %<>%
+#   replace(., is.na(.), "Unclassified")
+# 
+# # Potentially store tax classification BS values
+# # Raw_tax_data %>%
+# #   dplyr::select(.,
+# #          `Kingdom (BS)`,
+# #          `Phylum (BS)`,
+# #          `Class (BS)`,
+# #          `Order (BS)`,
+# #          `Family (BS)`,
+# #          `Genus (BS)`) %>%
+# #   cbind(Name = colnames(abundance_mat),. ) ->
+# #   Taxonomy.bs
+# 
+# # merge it downstream with the PS object
+# # taxTraits <- tax_table(cbind(tax_table(Ps_obj), taxTraits))
+# # Ps_obj <- merge_phyloseq(Ps_obj, taxTraits)
+# # Taxonomy.bs %<>%
+# #   filter(Taxonomy.bs$Name %in% row.names(Ps_obj_filt@tax_table))
+# 
+# Raw_tax_data %>%
+#   dplyr::select(.,
+#          Kingdom,
+#          Phylum,
+#          Class,
+#          Order,
+#          Family,
+#          Genus) %>%
+#   # map_dfr(., as_factor) %>%
+#   # map_dfr(fct_expand, "Rare")  %>%
+#   mutate(to_names = abundance_mat$ASV, .before = 1)-> # must be a matrix or phyloseq drops row names and gives and error
+#   Taxonomy
+# # row.names(Taxonomy) <- colnames(abundance_mat)
+# # colnames(Taxonomy) <-
+# #   c("Domain", "Phylum", "Class", "Order", "Family", "Genus")
+# 
+# # read sequence data
+# ASV_reps <- readDNAStringSet(
+#   file = paste0(data_path, Seq_file),
+#   format = "fasta",
+#   nrec = -1L,
+#   skip = 0L,
+#   seek.first.rec = FALSE,
+#   use.names = TRUE)
+# 
+# # generate phyloseq object. **Note: only speedyseq allows constructing phyloseq from tibble!**
+# Ps_obj <- phyloseq(otu_table(abundance_mat, taxa_are_rows = TRUE),
+#                    sample_data(Metadata),
+#                    tax_table(Taxonomy),
+#                    refseq(ASV_reps))
+# # rename_with_sample_data(Ps_obj, colnames(select(Metadata, -to_names)))
+# 
+# # merge samples in case the company re-sequenced some samples. **Note! Don't use it now to merge real DNA samples. Instead, do it downstream in one of the next scripts.**
+# Ps_obj %>%
+#   phyloseq_merge_samples("Read1_file") %>%
+#   filter_taxa(., function(x) sum(x) > 0, TRUE) ->
+#   Ps_obj_merged
+
+# Comment if there's no RDS file
+readRDS(paste0(data_path, Ps_file)) ->
+  Ps_obj
+Ps_obj %<>% 
+  subset_samples(., !grepl(paste(c("CTRL", "NTC", "mock", "Mock", "blank"), collapse = "|"), sample_names(Ps_obj))) 
+
+# Reorder factors for plotting
+#sample_data(Ps_obj)$Spill %<>% fct_relevel("Old", after = Inf)
+```
+
+### Exploring dataset features
+
+#### Taxa-based filtering 
+First let's look at the taxonomic distribution
+```{r plot abundance, cache=T}
+table(tax_table(Ps_obj)[, "Kingdom"], exclude = NULL)
+table(tax_table(Ps_obj)[, "Class"], exclude = NULL)
+# table(tax_table(Ps_obj)[, "Family"], exclude = NULL)
+```
+Now let's remove some taxa which are obvious artefacts or those which aren't bacteria or archaea
+
+```{r remove unwated taxa, cache=T}
+domains2remove <- c("", "Eukaryota", "Unclassified")
+orders2remove <- c("Chloroplast")
+families2remove <- c("Mitochondria")
+
+Ps_obj_domains <- tax_glom(Ps_obj, "Kingdom")
+Ps_obj_orders <- tax_glom(Ps_obj, "Order")
+Ps_obj_families <- tax_glom(Ps_obj, "Family")
+
+Ps_obj_tax_filt <- subset_taxa(Ps_obj, !is.na(Phylum) &
+                        !Kingdom %in% domains2remove &
+                      !Order %in% orders2remove &
+                      !Family %in% families2remove)
+
+sample_data(Ps_obj_tax_filt)$Library.size <- rowSums(otu_table(Ps_obj_tax_filt))
+```
+
+This removed:
+```{r summarise_removed, cache=T}
+Summary_pruned <- tibble(
+  Level = c("Kingdom", "Order", "Family"),
+  ASVs.removed = c(
+    table(tax_table(Ps_obj)[, "Kingdom"], exclude = NULL) %>% as.data.frame() %>% .[.$Var1 == "" | .$Var1 == "Eukaryota" | .$Var1 == "Unclassified", 2] %>% sum(),
+    table(tax_table(Ps_obj)[, "Order"], exclude = NULL) %>% as.data.frame() %>% .[.$Var1 == "Chloroplast", 2] %>% sum(),
+    table(tax_table(Ps_obj)[, "Family"], exclude = NULL) %>% as.data.frame() %>% .[.$Var1 == "Mitochondria", 2] %>% sum()
+                     ),
+  Seqs.removed = c(
+    psmelt(Ps_obj_domains) %>%
+      group_by(Kingdom) %>%
+      filter(Kingdom == "" |
+               Kingdom == "Eukaryota" | Kingdom == "Unclassified") %>%
+      summarise(sum = sum(Abundance)) %>% .$sum %>% sum(),
+    psmelt(Ps_obj_orders) %>%
+      group_by(Order) %>%
+      filter(Order == orders2remove) %>%
+      summarise(sum = sum(Abundance)) %>% .$sum %>% sum(),
+    psmelt(Ps_obj_families) %>%
+      group_by(Family) %>%
+      filter(Family == families2remove) %>%
+      summarise(sum = sum(Abundance)) %>% .$sum %>% sum()
+    )
+  )
+
+Summary_pruned %>% 
+  kable(., digits = c(0, 1, 0)) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F)
+```
+
+Removed `r percent(Summary_pruned$Seqs.removed[Summary_pruned$Level == "Order"] / sum(sample_sums(Ps_obj)), accuracy = 0.0001)` of the sequences.
+
+Now let's explore the prevalence of different taxa in the database.
+Prevalence is the number of samples in which a taxa appears at least once. So "Mean prevalence" refers to in how many samples does a sequence belonging to the phylum appears on average, and "Sum prevalence" is the sum of all samples where any sequence from the taxon appears.
+```{r explore revalence, cache=T}
+prevdf <- apply(X = otu_table(Ps_obj_tax_filt),
+                 MARGIN = ifelse(taxa_are_rows(Ps_obj_tax_filt), yes = 1, no = 2),
+                 FUN = function(x){sum(x > 0)})
+# Add taxonomy and total read counts to this data.frame
+prevdf <- data.frame(Prevalence = prevdf,
+                      TotalAbundance = taxa_sums(Ps_obj_tax_filt),
+                      tax_table(Ps_obj_tax_filt))
+
+prevdf %>%
+  group_by(Phylum) %>%
+  summarise(`Mean prevalence` = mean(Prevalence),
+            `Sum prevalence` = sum(Prevalence)) ->
+  Prevalence_phylum_summary
+
+Prevalence_phylum_summary %>% 
+  kable(., digits = c(0, 1, 0)) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F)
+
+prevdf %>%
+  group_by(Order) %>%
+  summarise(`Mean prevalence` = mean(Prevalence),
+            `Sum prevalence` = sum(Prevalence)) ->
+  Prevalence_order_summary
+
+Prevalence_order_summary %>% 
+  kable(., digits = c(0, 1, 0)) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F)
+```
+
+Based on that I'll remove all orders with a sum prevalence of under 5% (`r 0.05 * nsamples(Ps_obj_tax_filt)`) of all samples
+```{r remove rare taxa, cache=T}
+Prevalence_order_summary %>% 
+  filter(`Sum prevalence` < (0.05 * nsamples(Ps_obj_tax_filt))) %>% 
+  dplyr::select(Order) %>% 
+  map(as.character) %>% 
+  unlist() ->
+  filterOrder
+
+Ps_obj_order_prev_filt <- subset_taxa(Ps_obj_tax_filt, !Order %in% filterOrder)
+# Taxonomy.bs %<>% 
+#   filter(Taxonomy.bs$Name %in% row.names(Ps_obj_order_prev_filt@tax_table))
+sample_data(Ps_obj_order_prev_filt)$Library.size <- rowSums(otu_table(Ps_obj_order_prev_filt))
+print(Ps_obj_tax_filt)
+print(Ps_obj_order_prev_filt)
+```
+
+This removed `r ntaxa(Ps_obj_tax_filt) - ntaxa(Ps_obj_order_prev_filt)` or `r percent(1 - (ntaxa(Ps_obj_order_prev_filt) /  ntaxa(Ps_obj_tax_filt)))` of the ASVs, and `r percent(1 - (sum(otu_table(Ps_obj_order_prev_filt)) /  sum(otu_table(Ps_obj_tax_filt))), accuracy = 0.001)` of the reads.
+
+Plot general prevalence features of the phyla
+```{r prevalence phylum, cahce=T, fig.height=10, fig.width=10}
+# Subset to the remaining phyla
+prevdf_phylum_filt <- subset(prevdf, Phylum %in% get_taxa_unique(Ps_obj_order_prev_filt, "Phylum"))
+ggplot(prevdf_phylum_filt,
+       aes(TotalAbundance, Prevalence / nsamples(Ps_obj_order_prev_filt), color = Phylum)) +
+  # Include a guess for parameter
+  geom_hline(yintercept = 0.05,
+             alpha = 0.5,
+             linetype = 2) + geom_point(size = 2, alpha = 0.7) +
+  scale_x_log10() +  xlab("Total Abundance") + ylab("Prevalence [Frac. Samples]") +
+  facet_wrap( ~ Phylum) + theme(legend.position = "none")
+```
+
+Plot general prevalence features of the top 20 orders
+```{r prevalence order, cache=T, fig.height=12, fig.width=10}
+# Subset to the remaining phyla
+prevdf_order_filt <- subset(prevdf, Order %in% get_taxa_unique(Ps_obj_order_prev_filt, "Order"))
+
+# grab the top 30 most abundant orders
+prevdf_order_filt %>% 
+  group_by(Order) %>%
+  summarise(Combined.abundance = sum(TotalAbundance)) %>% 
+  arrange(desc(Combined.abundance)) %>% 
+  .[1:30, "Order"]  ->
+  Orders2plot
+
+prevdf_order_filt2 <- subset(prevdf, Order %in% Orders2plot$Order)
+
+ggplot(prevdf_order_filt2,
+       aes(TotalAbundance, Prevalence / nsamples(Ps_obj_order_prev_filt), color = Order)) +
+  # Include a guess for parameter
+  geom_hline(yintercept = 0.05,
+             alpha = 0.5,
+             linetype = 2) + geom_point(size = 2, alpha = 0.7) +
+  scale_x_log10() +  xlab("Total Abundance") + ylab("Prevalence [Frac. Samples]") +
+  facet_wrap( ~ Order) + theme(legend.position = "none")
+```
+
+#### Unsupervised filtering by prevalence
+I'll remove all sequences which appear in less than 2.5% of the samples
+```{r unsupervised prevalence filter, cache=T}
+# Define prevalence threshold as 5% of total samples
+prevalenceThreshold <- 0.025 * nsamples(Ps_obj_order_prev_filt)
+prevalenceThreshold
+
+# Execute prevalence filter, using `prune_taxa()` function
+keepTaxa <-
+  row.names(prevdf_phylum_filt)[(prevdf_phylum_filt$Prevalence >= prevalenceThreshold)]
+Ps_obj_seq_prev_filt <- prune_taxa(keepTaxa, Ps_obj_order_prev_filt)
+# Taxonomy.bs %<>% 
+#   filter(Taxonomy.bs$Name %in% row.names(Ps_obj_seq_prev_filt@tax_table))
+sample_data(Ps_obj_seq_prev_filt)$Library.size <- rowSums(otu_table(Ps_obj_seq_prev_filt))
+print(Ps_obj_order_prev_filt)
+print(Ps_obj_seq_prev_filt)
+```
+This removed `r ntaxa(Ps_obj_order_prev_filt) - ntaxa(Ps_obj_seq_prev_filt)` or `r percent(1 - (ntaxa(Ps_obj_seq_prev_filt) /  ntaxa(Ps_obj_order_prev_filt)))` of the ASVs! But only `r percent(1 - (sum(otu_table(Ps_obj_seq_prev_filt)) /  sum(otu_table(Ps_obj_order_prev_filt))), accuracy = 0.001)` of the reads.
+
+However all these removed ASVs accounted for only: 
+```{r} 
+prevdf_phylum_filt %>% 
+  arrange(., Prevalence) %>% 
+  group_by(Prevalence > prevalenceThreshold) %>% 
+  summarise(Abundance = sum(TotalAbundance)) %>%
+  mutate(`Rel. Ab.` = percent(Abundance / sum(Abundance), accuracy = 0.01)) %>% 
+  kable(., digits = c(0, 1, 0)) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F)
+```
+So it's fine to remove them.
+
+### General taxonomic features
+```{r reps heatmaps, cache=T}
+Ps_obj_seq_prev_filt %>%
+  subset_samples(., sample_sums(Ps_obj_seq_prev_filt) > min_lib_size) %>%
+  filter_taxa(., function(x)
+    sum(x) > 0, TRUE) %>%
+  transform_sample_counts(., function(x)
+    x / sum(x) * 100) ->
+  Ps_obj_seq_prev_filt_subset
+
+Ps_obj_seq_prev_filt_subset %>% 
+  sample_data() %>% 
+  as_tibble() %>% 
+  arrange(Sample) %>% 
+  pull(.sample) ->
+  Sample.order
+
+Ps_obj_seq_prev_filt_subset_100 <-
+  prune_taxa(names(sort(taxa_sums(Ps_obj_seq_prev_filt_subset), TRUE)[1:100]), Ps_obj_seq_prev_filt_subset)
+plot_heatmap(
+  Ps_obj_seq_prev_filt_subset_100,
+  method = NULL,
+  distance = NULL,
+  sample.label = "Sample",
+  taxa.label = "Order",
+  sample.order = Sample.order,
+  low = "#000033",
+  high = "#FF3300"
+)
+```
+
+```{r firmicutes heatmap, cache=T}
+Ps_obj_seq_prev_filt_subset_firmi <-
+  subset_taxa(Ps_obj_seq_prev_filt_subset, Phylum == "Firmicutes")
+plot_heatmap(
+  Ps_obj_seq_prev_filt_subset_firmi,
+  method = NULL,
+  distance = NULL,
+  sample.label = "Sample",
+  sample.order = Sample.order,
+  taxa.label = "Order",
+  low = "#000033",
+  high = "#FF3300"
+)
+```
+
+```{r Actinobacteria heatmap, cache=T}
+Ps_obj_seq_prev_filt_subset %>%
+  subset_taxa(., Phylum == "Actinobacteriota") %>%
+  transform_sample_counts(., function(x) x / sum(x) * 100) ->
+  Ps_obj_seq_prev_filt_subset_actino
+plot_heatmap(
+  Ps_obj_seq_prev_filt_subset_actino,
+  method = NULL,
+  distance = NULL,
+  sample.label = "Sample",
+  sample.order = Sample.order,
+  taxa.label = "Order",
+  low = "#000033",
+  high = "#FF3300"
+)
+```
+
+```{r Bacteroidetes heatmap, cache=T}
+Ps_obj_seq_prev_filt_subset %>%
+  subset_taxa(., Phylum == "Bacteroidota") %>%
+  transform_sample_counts(., function(x) x / sum(x) * 100) ->
+  Ps_obj_seq_prev_filt_subset_bacter
+
+plot_heatmap(
+  Ps_obj_seq_prev_filt_subset_bacter,
+  method = NULL,
+  distance = NULL,
+  sample.label = "Sample",
+  sample.order = Sample.order,
+  taxa.label = "Order",
+  low = "#000033",
+  high = "#FF3300"
+)
+```
+
+```{r Proteobacteria heatmap, cache=T}
+Ps_obj_seq_prev_filt_subset %>%
+  subset_taxa(., Phylum == "Proteobacteria") %>%
+  transform_sample_counts(., function(x) x / sum(x) * 100) ->
+  Ps_obj_seq_prev_filt_subset_proteo
+
+plot_heatmap(
+  Ps_obj_seq_prev_filt_subset_proteo,
+  method = NULL,
+  distance = NULL,
+  sample.label = "Sample",
+  sample.order = Sample.order,
+  taxa.label = "Phylum",
+  low = "#000033",
+  high = "#FF3300"
+)
+```
+
+```{r Cyanobacterales heatmap, cache=T}
+Ps_obj_seq_prev_filt_subset %>% 
+  subset_taxa(., Class == "Cyanobacteriia") %>% 
+  transform_sample_counts(., function(x) x / sum(x) * 100) ->
+  Ps_obj_seq_prev_filt_subset_chitino
+plot_heatmap(
+  Ps_obj_seq_prev_filt_subset_chitino,
+  method = NULL,
+  distance = NULL,
+  sample.label = "Sample",
+  sample.order = Sample.order,
+  taxa.label = "Order",
+  low = "#000033",
+  high = "#FF3300"
+)
+```
+
+```{r Chitinophagales heatmap, cache=T}
+Ps_obj_seq_prev_filt_subset %>% 
+  subset_taxa(., Order == "Chitinophagales") %>% 
+  transform_sample_counts(., function(x) x / sum(x) * 100) ->
+  Ps_obj_seq_prev_filt_subset_chitino
+plot_heatmap(
+  Ps_obj_seq_prev_filt_subset_chitino,
+  method = NULL,
+  distance = NULL,
+  sample.label = "Sample",
+  sample.order = Sample.order,
+  taxa.label = "Order",
+  low = "#000033",
+  high = "#FF3300"
+)
+```
+
+```{r Rhizobiales heatmap, cache=T}
+Ps_obj_seq_prev_filt_subset %>% 
+  subset_taxa(., Order == "Rhizobiales") %>% 
+  transform_sample_counts(., function(x) x / sum(x) * 100) ->
+  Ps_obj_seq_prev_filt_subset_rhizo
+plot_heatmap(
+  Ps_obj_seq_prev_filt_subset_rhizo,
+  method = NULL,
+  distance = NULL,
+  sample.label = "Sample",
+  sample.order = Sample.order,
+  taxa.label = "Order",
+  low = "#000033",
+  high = "#FF3300"
+)
+```
+
+```{r Betaproteobacteriales heatmap, cache=T}
+# Ps_obj_seq_prev_filt_subset %>% 
+#   subset_taxa(., Order == "Betaproteobacteriales") %>% 
+#   transform_sample_counts(., function(x) x / sum(x) * 100) ->
+#   Ps_obj_seq_prev_filt_subset_beta
+# plot_heatmap(
+#   Ps_obj_seq_prev_filt_subset_beta,
+#   method = NULL,
+#   distance = NULL,
+#   sample.label = "Sample.name",
+#   sample.order = Sample.order,
+#   taxa.label = "Order",
+#   low = "#000033",
+#   high = "#FF3300"
+# )
+```
+
+Let us look at the agglomerated taxa
+```{r agglomerated taxa heatmap, cache=T, fig.height=10, fig.width=14}
+Ps_obj_seq_prev_filt_subset %>% 
+  transform_sample_counts(., function(x) x / sum(x) * 100) %>% 
+  tax_glom(., "Phylum", NArm = TRUE) ->
+  Ps_obj_seq_prev_glom
+
+plot_heatmap(
+  Ps_obj_seq_prev_glom,
+  # method = "NMDS",
+  # distance = "bray",
+  sample.order = Sample.order,
+  sample.label = "Sample",
+  taxa.label = "Phylum",
+  taxa.order = "Phylum",
+  low = "#000033",
+  high = "#FF3300"
+) + theme_bw(base_size = 20) + theme(axis.text.x = element_text(hjust = 1.0, angle = 45.0))
+```
+
+
+#### Explore abundance distribution of specific taxa
+```{r abund dist, cache=T}
+Ps_obj_seq_prev_filt_subset_ra <- transform_sample_counts(Ps_obj_seq_prev_filt_subset, function(x){x / sum(x)} * 100)
+plot_abundance(Ps_obj_seq_prev_filt_subset_ra, taxa = "Proteobacteria")
+# plotBefore <- plot_abundance(Ps_obj_seq_prev_filt_subset, taxa = "Proteobacteria")
+# plotAfter <- plot_abundance(Ps_obj_seq_prev_filt_subset_ra, taxa = "Proteobacteria")
+# Combine each plot into one graphic.
+# grid.arrange(nrow = 2, plotBefore, plotAfter)
+```
+
+```{r specific taxa, cache=T}
+Ps_obj_seq_prev_filt_subset_ra_taxa <- subset_taxa(Ps_obj_seq_prev_filt_subset_ra, Order == "Bacillales")
+plot_abundance(Ps_obj_seq_prev_filt_subset_ra_taxa, Facet = "Genus")
+```
+
+### Taxa violin plots
+```{r violin plots, fig.height = 8, fig.width = 12, cache=T}
+taxa_order <- order_taxa(Ps_obj_seq_prev_filt_subset)
+Ps_obj_seq_prev_filt_subset_grouped <- mark_rare_taxa(Ps_obj_seq_prev_filt_subset, rank = "Phylum", rare_thresh = 0.01)
+plot_tax_violin(Ps_obj_seq_prev_filt_subset_grouped, grouping_var1 = Var3, grouping_var2 = Var2, taxa_order = taxa_order)
+```
+
+#### Make Krona plots
+```{r Krona, cache=T}
+dir.create(paste0(data_path, "Krona/")) # fore the tables
+for (i in seq(nsamples(Ps_obj_seq_prev_filt_subset))) {
+  sample_data <-
+    data.frame(t(otu_table(Ps_obj_seq_prev_filt_subset)[i,]), tax_table(Ps_obj_seq_prev_filt_subset))
+  sample_data <- sample_data[sample_data[, 1] > 0, ]
+  write_tsv(sample_data, paste0(data_path, "Krona/", sample_names(Ps_obj_seq_prev_filt_subset)[i], ".tsv"))
+}
+
+sample_data(Ps_obj_seq_prev_filt_subset_ra)$Krona_combinations <- paste0(
+  get_variable(Ps_obj_seq_prev_filt_subset_ra, Var3),
+  ".",
+  get_variable(Ps_obj_seq_prev_filt_subset_ra, Var2),
+  ".",
+  get_variable(Ps_obj_seq_prev_filt_subset_ra, Var3)
+)
+
+Ps_obj_seq_prev_filt_subset_ra %>%
+  phyloseq::merge_samples(., "Krona_combinations", fun = mean) ->
+  merged_Ps_obj
+
+for (i in seq(nsamples(merged_Ps_obj))) {
+  sample_data <-
+    data.frame(t(otu_table(merged_Ps_obj)[i,]), tax_table(merged_Ps_obj))
+  sample_data <- sample_data[sample_data[, 1] > 0, ]
+  write_tsv(sample_data, paste0(data_path, "Krona/", Proj_name, ".", sample_names(merged_Ps_obj)[i], ".tsv"))
+}
+
+list.files(paste0(data_path, "Krona/"), full.names = TRUE) %>%
+  paste(., collapse = " ") %>%
+  paste0("/usr/local/bin/ktImportText ", .,
+         " -o ",
+         Proj_name,
+         "_Krona.html") %>%
+  system()
+```
+
+#### Save filtered phyloseq object
+```{r save phyloseq, cache=T}
+saveRDS(Ps_obj_tax_filt, file = paste0(data_path, Proj_name, "_tax_filt.Rds"))
+# save seqs
+Ps_obj_tax_filt %>%  
+  refseq() %>% 
+  writeXStringSet(., filepath = paste0(data_path, "DADA2_reps_tax_filt.fa"), format = "fasta", width = 1000)
+saveRDS(Ps_obj_order_prev_filt, file = paste0(data_path, Proj_name, "_tax_prev_filt.Rds"))
+Ps_obj_order_prev_filt %>%  
+  refseq() %>% 
+  writeXStringSet(., filepath = paste0(data_path, "DADA2_reps_tax_prev_filt.fa"), format = "fasta", width = 1000)
+saveRDS(Ps_obj_seq_prev_filt, file = paste0(data_path, Proj_name, "_seq_prev_filt.Rds"))
+Ps_obj_seq_prev_filt %>%  
+  refseq() %>% 
+  writeXStringSet(., filepath = paste0(data_path, "DADA2_reps_seq_prev_filt.fa"), format = "fasta", width = 1000)
+
+# save filtered seqtab
+Ps_obj_seq_prev_filt %>% 
+  t() %>%
+  get_taxa() %>% 
+  as_tibble(rownames = "ASV") %>%
+  write_tsv(., 
+            paste0(data_path, Proj_name, "_seqtab_seq_prev_filt.tsv"), 
+            col_names = TRUE)
+
+Ps_obj_seq_prev_filt %>% 
+  t() %>% 
+  tax_table() %>% 
+  as_tibble() %>%
+  rename(.otu = "ASV") %>% 
+  write_tsv(., 
+            paste0(data_path, Proj_name, "_taxa_silva_seq_prev_filt.tsv"), 
+            col_names = TRUE)
+```
+
+```{r colophon, eval=T}
+sessioninfo::session_info() %>%
+  details::details(
+    summary = 'Current session info',
+    open    = TRUE
+  )
+
+## References

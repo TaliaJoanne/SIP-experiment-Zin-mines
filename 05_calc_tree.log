@@ -1,0 +1,4067 @@
+05_calc_tree.sh DADA2_reps_seq_prev_filt.fa
+05_calc_tree.sh DADA2_reps_seq_prev_filt.fa
+Will process DADA2 sequences from the following file:
+Will process DADA2 sequences from the following file:
+./DADA2_pseudo/DADA2_reps_seq_prev_filt.fa
+./DADA2_pseudo/DADA2_reps_seq_prev_filt.fa
+Align the sequences against a DB
+Align the sequences against a DB
+16:23:47 [SINA] This is SINA 1.7.2.
+16:23:47 [SINA] This is SINA 1.7.2.
+16:23:53 [ARB I/O] Scanning:   0% |            | 1/510984 [00:00:00 / 00:00:06]
+16:23:53 [ARB I/O] Scanning:   0% |            | 1/510984 [00:00:00 / 00:00:06]
+
+
+16:23:53 [ARB I/O] Scanning:  39% |██▊    | 198734/510984 [00:00:00 / 00:00:00]
+16:23:53 [ARB I/O] Scanning:  39% |██▊    | 198734/510984 [00:00:00 / 00:00:00]
+
+
+16:23:54 [Search (internal)] No cached index found.
+16:23:54 [Search (internal)] No cached index found.
+16:23:54 [Search (internal)] Building Index:   0% |      | 1/510984 [00:00:00 / 15:28:57]
+16:23:54 [Search (internal)] Building Index:   0% |      | 1/510984 [00:00:00 / 15:28:57]
+
+
+16:23:54 [Search (internal)] Building Index:   0% |    | 679/510984 [00:00:00 / 00:07:45]
+16:23:54 [Search (internal)] Building Index:   0% |    | 679/510984 [00:00:00 / 00:07:45]
+
+
+16:23:55 [Search (internal)] Building Index:   0% |   | 1510/510984 [00:00:01 / 00:06:19]
+16:23:55 [Search (internal)] Building Index:   0% |   | 1510/510984 [00:00:01 / 00:06:19]
+
+
+16:23:55 [Search (internal)] Building Index:   0% |   | 2420/510984 [00:00:01 / 00:05:42]
+16:23:55 [Search (internal)] Building Index:   0% |   | 2420/510984 [00:00:01 / 00:05:42]
+
+
+16:23:56 [Search (internal)] Building Index:   1% |   | 3341/510984 [00:00:02 / 00:05:23]
+16:23:56 [Search (internal)] Building Index:   1% |   | 3341/510984 [00:00:02 / 00:05:23]
+
+
+16:23:56 [Search (internal)] Building Index:   1% |   | 4243/510984 [00:00:02 / 00:05:16]
+16:23:56 [Search (internal)] Building Index:   1% |   | 4243/510984 [00:00:02 / 00:05:16]
+
+
+16:23:57 [Search (internal)] Building Index:   1% |   | 5145/510984 [00:00:03 / 00:05:10]
+16:23:57 [Search (internal)] Building Index:   1% |   | 5145/510984 [00:00:03 / 00:05:10]
+
+
+16:23:57 [Search (internal)] Building Index:   1% |   | 6053/510984 [00:00:03 / 00:05:05]
+16:23:57 [Search (internal)] Building Index:   1% |   | 6053/510984 [00:00:03 / 00:05:05]
+
+
+16:23:58 [Search (internal)] Building Index:   1% |   | 6955/510984 [00:00:04 / 00:05:02]
+16:23:58 [Search (internal)] Building Index:   1% |   | 6955/510984 [00:00:04 / 00:05:02]
+
+
+16:23:58 [Search (internal)] Building Index:   2% |   | 7909/510984 [00:00:04 / 00:04:57]
+16:23:58 [Search (internal)] Building Index:   2% |   | 7909/510984 [00:00:04 / 00:04:57]
+
+
+16:23:59 [Search (internal)] Building Index:   2% |   | 8865/510984 [00:00:05 / 00:04:53]
+16:23:59 [Search (internal)] Building Index:   2% |   | 8865/510984 [00:00:05 / 00:04:53]
+
+
+16:23:59 [Search (internal)] Building Index:   2% |   | 9826/510984 [00:00:05 / 00:04:50]
+16:23:59 [Search (internal)] Building Index:   2% |   | 9826/510984 [00:00:05 / 00:04:50]
+
+
+16:24:00 [Search (internal)] Building Index:   2% |  | 10765/510984 [00:00:06 / 00:04:47]
+16:24:00 [Search (internal)] Building Index:   2% |  | 10765/510984 [00:00:06 / 00:04:47]
+
+
+16:24:00 [Search (internal)] Building Index:   2% |  | 11689/510984 [00:00:06 / 00:04:46]
+16:24:00 [Search (internal)] Building Index:   2% |  | 11689/510984 [00:00:06 / 00:04:46]
+
+
+16:24:01 [Search (internal)] Building Index:   2% |  | 12653/510984 [00:00:07 / 00:04:43]
+16:24:01 [Search (internal)] Building Index:   2% |  | 12653/510984 [00:00:07 / 00:04:43]
+
+
+16:24:01 [Search (internal)] Building Index:   3% |  | 13603/510984 [00:00:07 / 00:04:42]
+16:24:01 [Search (internal)] Building Index:   3% |  | 13603/510984 [00:00:07 / 00:04:42]
+
+
+16:24:02 [Search (internal)] Building Index:   3% |  | 14547/510984 [00:00:08 / 00:04:41]
+16:24:02 [Search (internal)] Building Index:   3% |  | 14547/510984 [00:00:08 / 00:04:41]
+
+
+16:24:02 [Search (internal)] Building Index:   3% |  | 15491/510984 [00:00:08 / 00:04:39]
+16:24:02 [Search (internal)] Building Index:   3% |  | 15491/510984 [00:00:08 / 00:04:39]
+
+
+16:24:03 [Search (internal)] Building Index:   3% |  | 16445/510984 [00:00:09 / 00:04:38]
+16:24:03 [Search (internal)] Building Index:   3% |  | 16445/510984 [00:00:09 / 00:04:38]
+
+
+16:24:03 [Search (internal)] Building Index:   3% |  | 17405/510984 [00:00:09 / 00:04:36]
+16:24:03 [Search (internal)] Building Index:   3% |  | 17405/510984 [00:00:09 / 00:04:36]
+
+
+16:24:04 [Search (internal)] Building Index:   4% |  | 18322/510984 [00:00:10 / 00:04:36]
+16:24:04 [Search (internal)] Building Index:   4% |  | 18322/510984 [00:00:10 / 00:04:36]
+
+
+16:24:04 [Search (internal)] Building Index:   4% |  | 19222/510984 [00:00:10 / 00:04:35]
+16:24:04 [Search (internal)] Building Index:   4% |  | 19222/510984 [00:00:10 / 00:04:35]
+
+
+16:24:05 [Search (internal)] Building Index:   4% |  | 20128/510984 [00:00:11 / 00:04:34]
+16:24:05 [Search (internal)] Building Index:   4% |  | 20128/510984 [00:00:11 / 00:04:34]
+
+
+16:24:05 [Search (internal)] Building Index:   4% |  | 21035/510984 [00:00:11 / 00:04:34]
+16:24:05 [Search (internal)] Building Index:   4% |  | 21035/510984 [00:00:11 / 00:04:34]
+
+
+16:24:06 [Search (internal)] Building Index:   4% |  | 21907/510984 [00:00:12 / 00:04:34]
+16:24:06 [Search (internal)] Building Index:   4% |  | 21907/510984 [00:00:12 / 00:04:34]
+
+
+16:24:06 [Search (internal)] Building Index:   4% |  | 22798/510984 [00:00:12 / 00:04:33]
+16:24:06 [Search (internal)] Building Index:   4% |  | 22798/510984 [00:00:12 / 00:04:33]
+
+
+16:24:07 [Search (internal)] Building Index:   5% |  | 23646/510984 [00:00:13 / 00:04:34]
+16:24:07 [Search (internal)] Building Index:   5% |  | 23646/510984 [00:00:13 / 00:04:34]
+
+
+16:24:07 [Search (internal)] Building Index:   5% |  | 24461/510984 [00:00:13 / 00:04:34]
+16:24:07 [Search (internal)] Building Index:   5% |  | 24461/510984 [00:00:13 / 00:04:34]
+
+
+16:24:08 [Search (internal)] Building Index:   5% |  | 25290/510984 [00:00:14 / 00:04:34]
+16:24:08 [Search (internal)] Building Index:   5% |  | 25290/510984 [00:00:14 / 00:04:34]
+
+
+16:24:08 [Search (internal)] Building Index:   5% |  | 26167/510984 [00:00:14 / 00:04:34]
+16:24:08 [Search (internal)] Building Index:   5% |  | 26167/510984 [00:00:14 / 00:04:34]
+
+
+16:24:09 [Search (internal)] Building Index:   5% |  | 27024/510984 [00:00:15 / 00:04:34]
+16:24:09 [Search (internal)] Building Index:   5% |  | 27024/510984 [00:00:15 / 00:04:34]
+
+
+16:24:09 [Search (internal)] Building Index:   5% |  | 27939/510984 [00:00:15 / 00:04:33]
+16:24:09 [Search (internal)] Building Index:   5% |  | 27939/510984 [00:00:15 / 00:04:33]
+
+
+16:24:10 [Search (internal)] Building Index:   6% |▏ | 28853/510984 [00:00:16 / 00:04:32]
+16:24:10 [Search (internal)] Building Index:   6% |▏ | 28853/510984 [00:00:16 / 00:04:32]
+
+
+16:24:10 [Search (internal)] Building Index:   6% |▏ | 29761/510984 [00:00:16 / 00:04:32]
+16:24:10 [Search (internal)] Building Index:   6% |▏ | 29761/510984 [00:00:16 / 00:04:32]
+
+
+16:24:11 [Search (internal)] Building Index:   6% |▏ | 30668/510984 [00:00:17 / 00:04:31]
+16:24:11 [Search (internal)] Building Index:   6% |▏ | 30668/510984 [00:00:17 / 00:04:31]
+
+
+16:24:12 [Search (internal)] Building Index:   6% |▏ | 31567/510984 [00:00:17 / 00:04:30]
+16:24:12 [Search (internal)] Building Index:   6% |▏ | 31567/510984 [00:00:17 / 00:04:30]
+
+
+16:24:12 [Search (internal)] Building Index:   6% |▏ | 32465/510984 [00:00:18 / 00:04:30]
+16:24:12 [Search (internal)] Building Index:   6% |▏ | 32465/510984 [00:00:18 / 00:04:30]
+
+
+16:24:13 [Search (internal)] Building Index:   7% |▏ | 33382/510984 [00:00:18 / 00:04:29]
+16:24:13 [Search (internal)] Building Index:   7% |▏ | 33382/510984 [00:00:18 / 00:04:29]
+
+
+16:24:13 [Search (internal)] Building Index:   7% |▏ | 34280/510984 [00:00:19 / 00:04:29]
+16:24:13 [Search (internal)] Building Index:   7% |▏ | 34280/510984 [00:00:19 / 00:04:29]
+
+
+16:24:14 [Search (internal)] Building Index:   7% |▏ | 35211/510984 [00:00:19 / 00:04:28]
+16:24:14 [Search (internal)] Building Index:   7% |▏ | 35211/510984 [00:00:19 / 00:04:28]
+
+
+16:24:14 [Search (internal)] Building Index:   7% |▏ | 36224/510984 [00:00:20 / 00:04:26]
+16:24:14 [Search (internal)] Building Index:   7% |▏ | 36224/510984 [00:00:20 / 00:04:26]
+
+
+16:24:15 [Search (internal)] Building Index:   7% |▏ | 37288/510984 [00:00:20 / 00:04:24]
+16:24:15 [Search (internal)] Building Index:   7% |▏ | 37288/510984 [00:00:20 / 00:04:24]
+
+
+16:24:15 [Search (internal)] Building Index:   8% |▏ | 38388/510984 [00:00:21 / 00:04:23]
+16:24:15 [Search (internal)] Building Index:   8% |▏ | 38388/510984 [00:00:21 / 00:04:23]
+
+
+16:24:16 [Search (internal)] Building Index:   8% |▏ | 39472/510984 [00:00:21 / 00:04:21]
+16:24:16 [Search (internal)] Building Index:   8% |▏ | 39472/510984 [00:00:21 / 00:04:21]
+
+
+16:24:16 [Search (internal)] Building Index:   8% |▏ | 40532/510984 [00:00:22 / 00:04:19]
+16:24:16 [Search (internal)] Building Index:   8% |▏ | 40532/510984 [00:00:22 / 00:04:19]
+
+
+16:24:17 [Search (internal)] Building Index:   8% |▏ | 41622/510984 [00:00:22 / 00:04:18]
+16:24:17 [Search (internal)] Building Index:   8% |▏ | 41622/510984 [00:00:22 / 00:04:18]
+
+
+16:24:17 [Search (internal)] Building Index:   8% |▏ | 42674/510984 [00:00:23 / 00:04:17]
+16:24:17 [Search (internal)] Building Index:   8% |▏ | 42674/510984 [00:00:23 / 00:04:17]
+
+
+16:24:18 [Search (internal)] Building Index:   9% |▏ | 43807/510984 [00:00:23 / 00:04:15]
+16:24:18 [Search (internal)] Building Index:   9% |▏ | 43807/510984 [00:00:23 / 00:04:15]
+
+
+16:24:18 [Search (internal)] Building Index:   9% |▏ | 44981/510984 [00:00:24 / 00:04:13]
+16:24:18 [Search (internal)] Building Index:   9% |▏ | 44981/510984 [00:00:24 / 00:04:13]
+
+
+16:24:19 [Search (internal)] Building Index:   9% |▏ | 46139/510984 [00:00:25 / 00:04:11]
+16:24:19 [Search (internal)] Building Index:   9% |▏ | 46139/510984 [00:00:25 / 00:04:11]
+
+
+16:24:19 [Search (internal)] Building Index:   9% |▏ | 47168/510984 [00:00:25 / 00:04:10]
+16:24:19 [Search (internal)] Building Index:   9% |▏ | 47168/510984 [00:00:25 / 00:04:10]
+
+
+16:24:20 [Search (internal)] Building Index:   9% |▏ | 48178/510984 [00:00:26 / 00:04:09]
+16:24:20 [Search (internal)] Building Index:   9% |▏ | 48178/510984 [00:00:26 / 00:04:09]
+
+
+16:24:20 [Search (internal)] Building Index:  10% |▏ | 49203/510984 [00:00:26 / 00:04:08]
+16:24:20 [Search (internal)] Building Index:  10% |▏ | 49203/510984 [00:00:26 / 00:04:08]
+
+
+16:24:21 [Search (internal)] Building Index:  10% |▏ | 50266/510984 [00:00:27 / 00:04:07]
+16:24:21 [Search (internal)] Building Index:  10% |▏ | 50266/510984 [00:00:27 / 00:04:07]
+
+
+16:24:21 [Search (internal)] Building Index:  10% |▏ | 51286/510984 [00:00:27 / 00:04:06]
+16:24:21 [Search (internal)] Building Index:  10% |▏ | 51286/510984 [00:00:27 / 00:04:06]
+
+
+16:24:22 [Search (internal)] Building Index:  10% |▏ | 52263/510984 [00:00:28 / 00:04:06]
+16:24:22 [Search (internal)] Building Index:  10% |▏ | 52263/510984 [00:00:28 / 00:04:06]
+
+
+16:24:22 [Search (internal)] Building Index:  10% |▏ | 53179/510984 [00:00:28 / 00:04:06]
+16:24:22 [Search (internal)] Building Index:  10% |▏ | 53179/510984 [00:00:28 / 00:04:06]
+
+
+16:24:23 [Search (internal)] Building Index:  11% |▏ | 54139/510984 [00:00:29 / 00:04:05]
+16:24:23 [Search (internal)] Building Index:  11% |▏ | 54139/510984 [00:00:29 / 00:04:05]
+
+
+16:24:23 [Search (internal)] Building Index:  11% |▏ | 55183/510984 [00:00:29 / 00:04:04]
+16:24:23 [Search (internal)] Building Index:  11% |▏ | 55183/510984 [00:00:29 / 00:04:04]
+
+
+16:24:24 [Search (internal)] Building Index:  11% |▏ | 56262/510984 [00:00:30 / 00:04:03]
+16:24:24 [Search (internal)] Building Index:  11% |▏ | 56262/510984 [00:00:30 / 00:04:03]
+
+
+16:24:24 [Search (internal)] Building Index:  11% |▎ | 57382/510984 [00:00:30 / 00:04:01]
+16:24:24 [Search (internal)] Building Index:  11% |▎ | 57382/510984 [00:00:30 / 00:04:01]
+
+
+16:24:25 [Search (internal)] Building Index:  11% |▎ | 58457/510984 [00:00:31 / 00:04:00]
+16:24:25 [Search (internal)] Building Index:  11% |▎ | 58457/510984 [00:00:31 / 00:04:00]
+
+
+16:24:25 [Search (internal)] Building Index:  12% |▎ | 59561/510984 [00:00:31 / 00:03:59]
+16:24:25 [Search (internal)] Building Index:  12% |▎ | 59561/510984 [00:00:31 / 00:03:59]
+
+
+16:24:26 [Search (internal)] Building Index:  12% |▎ | 60633/510984 [00:00:32 / 00:03:58]
+16:24:26 [Search (internal)] Building Index:  12% |▎ | 60633/510984 [00:00:32 / 00:03:58]
+
+
+16:24:26 [Search (internal)] Building Index:  12% |▎ | 61709/510984 [00:00:32 / 00:03:57]
+16:24:26 [Search (internal)] Building Index:  12% |▎ | 61709/510984 [00:00:32 / 00:03:57]
+
+
+16:24:27 [Search (internal)] Building Index:  12% |▎ | 62765/510984 [00:00:33 / 00:03:56]
+16:24:27 [Search (internal)] Building Index:  12% |▎ | 62765/510984 [00:00:33 / 00:03:56]
+
+
+16:24:27 [Search (internal)] Building Index:  12% |▎ | 63798/510984 [00:00:33 / 00:03:55]
+16:24:27 [Search (internal)] Building Index:  12% |▎ | 63798/510984 [00:00:33 / 00:03:55]
+
+
+16:24:28 [Search (internal)] Building Index:  13% |▎ | 64853/510984 [00:00:34 / 00:03:54]
+16:24:28 [Search (internal)] Building Index:  13% |▎ | 64853/510984 [00:00:34 / 00:03:54]
+
+
+16:24:28 [Search (internal)] Building Index:  13% |▎ | 65899/510984 [00:00:34 / 00:03:54]
+16:24:28 [Search (internal)] Building Index:  13% |▎ | 65899/510984 [00:00:34 / 00:03:54]
+
+
+16:24:29 [Search (internal)] Building Index:  13% |▎ | 66931/510984 [00:00:35 / 00:03:53]
+16:24:29 [Search (internal)] Building Index:  13% |▎ | 66931/510984 [00:00:35 / 00:03:53]
+
+
+16:24:29 [Search (internal)] Building Index:  13% |▎ | 67947/510984 [00:00:35 / 00:03:52]
+16:24:29 [Search (internal)] Building Index:  13% |▎ | 67947/510984 [00:00:35 / 00:03:52]
+
+
+16:24:30 [Search (internal)] Building Index:  13% |▎ | 68925/510984 [00:00:36 / 00:03:52]
+16:24:30 [Search (internal)] Building Index:  13% |▎ | 68925/510984 [00:00:36 / 00:03:52]
+
+
+16:24:30 [Search (internal)] Building Index:  14% |▎ | 69886/510984 [00:00:36 / 00:03:51]
+16:24:30 [Search (internal)] Building Index:  14% |▎ | 69886/510984 [00:00:36 / 00:03:51]
+
+
+16:24:31 [Search (internal)] Building Index:  14% |▎ | 70832/510984 [00:00:37 / 00:03:51]
+16:24:31 [Search (internal)] Building Index:  14% |▎ | 70832/510984 [00:00:37 / 00:03:51]
+
+
+16:24:31 [Search (internal)] Building Index:  14% |▎ | 71739/510984 [00:00:37 / 00:03:50]
+16:24:31 [Search (internal)] Building Index:  14% |▎ | 71739/510984 [00:00:37 / 00:03:50]
+
+
+16:24:32 [Search (internal)] Building Index:  14% |▎ | 72689/510984 [00:00:38 / 00:03:50]
+16:24:32 [Search (internal)] Building Index:  14% |▎ | 72689/510984 [00:00:38 / 00:03:50]
+
+
+16:24:32 [Search (internal)] Building Index:  14% |▎ | 73649/510984 [00:00:38 / 00:03:49]
+16:24:32 [Search (internal)] Building Index:  14% |▎ | 73649/510984 [00:00:38 / 00:03:49]
+
+
+16:24:33 [Search (internal)] Building Index:  15% |▎ | 74604/510984 [00:00:39 / 00:03:49]
+16:24:33 [Search (internal)] Building Index:  15% |▎ | 74604/510984 [00:00:39 / 00:03:49]
+
+
+16:24:33 [Search (internal)] Building Index:  15% |▎ | 75568/510984 [00:00:39 / 00:03:48]
+16:24:33 [Search (internal)] Building Index:  15% |▎ | 75568/510984 [00:00:39 / 00:03:48]
+
+
+16:24:34 [Search (internal)] Building Index:  15% |▎ | 76549/510984 [00:00:40 / 00:03:48]
+16:24:34 [Search (internal)] Building Index:  15% |▎ | 76549/510984 [00:00:40 / 00:03:48]
+
+
+16:24:34 [Search (internal)] Building Index:  15% |▎ | 77527/510984 [00:00:40 / 00:03:47]
+16:24:34 [Search (internal)] Building Index:  15% |▎ | 77527/510984 [00:00:40 / 00:03:47]
+
+
+16:24:35 [Search (internal)] Building Index:  15% |▎ | 78514/510984 [00:00:41 / 00:03:47]
+16:24:35 [Search (internal)] Building Index:  15% |▎ | 78514/510984 [00:00:41 / 00:03:47]
+
+
+16:24:35 [Search (internal)] Building Index:  16% |▎ | 79527/510984 [00:00:41 / 00:03:46]
+16:24:35 [Search (internal)] Building Index:  16% |▎ | 79527/510984 [00:00:41 / 00:03:46]
+
+
+16:24:36 [Search (internal)] Building Index:  16% |▎ | 80520/510984 [00:00:42 / 00:03:45]
+16:24:36 [Search (internal)] Building Index:  16% |▎ | 80520/510984 [00:00:42 / 00:03:45]
+
+
+16:24:36 [Search (internal)] Building Index:  16% |▎ | 81509/510984 [00:00:42 / 00:03:45]
+16:24:36 [Search (internal)] Building Index:  16% |▎ | 81509/510984 [00:00:42 / 00:03:45]
+
+
+16:24:37 [Search (internal)] Building Index:  16% |▎ | 82447/510984 [00:00:43 / 00:03:45]
+16:24:37 [Search (internal)] Building Index:  16% |▎ | 82447/510984 [00:00:43 / 00:03:45]
+
+
+16:24:37 [Search (internal)] Building Index:  16% |▎ | 83355/510984 [00:00:43 / 00:03:44]
+16:24:37 [Search (internal)] Building Index:  16% |▎ | 83355/510984 [00:00:43 / 00:03:44]
+
+
+16:24:38 [Search (internal)] Building Index:  16% |▎ | 84257/510984 [00:00:44 / 00:03:44]
+16:24:38 [Search (internal)] Building Index:  16% |▎ | 84257/510984 [00:00:44 / 00:03:44]
+
+
+16:24:38 [Search (internal)] Building Index:  17% |▍ | 85237/510984 [00:00:44 / 00:03:43]
+16:24:38 [Search (internal)] Building Index:  17% |▍ | 85237/510984 [00:00:44 / 00:03:43]
+
+
+16:24:39 [Search (internal)] Building Index:  17% |▍ | 86214/510984 [00:00:45 / 00:03:43]
+16:24:39 [Search (internal)] Building Index:  17% |▍ | 86214/510984 [00:00:45 / 00:03:43]
+
+
+16:24:39 [Search (internal)] Building Index:  17% |▍ | 87151/510984 [00:00:45 / 00:03:42]
+16:24:39 [Search (internal)] Building Index:  17% |▍ | 87151/510984 [00:00:45 / 00:03:42]
+
+
+16:24:40 [Search (internal)] Building Index:  17% |▍ | 88150/510984 [00:00:46 / 00:03:42]
+16:24:40 [Search (internal)] Building Index:  17% |▍ | 88150/510984 [00:00:46 / 00:03:42]
+
+
+16:24:41 [Search (internal)] Building Index:  17% |▍ | 89133/510984 [00:00:46 / 00:03:41]
+16:24:41 [Search (internal)] Building Index:  17% |▍ | 89133/510984 [00:00:46 / 00:03:41]
+
+
+16:24:41 [Search (internal)] Building Index:  18% |▍ | 90095/510984 [00:00:47 / 00:03:41]
+16:24:41 [Search (internal)] Building Index:  18% |▍ | 90095/510984 [00:00:47 / 00:03:41]
+
+
+16:24:42 [Search (internal)] Building Index:  18% |▍ | 91028/510984 [00:00:47 / 00:03:40]
+16:24:42 [Search (internal)] Building Index:  18% |▍ | 91028/510984 [00:00:47 / 00:03:40]
+
+
+16:24:42 [Search (internal)] Building Index:  18% |▍ | 91973/510984 [00:00:48 / 00:03:40]
+16:24:42 [Search (internal)] Building Index:  18% |▍ | 91973/510984 [00:00:48 / 00:03:40]
+
+
+16:24:43 [Search (internal)] Building Index:  18% |▍ | 92905/510984 [00:00:48 / 00:03:39]
+16:24:43 [Search (internal)] Building Index:  18% |▍ | 92905/510984 [00:00:48 / 00:03:39]
+
+
+16:24:43 [Search (internal)] Building Index:  18% |▍ | 93808/510984 [00:00:49 / 00:03:39]
+16:24:43 [Search (internal)] Building Index:  18% |▍ | 93808/510984 [00:00:49 / 00:03:39]
+
+
+16:24:44 [Search (internal)] Building Index:  19% |▍ | 94691/510984 [00:00:49 / 00:03:39]
+16:24:44 [Search (internal)] Building Index:  19% |▍ | 94691/510984 [00:00:49 / 00:03:39]
+
+
+16:24:44 [Search (internal)] Building Index:  19% |▍ | 95599/510984 [00:00:50 / 00:03:38]
+16:24:44 [Search (internal)] Building Index:  19% |▍ | 95599/510984 [00:00:50 / 00:03:38]
+
+
+16:24:45 [Search (internal)] Building Index:  19% |▍ | 96484/510984 [00:00:50 / 00:03:38]
+16:24:45 [Search (internal)] Building Index:  19% |▍ | 96484/510984 [00:00:50 / 00:03:38]
+
+
+16:24:45 [Search (internal)] Building Index:  19% |▍ | 97389/510984 [00:00:51 / 00:03:38]
+16:24:45 [Search (internal)] Building Index:  19% |▍ | 97389/510984 [00:00:51 / 00:03:38]
+
+
+16:24:46 [Search (internal)] Building Index:  19% |▍ | 98303/510984 [00:00:51 / 00:03:37]
+16:24:46 [Search (internal)] Building Index:  19% |▍ | 98303/510984 [00:00:51 / 00:03:37]
+
+
+16:24:46 [Search (internal)] Building Index:  19% |▍ | 99261/510984 [00:00:52 / 00:03:37]
+16:24:46 [Search (internal)] Building Index:  19% |▍ | 99261/510984 [00:00:52 / 00:03:37]
+
+
+16:24:47 [Search (internal)] Building Index:  20% |▏| 100199/510984 [00:00:52 / 00:03:36]
+16:24:47 [Search (internal)] Building Index:  20% |▏| 100199/510984 [00:00:52 / 00:03:36]
+
+
+16:24:47 [Search (internal)] Building Index:  20% |▏| 101150/510984 [00:00:53 / 00:03:36]
+16:24:47 [Search (internal)] Building Index:  20% |▏| 101150/510984 [00:00:53 / 00:03:36]
+
+
+16:24:48 [Search (internal)] Building Index:  20% |▏| 102118/510984 [00:00:53 / 00:03:35]
+16:24:48 [Search (internal)] Building Index:  20% |▏| 102118/510984 [00:00:53 / 00:03:35]
+
+
+16:24:48 [Search (internal)] Building Index:  20% |▏| 103020/510984 [00:00:54 / 00:03:35]
+16:24:48 [Search (internal)] Building Index:  20% |▏| 103020/510984 [00:00:54 / 00:03:35]
+
+
+16:24:49 [Search (internal)] Building Index:  20% |▏| 103924/510984 [00:00:54 / 00:03:35]
+16:24:49 [Search (internal)] Building Index:  20% |▏| 103924/510984 [00:00:54 / 00:03:35]
+
+
+16:24:49 [Search (internal)] Building Index:  21% |▏| 104894/510984 [00:00:55 / 00:03:34]
+16:24:49 [Search (internal)] Building Index:  21% |▏| 104894/510984 [00:00:55 / 00:03:34]
+
+
+16:24:50 [Search (internal)] Building Index:  21% |▏| 105839/510984 [00:00:55 / 00:03:34]
+16:24:50 [Search (internal)] Building Index:  21% |▏| 105839/510984 [00:00:55 / 00:03:34]
+
+
+16:24:50 [Search (internal)] Building Index:  21% |▏| 106801/510984 [00:00:56 / 00:03:33]
+16:24:50 [Search (internal)] Building Index:  21% |▏| 106801/510984 [00:00:56 / 00:03:33]
+
+
+16:24:51 [Search (internal)] Building Index:  21% |▏| 107781/510984 [00:00:56 / 00:03:33]
+16:24:51 [Search (internal)] Building Index:  21% |▏| 107781/510984 [00:00:56 / 00:03:33]
+
+
+16:24:51 [Search (internal)] Building Index:  21% |▏| 108728/510984 [00:00:57 / 00:03:32]
+16:24:51 [Search (internal)] Building Index:  21% |▏| 108728/510984 [00:00:57 / 00:03:32]
+
+
+16:24:52 [Search (internal)] Building Index:  21% |▏| 109660/510984 [00:00:57 / 00:03:32]
+16:24:52 [Search (internal)] Building Index:  21% |▏| 109660/510984 [00:00:57 / 00:03:32]
+
+
+16:24:52 [Search (internal)] Building Index:  22% |▏| 110529/510984 [00:00:58 / 00:03:31]
+16:24:52 [Search (internal)] Building Index:  22% |▏| 110529/510984 [00:00:58 / 00:03:31]
+
+
+16:24:53 [Search (internal)] Building Index:  22% |▏| 111455/510984 [00:00:58 / 00:03:31]
+16:24:53 [Search (internal)] Building Index:  22% |▏| 111455/510984 [00:00:58 / 00:03:31]
+
+
+16:24:53 [Search (internal)] Building Index:  22% |▏| 112371/510984 [00:00:59 / 00:03:31]
+16:24:53 [Search (internal)] Building Index:  22% |▏| 112371/510984 [00:00:59 / 00:03:31]
+
+
+16:24:54 [Search (internal)] Building Index:  22% |▏| 113283/510984 [00:01:00 / 00:03:30]
+16:24:54 [Search (internal)] Building Index:  22% |▏| 113283/510984 [00:01:00 / 00:03:30]
+
+
+16:24:54 [Search (internal)] Building Index:  22% |▎| 114221/510984 [00:01:00 / 00:03:30]
+16:24:54 [Search (internal)] Building Index:  22% |▎| 114221/510984 [00:01:00 / 00:03:30]
+
+
+16:24:55 [Search (internal)] Building Index:  23% |▎| 115168/510984 [00:01:01 / 00:03:29]
+16:24:55 [Search (internal)] Building Index:  23% |▎| 115168/510984 [00:01:01 / 00:03:29]
+
+
+16:24:55 [Search (internal)] Building Index:  23% |▎| 116108/510984 [00:01:01 / 00:03:29]
+16:24:55 [Search (internal)] Building Index:  23% |▎| 116108/510984 [00:01:01 / 00:03:29]
+
+
+16:24:56 [Search (internal)] Building Index:  23% |▎| 117094/510984 [00:01:02 / 00:03:28]
+16:24:56 [Search (internal)] Building Index:  23% |▎| 117094/510984 [00:01:02 / 00:03:28]
+
+
+16:24:56 [Search (internal)] Building Index:  23% |▎| 118056/510984 [00:01:02 / 00:03:28]
+16:24:56 [Search (internal)] Building Index:  23% |▎| 118056/510984 [00:01:02 / 00:03:28]
+
+
+16:24:57 [Search (internal)] Building Index:  23% |▎| 119006/510984 [00:01:03 / 00:03:27]
+16:24:57 [Search (internal)] Building Index:  23% |▎| 119006/510984 [00:01:03 / 00:03:27]
+
+
+16:24:57 [Search (internal)] Building Index:  23% |▎| 119949/510984 [00:01:03 / 00:03:27]
+16:24:57 [Search (internal)] Building Index:  23% |▎| 119949/510984 [00:01:03 / 00:03:27]
+
+
+16:24:58 [Search (internal)] Building Index:  24% |▎| 120823/510984 [00:01:04 / 00:03:26]
+16:24:58 [Search (internal)] Building Index:  24% |▎| 120823/510984 [00:01:04 / 00:03:26]
+
+
+16:24:58 [Search (internal)] Building Index:  24% |▎| 121689/510984 [00:01:04 / 00:03:26]
+16:24:58 [Search (internal)] Building Index:  24% |▎| 121689/510984 [00:01:04 / 00:03:26]
+
+
+16:24:59 [Search (internal)] Building Index:  24% |▎| 122602/510984 [00:01:05 / 00:03:26]
+16:24:59 [Search (internal)] Building Index:  24% |▎| 122602/510984 [00:01:05 / 00:03:26]
+
+
+16:24:59 [Search (internal)] Building Index:  24% |▎| 123570/510984 [00:01:05 / 00:03:25]
+16:24:59 [Search (internal)] Building Index:  24% |▎| 123570/510984 [00:01:05 / 00:03:25]
+
+
+16:25:00 [Search (internal)] Building Index:  24% |▎| 124494/510984 [00:01:06 / 00:03:25]
+16:25:00 [Search (internal)] Building Index:  24% |▎| 124494/510984 [00:01:06 / 00:03:25]
+
+
+16:25:00 [Search (internal)] Building Index:  25% |▎| 125414/510984 [00:01:06 / 00:03:24]
+16:25:00 [Search (internal)] Building Index:  25% |▎| 125414/510984 [00:01:06 / 00:03:24]
+
+
+16:25:01 [Search (internal)] Building Index:  25% |▎| 126351/510984 [00:01:07 / 00:03:24]
+16:25:01 [Search (internal)] Building Index:  25% |▎| 126351/510984 [00:01:07 / 00:03:24]
+
+
+16:25:01 [Search (internal)] Building Index:  25% |▎| 127295/510984 [00:01:07 / 00:03:23]
+16:25:01 [Search (internal)] Building Index:  25% |▎| 127295/510984 [00:01:07 / 00:03:23]
+
+
+16:25:02 [Search (internal)] Building Index:  25% |▎| 128204/510984 [00:01:08 / 00:03:23]
+16:25:02 [Search (internal)] Building Index:  25% |▎| 128204/510984 [00:01:08 / 00:03:23]
+
+
+16:25:02 [Search (internal)] Building Index:  25% |▎| 129099/510984 [00:01:08 / 00:03:23]
+16:25:02 [Search (internal)] Building Index:  25% |▎| 129099/510984 [00:01:08 / 00:03:23]
+
+
+16:25:03 [Search (internal)] Building Index:  25% |▎| 129999/510984 [00:01:09 / 00:03:22]
+16:25:03 [Search (internal)] Building Index:  25% |▎| 129999/510984 [00:01:09 / 00:03:22]
+
+
+16:25:03 [Search (internal)] Building Index:  26% |▎| 130900/510984 [00:01:09 / 00:03:22]
+16:25:03 [Search (internal)] Building Index:  26% |▎| 130900/510984 [00:01:09 / 00:03:22]
+
+
+16:25:04 [Search (internal)] Building Index:  26% |▎| 131859/510984 [00:01:10 / 00:03:21]
+16:25:04 [Search (internal)] Building Index:  26% |▎| 131859/510984 [00:01:10 / 00:03:21]
+
+
+16:25:04 [Search (internal)] Building Index:  26% |▎| 132845/510984 [00:01:10 / 00:03:21]
+16:25:04 [Search (internal)] Building Index:  26% |▎| 132845/510984 [00:01:10 / 00:03:21]
+
+
+16:25:05 [Search (internal)] Building Index:  26% |▎| 133816/510984 [00:01:11 / 00:03:20]
+16:25:05 [Search (internal)] Building Index:  26% |▎| 133816/510984 [00:01:11 / 00:03:20]
+
+
+16:25:05 [Search (internal)] Building Index:  26% |▎| 134795/510984 [00:01:11 / 00:03:20]
+16:25:05 [Search (internal)] Building Index:  26% |▎| 134795/510984 [00:01:11 / 00:03:20]
+
+
+16:25:06 [Search (internal)] Building Index:  27% |▎| 135760/510984 [00:01:12 / 00:03:19]
+16:25:06 [Search (internal)] Building Index:  27% |▎| 135760/510984 [00:01:12 / 00:03:19]
+
+
+16:25:06 [Search (internal)] Building Index:  27% |▎| 136803/510984 [00:01:12 / 00:03:18]
+16:25:06 [Search (internal)] Building Index:  27% |▎| 136803/510984 [00:01:12 / 00:03:18]
+
+
+16:25:07 [Search (internal)] Building Index:  27% |▎| 137816/510984 [00:01:13 / 00:03:18]
+16:25:07 [Search (internal)] Building Index:  27% |▎| 137816/510984 [00:01:13 / 00:03:18]
+
+
+16:25:07 [Search (internal)] Building Index:  27% |▎| 138783/510984 [00:01:13 / 00:03:17]
+16:25:07 [Search (internal)] Building Index:  27% |▎| 138783/510984 [00:01:13 / 00:03:17]
+
+
+16:25:08 [Search (internal)] Building Index:  27% |▎| 139746/510984 [00:01:14 / 00:03:17]
+16:25:08 [Search (internal)] Building Index:  27% |▎| 139746/510984 [00:01:14 / 00:03:17]
+
+
+16:25:08 [Search (internal)] Building Index:  28% |▎| 140715/510984 [00:01:14 / 00:03:16]
+16:25:08 [Search (internal)] Building Index:  28% |▎| 140715/510984 [00:01:14 / 00:03:16]
+
+
+16:25:09 [Search (internal)] Building Index:  28% |▎| 141672/510984 [00:01:15 / 00:03:16]
+16:25:09 [Search (internal)] Building Index:  28% |▎| 141672/510984 [00:01:15 / 00:03:16]
+
+
+16:25:09 [Search (internal)] Building Index:  28% |▎| 142557/510984 [00:01:15 / 00:03:15]
+16:25:09 [Search (internal)] Building Index:  28% |▎| 142557/510984 [00:01:15 / 00:03:15]
+
+
+16:25:10 [Search (internal)] Building Index:  28% |▎| 143408/510984 [00:01:16 / 00:03:15]
+16:25:10 [Search (internal)] Building Index:  28% |▎| 143408/510984 [00:01:16 / 00:03:15]
+
+
+16:25:10 [Search (internal)] Building Index:  28% |▎| 144160/510984 [00:01:16 / 00:03:15]
+16:25:10 [Search (internal)] Building Index:  28% |▎| 144160/510984 [00:01:16 / 00:03:15]
+
+
+16:25:11 [Search (internal)] Building Index:  28% |▎| 145043/510984 [00:01:17 / 00:03:15]
+16:25:11 [Search (internal)] Building Index:  28% |▎| 145043/510984 [00:01:17 / 00:03:15]
+
+
+16:25:12 [Search (internal)] Building Index:  29% |▎| 145933/510984 [00:01:17 / 00:03:14]
+16:25:12 [Search (internal)] Building Index:  29% |▎| 145933/510984 [00:01:17 / 00:03:14]
+
+
+16:25:12 [Search (internal)] Building Index:  29% |▎| 146865/510984 [00:01:18 / 00:03:14]
+16:25:12 [Search (internal)] Building Index:  29% |▎| 146865/510984 [00:01:18 / 00:03:14]
+
+
+16:25:13 [Search (internal)] Building Index:  29% |▎| 147783/510984 [00:01:18 / 00:03:13]
+16:25:13 [Search (internal)] Building Index:  29% |▎| 147783/510984 [00:01:18 / 00:03:13]
+
+
+16:25:13 [Search (internal)] Building Index:  29% |▎| 148678/510984 [00:01:19 / 00:03:13]
+16:25:13 [Search (internal)] Building Index:  29% |▎| 148678/510984 [00:01:19 / 00:03:13]
+
+
+16:25:14 [Search (internal)] Building Index:  29% |▎| 149557/510984 [00:01:19 / 00:03:12]
+16:25:14 [Search (internal)] Building Index:  29% |▎| 149557/510984 [00:01:19 / 00:03:12]
+
+
+16:25:14 [Search (internal)] Building Index:  29% |▎| 150557/510984 [00:01:20 / 00:03:12]
+16:25:14 [Search (internal)] Building Index:  29% |▎| 150557/510984 [00:01:20 / 00:03:12]
+
+
+16:25:15 [Search (internal)] Building Index:  30% |▎| 151567/510984 [00:01:20 / 00:03:11]
+16:25:15 [Search (internal)] Building Index:  30% |▎| 151567/510984 [00:01:20 / 00:03:11]
+
+
+16:25:15 [Search (internal)] Building Index:  30% |▎| 152542/510984 [00:01:21 / 00:03:11]
+16:25:15 [Search (internal)] Building Index:  30% |▎| 152542/510984 [00:01:21 / 00:03:11]
+
+
+16:25:16 [Search (internal)] Building Index:  30% |▎| 153495/510984 [00:01:21 / 00:03:10]
+16:25:16 [Search (internal)] Building Index:  30% |▎| 153495/510984 [00:01:21 / 00:03:10]
+
+
+16:25:16 [Search (internal)] Building Index:  30% |▎| 154492/510984 [00:01:22 / 00:03:10]
+16:25:16 [Search (internal)] Building Index:  30% |▎| 154492/510984 [00:01:22 / 00:03:10]
+
+
+16:25:17 [Search (internal)] Building Index:  30% |▎| 155467/510984 [00:01:22 / 00:03:09]
+16:25:17 [Search (internal)] Building Index:  30% |▎| 155467/510984 [00:01:22 / 00:03:09]
+
+
+16:25:17 [Search (internal)] Building Index:  31% |▎| 156396/510984 [00:01:23 / 00:03:09]
+16:25:17 [Search (internal)] Building Index:  31% |▎| 156396/510984 [00:01:23 / 00:03:09]
+
+
+16:25:18 [Search (internal)] Building Index:  31% |▎| 157306/510984 [00:01:23 / 00:03:08]
+16:25:18 [Search (internal)] Building Index:  31% |▎| 157306/510984 [00:01:23 / 00:03:08]
+
+
+16:25:18 [Search (internal)] Building Index:  31% |▎| 158159/510984 [00:01:24 / 00:03:08]
+16:25:18 [Search (internal)] Building Index:  31% |▎| 158159/510984 [00:01:24 / 00:03:08]
+
+
+16:25:19 [Search (internal)] Building Index:  31% |▎| 159007/510984 [00:01:24 / 00:03:08]
+16:25:19 [Search (internal)] Building Index:  31% |▎| 159007/510984 [00:01:24 / 00:03:08]
+
+
+16:25:19 [Search (internal)] Building Index:  31% |▎| 159851/510984 [00:01:25 / 00:03:07]
+16:25:19 [Search (internal)] Building Index:  31% |▎| 159851/510984 [00:01:25 / 00:03:07]
+
+
+16:25:20 [Search (internal)] Building Index:  31% |▎| 160757/510984 [00:01:25 / 00:03:07]
+16:25:20 [Search (internal)] Building Index:  31% |▎| 160757/510984 [00:01:25 / 00:03:07]
+
+
+16:25:20 [Search (internal)] Building Index:  32% |▎| 161710/510984 [00:01:26 / 00:03:06]
+16:25:20 [Search (internal)] Building Index:  32% |▎| 161710/510984 [00:01:26 / 00:03:06]
+
+
+16:25:21 [Search (internal)] Building Index:  32% |▎| 162655/510984 [00:01:26 / 00:03:06]
+16:25:21 [Search (internal)] Building Index:  32% |▎| 162655/510984 [00:01:26 / 00:03:06]
+
+
+16:25:21 [Search (internal)] Building Index:  32% |▎| 163555/510984 [00:01:27 / 00:03:05]
+16:25:21 [Search (internal)] Building Index:  32% |▎| 163555/510984 [00:01:27 / 00:03:05]
+
+
+16:25:22 [Search (internal)] Building Index:  32% |▎| 164445/510984 [00:01:28 / 00:03:05]
+16:25:22 [Search (internal)] Building Index:  32% |▎| 164445/510984 [00:01:28 / 00:03:05]
+
+
+16:25:22 [Search (internal)] Building Index:  32% |▎| 165345/510984 [00:01:28 / 00:03:05]
+16:25:22 [Search (internal)] Building Index:  32% |▎| 165345/510984 [00:01:28 / 00:03:05]
+
+
+16:25:23 [Search (internal)] Building Index:  33% |▎| 166205/510984 [00:01:29 / 00:03:04]
+16:25:23 [Search (internal)] Building Index:  33% |▎| 166205/510984 [00:01:29 / 00:03:04]
+
+
+16:25:23 [Search (internal)] Building Index:  33% |▎| 167048/510984 [00:01:29 / 00:03:04]
+16:25:23 [Search (internal)] Building Index:  33% |▎| 167048/510984 [00:01:29 / 00:03:04]
+
+
+16:25:24 [Search (internal)] Building Index:  33% |▎| 167925/510984 [00:01:30 / 00:03:04]
+16:25:24 [Search (internal)] Building Index:  33% |▎| 167925/510984 [00:01:30 / 00:03:04]
+
+
+16:25:24 [Search (internal)] Building Index:  33% |▎| 168791/510984 [00:01:30 / 00:03:03]
+16:25:24 [Search (internal)] Building Index:  33% |▎| 168791/510984 [00:01:30 / 00:03:03]
+
+
+16:25:25 [Search (internal)] Building Index:  33% |▎| 169727/510984 [00:01:31 / 00:03:03]
+16:25:25 [Search (internal)] Building Index:  33% |▎| 169727/510984 [00:01:31 / 00:03:03]
+
+
+16:25:25 [Search (internal)] Building Index:  33% |▍| 170679/510984 [00:01:31 / 00:03:02]
+16:25:25 [Search (internal)] Building Index:  33% |▍| 170679/510984 [00:01:31 / 00:03:02]
+
+
+16:25:26 [Search (internal)] Building Index:  34% |▍| 171634/510984 [00:01:32 / 00:03:02]
+16:25:26 [Search (internal)] Building Index:  34% |▍| 171634/510984 [00:01:32 / 00:03:02]
+
+
+16:25:26 [Search (internal)] Building Index:  34% |▍| 172633/510984 [00:01:32 / 00:03:01]
+16:25:26 [Search (internal)] Building Index:  34% |▍| 172633/510984 [00:01:32 / 00:03:01]
+
+
+16:25:27 [Search (internal)] Building Index:  34% |▍| 173611/510984 [00:01:33 / 00:03:01]
+16:25:27 [Search (internal)] Building Index:  34% |▍| 173611/510984 [00:01:33 / 00:03:01]
+
+
+16:25:27 [Search (internal)] Building Index:  34% |▍| 174445/510984 [00:01:33 / 00:03:00]
+16:25:27 [Search (internal)] Building Index:  34% |▍| 174445/510984 [00:01:33 / 00:03:00]
+
+
+16:25:28 [Search (internal)] Building Index:  34% |▍| 175375/510984 [00:01:34 / 00:03:00]
+16:25:28 [Search (internal)] Building Index:  34% |▍| 175375/510984 [00:01:34 / 00:03:00]
+
+
+16:25:28 [Search (internal)] Building Index:  35% |▍| 176299/510984 [00:01:34 / 00:02:59]
+16:25:28 [Search (internal)] Building Index:  35% |▍| 176299/510984 [00:01:34 / 00:02:59]
+
+
+16:25:29 [Search (internal)] Building Index:  35% |▍| 177180/510984 [00:01:35 / 00:02:59]
+16:25:29 [Search (internal)] Building Index:  35% |▍| 177180/510984 [00:01:35 / 00:02:59]
+
+
+16:25:29 [Search (internal)] Building Index:  35% |▍| 178105/510984 [00:01:35 / 00:02:58]
+16:25:29 [Search (internal)] Building Index:  35% |▍| 178105/510984 [00:01:35 / 00:02:58]
+
+
+16:25:30 [Search (internal)] Building Index:  35% |▍| 179029/510984 [00:01:36 / 00:02:58]
+16:25:30 [Search (internal)] Building Index:  35% |▍| 179029/510984 [00:01:36 / 00:02:58]
+
+
+16:25:30 [Search (internal)] Building Index:  35% |▍| 179872/510984 [00:01:36 / 00:02:58]
+16:25:30 [Search (internal)] Building Index:  35% |▍| 179872/510984 [00:01:36 / 00:02:58]
+
+
+16:25:31 [Search (internal)] Building Index:  35% |▍| 180708/510984 [00:01:37 / 00:02:57]
+16:25:31 [Search (internal)] Building Index:  35% |▍| 180708/510984 [00:01:37 / 00:02:57]
+
+
+16:25:31 [Search (internal)] Building Index:  36% |▍| 181543/510984 [00:01:37 / 00:02:57]
+16:25:31 [Search (internal)] Building Index:  36% |▍| 181543/510984 [00:01:37 / 00:02:57]
+
+
+16:25:32 [Search (internal)] Building Index:  36% |▍| 182459/510984 [00:01:38 / 00:02:56]
+16:25:32 [Search (internal)] Building Index:  36% |▍| 182459/510984 [00:01:38 / 00:02:56]
+
+
+16:25:32 [Search (internal)] Building Index:  36% |▍| 183403/510984 [00:01:38 / 00:02:56]
+16:25:32 [Search (internal)] Building Index:  36% |▍| 183403/510984 [00:01:38 / 00:02:56]
+
+
+16:25:33 [Search (internal)] Building Index:  36% |▍| 184297/510984 [00:01:39 / 00:02:55]
+16:25:33 [Search (internal)] Building Index:  36% |▍| 184297/510984 [00:01:39 / 00:02:55]
+
+
+16:25:33 [Search (internal)] Building Index:  36% |▍| 185225/510984 [00:01:39 / 00:02:55]
+16:25:33 [Search (internal)] Building Index:  36% |▍| 185225/510984 [00:01:39 / 00:02:55]
+
+
+16:25:34 [Search (internal)] Building Index:  36% |▍| 186111/510984 [00:01:40 / 00:02:55]
+16:25:34 [Search (internal)] Building Index:  36% |▍| 186111/510984 [00:01:40 / 00:02:55]
+
+
+16:25:34 [Search (internal)] Building Index:  37% |▍| 186974/510984 [00:01:40 / 00:02:54]
+16:25:34 [Search (internal)] Building Index:  37% |▍| 186974/510984 [00:01:40 / 00:02:54]
+
+
+16:25:35 [Search (internal)] Building Index:  37% |▍| 187844/510984 [00:01:41 / 00:02:54]
+16:25:35 [Search (internal)] Building Index:  37% |▍| 187844/510984 [00:01:41 / 00:02:54]
+
+
+16:25:35 [Search (internal)] Building Index:  37% |▍| 188705/510984 [00:01:41 / 00:02:53]
+16:25:35 [Search (internal)] Building Index:  37% |▍| 188705/510984 [00:01:41 / 00:02:53]
+
+
+16:25:36 [Search (internal)] Building Index:  37% |▍| 189532/510984 [00:01:42 / 00:02:53]
+16:25:36 [Search (internal)] Building Index:  37% |▍| 189532/510984 [00:01:42 / 00:02:53]
+
+
+16:25:37 [Search (internal)] Building Index:  37% |▍| 190330/510984 [00:01:42 / 00:02:53]
+16:25:37 [Search (internal)] Building Index:  37% |▍| 190330/510984 [00:01:42 / 00:02:53]
+
+
+16:25:37 [Search (internal)] Building Index:  37% |▍| 191104/510984 [00:01:43 / 00:02:52]
+16:25:37 [Search (internal)] Building Index:  37% |▍| 191104/510984 [00:01:43 / 00:02:52]
+
+
+16:25:38 [Search (internal)] Building Index:  38% |▍| 191979/510984 [00:01:43 / 00:02:52]
+16:25:38 [Search (internal)] Building Index:  38% |▍| 191979/510984 [00:01:43 / 00:02:52]
+
+
+16:25:38 [Search (internal)] Building Index:  38% |▍| 192827/510984 [00:01:44 / 00:02:52]
+16:25:38 [Search (internal)] Building Index:  38% |▍| 192827/510984 [00:01:44 / 00:02:52]
+
+
+16:25:39 [Search (internal)] Building Index:  38% |▍| 193698/510984 [00:01:44 / 00:02:51]
+16:25:39 [Search (internal)] Building Index:  38% |▍| 193698/510984 [00:01:44 / 00:02:51]
+
+
+16:25:39 [Search (internal)] Building Index:  38% |▍| 194562/510984 [00:01:45 / 00:02:51]
+16:25:39 [Search (internal)] Building Index:  38% |▍| 194562/510984 [00:01:45 / 00:02:51]
+
+
+16:25:40 [Search (internal)] Building Index:  38% |▍| 195424/510984 [00:01:45 / 00:02:51]
+16:25:40 [Search (internal)] Building Index:  38% |▍| 195424/510984 [00:01:45 / 00:02:51]
+
+
+16:25:40 [Search (internal)] Building Index:  38% |▍| 196333/510984 [00:01:46 / 00:02:50]
+16:25:40 [Search (internal)] Building Index:  38% |▍| 196333/510984 [00:01:46 / 00:02:50]
+
+
+16:25:41 [Search (internal)] Building Index:  39% |▍| 197224/510984 [00:01:46 / 00:02:50]
+16:25:41 [Search (internal)] Building Index:  39% |▍| 197224/510984 [00:01:46 / 00:02:50]
+
+
+16:25:41 [Search (internal)] Building Index:  39% |▍| 198094/510984 [00:01:47 / 00:02:49]
+16:25:41 [Search (internal)] Building Index:  39% |▍| 198094/510984 [00:01:47 / 00:02:49]
+
+
+16:25:42 [Search (internal)] Building Index:  39% |▍| 198955/510984 [00:01:47 / 00:02:49]
+16:25:42 [Search (internal)] Building Index:  39% |▍| 198955/510984 [00:01:47 / 00:02:49]
+
+
+16:25:42 [Search (internal)] Building Index:  39% |▍| 199894/510984 [00:01:48 / 00:02:48]
+16:25:42 [Search (internal)] Building Index:  39% |▍| 199894/510984 [00:01:48 / 00:02:48]
+
+
+16:25:43 [Search (internal)] Building Index:  39% |▍| 200796/510984 [00:01:48 / 00:02:48]
+16:25:43 [Search (internal)] Building Index:  39% |▍| 200796/510984 [00:01:48 / 00:02:48]
+
+
+16:25:43 [Search (internal)] Building Index:  39% |▍| 201710/510984 [00:01:49 / 00:02:47]
+16:25:43 [Search (internal)] Building Index:  39% |▍| 201710/510984 [00:01:49 / 00:02:47]
+
+
+16:25:44 [Search (internal)] Building Index:  40% |▍| 202625/510984 [00:01:50 / 00:02:47]
+16:25:44 [Search (internal)] Building Index:  40% |▍| 202625/510984 [00:01:50 / 00:02:47]
+
+
+16:25:44 [Search (internal)] Building Index:  40% |▍| 203600/510984 [00:01:50 / 00:02:46]
+16:25:44 [Search (internal)] Building Index:  40% |▍| 203600/510984 [00:01:50 / 00:02:46]
+
+
+16:25:45 [Search (internal)] Building Index:  40% |▍| 204569/510984 [00:01:51 / 00:02:46]
+16:25:45 [Search (internal)] Building Index:  40% |▍| 204569/510984 [00:01:51 / 00:02:46]
+
+
+16:25:45 [Search (internal)] Building Index:  40% |▍| 205545/510984 [00:01:51 / 00:02:45]
+16:25:45 [Search (internal)] Building Index:  40% |▍| 205545/510984 [00:01:51 / 00:02:45]
+
+
+16:25:46 [Search (internal)] Building Index:  40% |▍| 206492/510984 [00:01:52 / 00:02:45]
+16:25:46 [Search (internal)] Building Index:  40% |▍| 206492/510984 [00:01:52 / 00:02:45]
+
+
+16:25:46 [Search (internal)] Building Index:  41% |▍| 207417/510984 [00:01:52 / 00:02:44]
+16:25:46 [Search (internal)] Building Index:  41% |▍| 207417/510984 [00:01:52 / 00:02:44]
+
+
+16:25:47 [Search (internal)] Building Index:  41% |▍| 208328/510984 [00:01:53 / 00:02:44]
+16:25:47 [Search (internal)] Building Index:  41% |▍| 208328/510984 [00:01:53 / 00:02:44]
+
+
+16:25:47 [Search (internal)] Building Index:  41% |▍| 209318/510984 [00:01:53 / 00:02:43]
+16:25:47 [Search (internal)] Building Index:  41% |▍| 209318/510984 [00:01:53 / 00:02:43]
+
+
+16:25:48 [Search (internal)] Building Index:  41% |▍| 210303/510984 [00:01:54 / 00:02:43]
+16:25:48 [Search (internal)] Building Index:  41% |▍| 210303/510984 [00:01:54 / 00:02:43]
+
+
+16:25:48 [Search (internal)] Building Index:  41% |▍| 211224/510984 [00:01:54 / 00:02:42]
+16:25:48 [Search (internal)] Building Index:  41% |▍| 211224/510984 [00:01:54 / 00:02:42]
+
+
+16:25:49 [Search (internal)] Building Index:  42% |▍| 212114/510984 [00:01:55 / 00:02:42]
+16:25:49 [Search (internal)] Building Index:  42% |▍| 212114/510984 [00:01:55 / 00:02:42]
+
+
+16:25:49 [Search (internal)] Building Index:  42% |▍| 213025/510984 [00:01:55 / 00:02:41]
+16:25:49 [Search (internal)] Building Index:  42% |▍| 213025/510984 [00:01:55 / 00:02:41]
+
+
+16:25:50 [Search (internal)] Building Index:  42% |▍| 213943/510984 [00:01:56 / 00:02:41]
+16:25:50 [Search (internal)] Building Index:  42% |▍| 213943/510984 [00:01:56 / 00:02:41]
+
+
+16:25:50 [Search (internal)] Building Index:  42% |▍| 214835/510984 [00:01:56 / 00:02:40]
+16:25:50 [Search (internal)] Building Index:  42% |▍| 214835/510984 [00:01:56 / 00:02:40]
+
+
+16:25:51 [Search (internal)] Building Index:  42% |▍| 215776/510984 [00:01:57 / 00:02:40]
+16:25:51 [Search (internal)] Building Index:  42% |▍| 215776/510984 [00:01:57 / 00:02:40]
+
+
+16:25:51 [Search (internal)] Building Index:  42% |▍| 216663/510984 [00:01:57 / 00:02:39]
+16:25:51 [Search (internal)] Building Index:  42% |▍| 216663/510984 [00:01:57 / 00:02:39]
+
+
+16:25:52 [Search (internal)] Building Index:  43% |▍| 217423/510984 [00:01:58 / 00:02:39]
+16:25:52 [Search (internal)] Building Index:  43% |▍| 217423/510984 [00:01:58 / 00:02:39]
+
+
+16:25:52 [Search (internal)] Building Index:  43% |▍| 218216/510984 [00:01:58 / 00:02:39]
+16:25:52 [Search (internal)] Building Index:  43% |▍| 218216/510984 [00:01:58 / 00:02:39]
+
+
+16:25:53 [Search (internal)] Building Index:  43% |▍| 219027/510984 [00:01:59 / 00:02:38]
+16:25:53 [Search (internal)] Building Index:  43% |▍| 219027/510984 [00:01:59 / 00:02:38]
+
+
+16:25:53 [Search (internal)] Building Index:  43% |▍| 219887/510984 [00:01:59 / 00:02:38]
+16:25:53 [Search (internal)] Building Index:  43% |▍| 219887/510984 [00:01:59 / 00:02:38]
+
+
+16:25:54 [Search (internal)] Building Index:  43% |▍| 220799/510984 [00:02:00 / 00:02:37]
+16:25:54 [Search (internal)] Building Index:  43% |▍| 220799/510984 [00:02:00 / 00:02:37]
+
+
+16:25:54 [Search (internal)] Building Index:  43% |▍| 221716/510984 [00:02:00 / 00:02:37]
+16:25:54 [Search (internal)] Building Index:  43% |▍| 221716/510984 [00:02:00 / 00:02:37]
+
+
+16:25:55 [Search (internal)] Building Index:  44% |▍| 222590/510984 [00:02:01 / 00:02:37]
+16:25:55 [Search (internal)] Building Index:  44% |▍| 222590/510984 [00:02:01 / 00:02:37]
+
+
+16:25:55 [Search (internal)] Building Index:  44% |▍| 223537/510984 [00:02:01 / 00:02:36]
+16:25:55 [Search (internal)] Building Index:  44% |▍| 223537/510984 [00:02:01 / 00:02:36]
+
+
+16:25:56 [Search (internal)] Building Index:  44% |▍| 224524/510984 [00:02:02 / 00:02:35]
+16:25:56 [Search (internal)] Building Index:  44% |▍| 224524/510984 [00:02:02 / 00:02:35]
+
+
+16:25:56 [Search (internal)] Building Index:  44% |▍| 225529/510984 [00:02:02 / 00:02:35]
+16:25:56 [Search (internal)] Building Index:  44% |▍| 225529/510984 [00:02:02 / 00:02:35]
+
+
+16:25:57 [Search (internal)] Building Index:  44% |▍| 226529/510984 [00:02:03 / 00:02:34]
+16:25:57 [Search (internal)] Building Index:  44% |▍| 226529/510984 [00:02:03 / 00:02:34]
+
+
+16:25:57 [Search (internal)] Building Index:  45% |▌| 227545/510984 [00:02:03 / 00:02:34]
+16:25:57 [Search (internal)] Building Index:  45% |▌| 227545/510984 [00:02:03 / 00:02:34]
+
+
+16:25:58 [Search (internal)] Building Index:  45% |▌| 228525/510984 [00:02:04 / 00:02:33]
+16:25:58 [Search (internal)] Building Index:  45% |▌| 228525/510984 [00:02:04 / 00:02:33]
+
+
+16:25:58 [Search (internal)] Building Index:  45% |▌| 229411/510984 [00:02:04 / 00:02:33]
+16:25:58 [Search (internal)] Building Index:  45% |▌| 229411/510984 [00:02:04 / 00:02:33]
+
+
+16:25:59 [Search (internal)] Building Index:  45% |▌| 230322/510984 [00:02:05 / 00:02:32]
+16:25:59 [Search (internal)] Building Index:  45% |▌| 230322/510984 [00:02:05 / 00:02:32]
+
+
+16:25:59 [Search (internal)] Building Index:  45% |▌| 231271/510984 [00:02:05 / 00:02:32]
+16:25:59 [Search (internal)] Building Index:  45% |▌| 231271/510984 [00:02:05 / 00:02:32]
+
+
+16:26:00 [Search (internal)] Building Index:  45% |▌| 232261/510984 [00:02:06 / 00:02:31]
+16:26:00 [Search (internal)] Building Index:  45% |▌| 232261/510984 [00:02:06 / 00:02:31]
+
+
+16:26:00 [Search (internal)] Building Index:  46% |▌| 233256/510984 [00:02:06 / 00:02:30]
+16:26:00 [Search (internal)] Building Index:  46% |▌| 233256/510984 [00:02:06 / 00:02:30]
+
+
+16:26:01 [Search (internal)] Building Index:  46% |▌| 234230/510984 [00:02:07 / 00:02:30]
+16:26:01 [Search (internal)] Building Index:  46% |▌| 234230/510984 [00:02:07 / 00:02:30]
+
+
+16:26:01 [Search (internal)] Building Index:  46% |▌| 235131/510984 [00:02:07 / 00:02:29]
+16:26:01 [Search (internal)] Building Index:  46% |▌| 235131/510984 [00:02:07 / 00:02:29]
+
+
+16:26:02 [Search (internal)] Building Index:  46% |▌| 236106/510984 [00:02:08 / 00:02:29]
+16:26:02 [Search (internal)] Building Index:  46% |▌| 236106/510984 [00:02:08 / 00:02:29]
+
+
+16:26:03 [Search (internal)] Building Index:  46% |▌| 237028/510984 [00:02:08 / 00:02:28]
+16:26:03 [Search (internal)] Building Index:  46% |▌| 237028/510984 [00:02:08 / 00:02:28]
+
+
+16:26:03 [Search (internal)] Building Index:  47% |▌| 237934/510984 [00:02:09 / 00:02:28]
+16:26:03 [Search (internal)] Building Index:  47% |▌| 237934/510984 [00:02:09 / 00:02:28]
+
+
+16:26:04 [Search (internal)] Building Index:  47% |▌| 238819/510984 [00:02:09 / 00:02:28]
+16:26:04 [Search (internal)] Building Index:  47% |▌| 238819/510984 [00:02:09 / 00:02:28]
+
+
+16:26:04 [Search (internal)] Building Index:  47% |▌| 239713/510984 [00:02:10 / 00:02:27]
+16:26:04 [Search (internal)] Building Index:  47% |▌| 239713/510984 [00:02:10 / 00:02:27]
+
+
+16:26:05 [Search (internal)] Building Index:  47% |▌| 240664/510984 [00:02:10 / 00:02:27]
+16:26:05 [Search (internal)] Building Index:  47% |▌| 240664/510984 [00:02:10 / 00:02:27]
+
+
+16:26:05 [Search (internal)] Building Index:  47% |▌| 241596/510984 [00:02:11 / 00:02:26]
+16:26:05 [Search (internal)] Building Index:  47% |▌| 241596/510984 [00:02:11 / 00:02:26]
+
+
+16:26:06 [Search (internal)] Building Index:  47% |▌| 242575/510984 [00:02:11 / 00:02:25]
+16:26:06 [Search (internal)] Building Index:  47% |▌| 242575/510984 [00:02:11 / 00:02:25]
+
+
+16:26:06 [Search (internal)] Building Index:  48% |▌| 243538/510984 [00:02:12 / 00:02:25]
+16:26:06 [Search (internal)] Building Index:  48% |▌| 243538/510984 [00:02:12 / 00:02:25]
+
+
+16:26:07 [Search (internal)] Building Index:  48% |▌| 244509/510984 [00:02:12 / 00:02:24]
+16:26:07 [Search (internal)] Building Index:  48% |▌| 244509/510984 [00:02:12 / 00:02:24]
+
+
+16:26:07 [Search (internal)] Building Index:  48% |▌| 245488/510984 [00:02:13 / 00:02:24]
+16:26:07 [Search (internal)] Building Index:  48% |▌| 245488/510984 [00:02:13 / 00:02:24]
+
+
+16:26:08 [Search (internal)] Building Index:  48% |▌| 246462/510984 [00:02:13 / 00:02:23]
+16:26:08 [Search (internal)] Building Index:  48% |▌| 246462/510984 [00:02:13 / 00:02:23]
+
+
+16:26:08 [Search (internal)] Building Index:  48% |▌| 247437/510984 [00:02:14 / 00:02:23]
+16:26:08 [Search (internal)] Building Index:  48% |▌| 247437/510984 [00:02:14 / 00:02:23]
+
+
+16:26:09 [Search (internal)] Building Index:  49% |▌| 248404/510984 [00:02:14 / 00:02:22]
+16:26:09 [Search (internal)] Building Index:  49% |▌| 248404/510984 [00:02:14 / 00:02:22]
+
+
+16:26:09 [Search (internal)] Building Index:  49% |▌| 249327/510984 [00:02:15 / 00:02:22]
+16:26:09 [Search (internal)] Building Index:  49% |▌| 249327/510984 [00:02:15 / 00:02:22]
+
+
+16:26:10 [Search (internal)] Building Index:  49% |▌| 250212/510984 [00:02:16 / 00:02:21]
+16:26:10 [Search (internal)] Building Index:  49% |▌| 250212/510984 [00:02:16 / 00:02:21]
+
+
+16:26:10 [Search (internal)] Building Index:  49% |▌| 251112/510984 [00:02:16 / 00:02:21]
+16:26:10 [Search (internal)] Building Index:  49% |▌| 251112/510984 [00:02:16 / 00:02:21]
+
+
+16:26:11 [Search (internal)] Building Index:  49% |▌| 252013/510984 [00:02:17 / 00:02:20]
+16:26:11 [Search (internal)] Building Index:  49% |▌| 252013/510984 [00:02:17 / 00:02:20]
+
+
+16:26:11 [Search (internal)] Building Index:  50% |▌| 252958/510984 [00:02:17 / 00:02:20]
+16:26:11 [Search (internal)] Building Index:  50% |▌| 252958/510984 [00:02:17 / 00:02:20]
+
+
+16:26:12 [Search (internal)] Building Index:  50% |▌| 253919/510984 [00:02:18 / 00:02:19]
+16:26:12 [Search (internal)] Building Index:  50% |▌| 253919/510984 [00:02:18 / 00:02:19]
+
+
+16:26:12 [Search (internal)] Building Index:  50% |▌| 254898/510984 [00:02:18 / 00:02:19]
+16:26:12 [Search (internal)] Building Index:  50% |▌| 254898/510984 [00:02:18 / 00:02:19]
+
+
+16:26:13 [Search (internal)] Building Index:  50% |▌| 255876/510984 [00:02:19 / 00:02:18]
+16:26:13 [Search (internal)] Building Index:  50% |▌| 255876/510984 [00:02:19 / 00:02:18]
+
+
+16:26:13 [Search (internal)] Building Index:  50% |▌| 256876/510984 [00:02:19 / 00:02:18]
+16:26:13 [Search (internal)] Building Index:  50% |▌| 256876/510984 [00:02:19 / 00:02:18]
+
+
+16:26:14 [Search (internal)] Building Index:  50% |▌| 257845/510984 [00:02:20 / 00:02:17]
+16:26:14 [Search (internal)] Building Index:  50% |▌| 257845/510984 [00:02:20 / 00:02:17]
+
+
+16:26:14 [Search (internal)] Building Index:  51% |▌| 258733/510984 [00:02:20 / 00:02:17]
+16:26:14 [Search (internal)] Building Index:  51% |▌| 258733/510984 [00:02:20 / 00:02:17]
+
+
+16:26:15 [Search (internal)] Building Index:  51% |▌| 259691/510984 [00:02:21 / 00:02:16]
+16:26:15 [Search (internal)] Building Index:  51% |▌| 259691/510984 [00:02:21 / 00:02:16]
+
+
+16:26:15 [Search (internal)] Building Index:  51% |▌| 260618/510984 [00:02:21 / 00:02:16]
+16:26:15 [Search (internal)] Building Index:  51% |▌| 260618/510984 [00:02:21 / 00:02:16]
+
+
+16:26:16 [Search (internal)] Building Index:  51% |▌| 261524/510984 [00:02:22 / 00:02:15]
+16:26:16 [Search (internal)] Building Index:  51% |▌| 261524/510984 [00:02:22 / 00:02:15]
+
+
+16:26:16 [Search (internal)] Building Index:  51% |▌| 262422/510984 [00:02:22 / 00:02:15]
+16:26:16 [Search (internal)] Building Index:  51% |▌| 262422/510984 [00:02:22 / 00:02:15]
+
+
+16:26:17 [Search (internal)] Building Index:  52% |▌| 263325/510984 [00:02:23 / 00:02:14]
+16:26:17 [Search (internal)] Building Index:  52% |▌| 263325/510984 [00:02:23 / 00:02:14]
+
+
+16:26:17 [Search (internal)] Building Index:  52% |▌| 264244/510984 [00:02:23 / 00:02:14]
+16:26:17 [Search (internal)] Building Index:  52% |▌| 264244/510984 [00:02:23 / 00:02:14]
+
+
+16:26:18 [Search (internal)] Building Index:  52% |▌| 265172/510984 [00:02:24 / 00:02:13]
+16:26:18 [Search (internal)] Building Index:  52% |▌| 265172/510984 [00:02:24 / 00:02:13]
+
+
+16:26:18 [Search (internal)] Building Index:  52% |▌| 266093/510984 [00:02:24 / 00:02:13]
+16:26:18 [Search (internal)] Building Index:  52% |▌| 266093/510984 [00:02:24 / 00:02:13]
+
+
+16:26:19 [Search (internal)] Building Index:  52% |▌| 267004/510984 [00:02:25 / 00:02:12]
+16:26:19 [Search (internal)] Building Index:  52% |▌| 267004/510984 [00:02:25 / 00:02:12]
+
+
+16:26:19 [Search (internal)] Building Index:  52% |▌| 268010/510984 [00:02:25 / 00:02:12]
+16:26:19 [Search (internal)] Building Index:  52% |▌| 268010/510984 [00:02:25 / 00:02:12]
+
+
+16:26:20 [Search (internal)] Building Index:  53% |▌| 269003/510984 [00:02:26 / 00:02:11]
+16:26:20 [Search (internal)] Building Index:  53% |▌| 269003/510984 [00:02:26 / 00:02:11]
+
+
+16:26:20 [Search (internal)] Building Index:  53% |▌| 269947/510984 [00:02:26 / 00:02:10]
+16:26:20 [Search (internal)] Building Index:  53% |▌| 269947/510984 [00:02:26 / 00:02:10]
+
+
+16:26:21 [Search (internal)] Building Index:  53% |▌| 270866/510984 [00:02:27 / 00:02:10]
+16:26:21 [Search (internal)] Building Index:  53% |▌| 270866/510984 [00:02:27 / 00:02:10]
+
+
+16:26:21 [Search (internal)] Building Index:  53% |▌| 271822/510984 [00:02:27 / 00:02:09]
+16:26:21 [Search (internal)] Building Index:  53% |▌| 271822/510984 [00:02:27 / 00:02:09]
+
+
+16:26:22 [Search (internal)] Building Index:  53% |▌| 272776/510984 [00:02:28 / 00:02:09]
+16:26:22 [Search (internal)] Building Index:  53% |▌| 272776/510984 [00:02:28 / 00:02:09]
+
+
+16:26:22 [Search (internal)] Building Index:  54% |▌| 273710/510984 [00:02:28 / 00:02:08]
+16:26:22 [Search (internal)] Building Index:  54% |▌| 273710/510984 [00:02:28 / 00:02:08]
+
+
+16:26:23 [Search (internal)] Building Index:  54% |▌| 274620/510984 [00:02:29 / 00:02:08]
+16:26:23 [Search (internal)] Building Index:  54% |▌| 274620/510984 [00:02:29 / 00:02:08]
+
+
+16:26:23 [Search (internal)] Building Index:  54% |▌| 275577/510984 [00:02:29 / 00:02:07]
+16:26:23 [Search (internal)] Building Index:  54% |▌| 275577/510984 [00:02:29 / 00:02:07]
+
+
+16:26:24 [Search (internal)] Building Index:  54% |▌| 276518/510984 [00:02:30 / 00:02:07]
+16:26:24 [Search (internal)] Building Index:  54% |▌| 276518/510984 [00:02:30 / 00:02:07]
+
+
+16:26:24 [Search (internal)] Building Index:  54% |▌| 277383/510984 [00:02:30 / 00:02:06]
+16:26:24 [Search (internal)] Building Index:  54% |▌| 277383/510984 [00:02:30 / 00:02:06]
+
+
+16:26:25 [Search (internal)] Building Index:  54% |▌| 278296/510984 [00:02:31 / 00:02:06]
+16:26:25 [Search (internal)] Building Index:  54% |▌| 278296/510984 [00:02:31 / 00:02:06]
+
+
+16:26:25 [Search (internal)] Building Index:  55% |▌| 279254/510984 [00:02:31 / 00:02:05]
+16:26:25 [Search (internal)] Building Index:  55% |▌| 279254/510984 [00:02:31 / 00:02:05]
+
+
+16:26:26 [Search (internal)] Building Index:  55% |▌| 280198/510984 [00:02:32 / 00:02:05]
+16:26:26 [Search (internal)] Building Index:  55% |▌| 280198/510984 [00:02:32 / 00:02:05]
+
+
+16:26:26 [Search (internal)] Building Index:  55% |▌| 281132/510984 [00:02:32 / 00:02:04]
+16:26:26 [Search (internal)] Building Index:  55% |▌| 281132/510984 [00:02:32 / 00:02:04]
+
+
+16:26:27 [Search (internal)] Building Index:  55% |▌| 282093/510984 [00:02:33 / 00:02:04]
+16:26:27 [Search (internal)] Building Index:  55% |▌| 282093/510984 [00:02:33 / 00:02:04]
+
+
+16:26:27 [Search (internal)] Building Index:  55% |▌| 283010/510984 [00:02:33 / 00:02:03]
+16:26:27 [Search (internal)] Building Index:  55% |▌| 283010/510984 [00:02:33 / 00:02:03]
+
+
+16:26:28 [Search (internal)] Building Index:  56% |▋| 283902/510984 [00:02:34 / 00:02:03]
+16:26:28 [Search (internal)] Building Index:  56% |▋| 283902/510984 [00:02:34 / 00:02:03]
+
+
+16:26:28 [Search (internal)] Building Index:  56% |▋| 284839/510984 [00:02:34 / 00:02:02]
+16:26:28 [Search (internal)] Building Index:  56% |▋| 284839/510984 [00:02:34 / 00:02:02]
+
+
+16:26:29 [Search (internal)] Building Index:  56% |▋| 285766/510984 [00:02:35 / 00:02:02]
+16:26:29 [Search (internal)] Building Index:  56% |▋| 285766/510984 [00:02:35 / 00:02:02]
+
+
+16:26:30 [Search (internal)] Building Index:  56% |▋| 286690/510984 [00:02:35 / 00:02:01]
+16:26:30 [Search (internal)] Building Index:  56% |▋| 286690/510984 [00:02:35 / 00:02:01]
+
+
+16:26:30 [Search (internal)] Building Index:  56% |▋| 287480/510984 [00:02:36 / 00:02:01]
+16:26:30 [Search (internal)] Building Index:  56% |▋| 287480/510984 [00:02:36 / 00:02:01]
+
+
+16:26:31 [Search (internal)] Building Index:  56% |▋| 288263/510984 [00:02:36 / 00:02:01]
+16:26:31 [Search (internal)] Building Index:  56% |▋| 288263/510984 [00:02:36 / 00:02:01]
+
+
+16:26:31 [Search (internal)] Building Index:  57% |▋| 289089/510984 [00:02:37 / 00:02:00]
+16:26:31 [Search (internal)] Building Index:  57% |▋| 289089/510984 [00:02:37 / 00:02:00]
+
+
+16:26:32 [Search (internal)] Building Index:  57% |▋| 289999/510984 [00:02:37 / 00:02:00]
+16:26:32 [Search (internal)] Building Index:  57% |▋| 289999/510984 [00:02:37 / 00:02:00]
+
+
+16:26:32 [Search (internal)] Building Index:  57% |▋| 290955/510984 [00:02:38 / 00:01:59]
+16:26:32 [Search (internal)] Building Index:  57% |▋| 290955/510984 [00:02:38 / 00:01:59]
+
+
+16:26:33 [Search (internal)] Building Index:  57% |▋| 291958/510984 [00:02:38 / 00:01:59]
+16:26:33 [Search (internal)] Building Index:  57% |▋| 291958/510984 [00:02:38 / 00:01:59]
+
+
+16:26:33 [Search (internal)] Building Index:  57% |▋| 292958/510984 [00:02:39 / 00:01:58]
+16:26:33 [Search (internal)] Building Index:  57% |▋| 292958/510984 [00:02:39 / 00:01:58]
+
+
+16:26:34 [Search (internal)] Building Index:  58% |▋| 293898/510984 [00:02:39 / 00:01:58]
+16:26:34 [Search (internal)] Building Index:  58% |▋| 293898/510984 [00:02:39 / 00:01:58]
+
+
+16:26:34 [Search (internal)] Building Index:  58% |▋| 294838/510984 [00:02:40 / 00:01:57]
+16:26:34 [Search (internal)] Building Index:  58% |▋| 294838/510984 [00:02:40 / 00:01:57]
+
+
+16:26:35 [Search (internal)] Building Index:  58% |▋| 295801/510984 [00:02:40 / 00:01:57]
+16:26:35 [Search (internal)] Building Index:  58% |▋| 295801/510984 [00:02:40 / 00:01:57]
+
+
+16:26:35 [Search (internal)] Building Index:  58% |▋| 296768/510984 [00:02:41 / 00:01:56]
+16:26:35 [Search (internal)] Building Index:  58% |▋| 296768/510984 [00:02:41 / 00:01:56]
+
+
+16:26:36 [Search (internal)] Building Index:  58% |▋| 297744/510984 [00:02:41 / 00:01:56]
+16:26:36 [Search (internal)] Building Index:  58% |▋| 297744/510984 [00:02:41 / 00:01:56]
+
+
+16:26:36 [Search (internal)] Building Index:  58% |▋| 298745/510984 [00:02:42 / 00:01:55]
+16:26:36 [Search (internal)] Building Index:  58% |▋| 298745/510984 [00:02:42 / 00:01:55]
+
+
+16:26:37 [Search (internal)] Building Index:  59% |▋| 299714/510984 [00:02:43 / 00:01:54]
+16:26:37 [Search (internal)] Building Index:  59% |▋| 299714/510984 [00:02:43 / 00:01:54]
+
+
+16:26:37 [Search (internal)] Building Index:  59% |▋| 300724/510984 [00:02:43 / 00:01:54]
+16:26:37 [Search (internal)] Building Index:  59% |▋| 300724/510984 [00:02:43 / 00:01:54]
+
+
+16:26:38 [Search (internal)] Building Index:  59% |▋| 301699/510984 [00:02:44 / 00:01:53]
+16:26:38 [Search (internal)] Building Index:  59% |▋| 301699/510984 [00:02:44 / 00:01:53]
+
+
+16:26:38 [Search (internal)] Building Index:  59% |▋| 302568/510984 [00:02:44 / 00:01:53]
+16:26:38 [Search (internal)] Building Index:  59% |▋| 302568/510984 [00:02:44 / 00:01:53]
+
+
+16:26:39 [Search (internal)] Building Index:  59% |▋| 303446/510984 [00:02:45 / 00:01:52]
+16:26:39 [Search (internal)] Building Index:  59% |▋| 303446/510984 [00:02:45 / 00:01:52]
+
+
+16:26:39 [Search (internal)] Building Index:  60% |▋| 304344/510984 [00:02:45 / 00:01:52]
+16:26:39 [Search (internal)] Building Index:  60% |▋| 304344/510984 [00:02:45 / 00:01:52]
+
+
+16:26:40 [Search (internal)] Building Index:  60% |▋| 305337/510984 [00:02:46 / 00:01:51]
+16:26:40 [Search (internal)] Building Index:  60% |▋| 305337/510984 [00:02:46 / 00:01:51]
+
+
+16:26:40 [Search (internal)] Building Index:  60% |▋| 306326/510984 [00:02:46 / 00:01:51]
+16:26:40 [Search (internal)] Building Index:  60% |▋| 306326/510984 [00:02:46 / 00:01:51]
+
+
+16:26:41 [Search (internal)] Building Index:  60% |▋| 307258/510984 [00:02:47 / 00:01:50]
+16:26:41 [Search (internal)] Building Index:  60% |▋| 307258/510984 [00:02:47 / 00:01:50]
+
+
+16:26:41 [Search (internal)] Building Index:  60% |▋| 308160/510984 [00:02:47 / 00:01:50]
+16:26:41 [Search (internal)] Building Index:  60% |▋| 308160/510984 [00:02:47 / 00:01:50]
+
+
+16:26:42 [Search (internal)] Building Index:  60% |▋| 309097/510984 [00:02:48 / 00:01:49]
+16:26:42 [Search (internal)] Building Index:  60% |▋| 309097/510984 [00:02:48 / 00:01:49]
+
+
+16:26:42 [Search (internal)] Building Index:  61% |▋| 310056/510984 [00:02:48 / 00:01:49]
+16:26:42 [Search (internal)] Building Index:  61% |▋| 310056/510984 [00:02:48 / 00:01:49]
+
+
+16:26:43 [Search (internal)] Building Index:  61% |▋| 311006/510984 [00:02:49 / 00:01:48]
+16:26:43 [Search (internal)] Building Index:  61% |▋| 311006/510984 [00:02:49 / 00:01:48]
+
+
+16:26:43 [Search (internal)] Building Index:  61% |▋| 311913/510984 [00:02:49 / 00:01:48]
+16:26:43 [Search (internal)] Building Index:  61% |▋| 311913/510984 [00:02:49 / 00:01:48]
+
+
+16:26:44 [Search (internal)] Building Index:  61% |▋| 312805/510984 [00:02:50 / 00:01:47]
+16:26:44 [Search (internal)] Building Index:  61% |▋| 312805/510984 [00:02:50 / 00:01:47]
+
+
+16:26:44 [Search (internal)] Building Index:  61% |▋| 313766/510984 [00:02:50 / 00:01:47]
+16:26:44 [Search (internal)] Building Index:  61% |▋| 313766/510984 [00:02:50 / 00:01:47]
+
+
+16:26:45 [Search (internal)] Building Index:  62% |▋| 314746/510984 [00:02:51 / 00:01:46]
+16:26:45 [Search (internal)] Building Index:  62% |▋| 314746/510984 [00:02:51 / 00:01:46]
+
+
+16:26:45 [Search (internal)] Building Index:  62% |▋| 315760/510984 [00:02:51 / 00:01:46]
+16:26:45 [Search (internal)] Building Index:  62% |▋| 315760/510984 [00:02:51 / 00:01:46]
+
+
+16:26:46 [Search (internal)] Building Index:  62% |▋| 316766/510984 [00:02:52 / 00:01:45]
+16:26:46 [Search (internal)] Building Index:  62% |▋| 316766/510984 [00:02:52 / 00:01:45]
+
+
+16:26:46 [Search (internal)] Building Index:  62% |▋| 317697/510984 [00:02:52 / 00:01:45]
+16:26:46 [Search (internal)] Building Index:  62% |▋| 317697/510984 [00:02:52 / 00:01:45]
+
+
+16:26:47 [Search (internal)] Building Index:  62% |▋| 318684/510984 [00:02:53 / 00:01:44]
+16:26:47 [Search (internal)] Building Index:  62% |▋| 318684/510984 [00:02:53 / 00:01:44]
+
+
+16:26:47 [Search (internal)] Building Index:  63% |▋| 319629/510984 [00:02:53 / 00:01:44]
+16:26:47 [Search (internal)] Building Index:  63% |▋| 319629/510984 [00:02:53 / 00:01:44]
+
+
+16:26:48 [Search (internal)] Building Index:  63% |▋| 320568/510984 [00:02:54 / 00:01:43]
+16:26:48 [Search (internal)] Building Index:  63% |▋| 320568/510984 [00:02:54 / 00:01:43]
+
+
+16:26:48 [Search (internal)] Building Index:  63% |▋| 321495/510984 [00:02:54 / 00:01:42]
+16:26:48 [Search (internal)] Building Index:  63% |▋| 321495/510984 [00:02:54 / 00:01:42]
+
+
+16:26:49 [Search (internal)] Building Index:  63% |▋| 322427/510984 [00:02:55 / 00:01:42]
+16:26:49 [Search (internal)] Building Index:  63% |▋| 322427/510984 [00:02:55 / 00:01:42]
+
+
+16:26:49 [Search (internal)] Building Index:  63% |▋| 323376/510984 [00:02:55 / 00:01:41]
+16:26:49 [Search (internal)] Building Index:  63% |▋| 323376/510984 [00:02:55 / 00:01:41]
+
+
+16:26:50 [Search (internal)] Building Index:  63% |▋| 324319/510984 [00:02:56 / 00:01:41]
+16:26:50 [Search (internal)] Building Index:  63% |▋| 324319/510984 [00:02:56 / 00:01:41]
+
+
+16:26:50 [Search (internal)] Building Index:  64% |▋| 325252/510984 [00:02:56 / 00:01:40]
+16:26:50 [Search (internal)] Building Index:  64% |▋| 325252/510984 [00:02:56 / 00:01:40]
+
+
+16:26:51 [Search (internal)] Building Index:  64% |▋| 326170/510984 [00:02:57 / 00:01:40]
+16:26:51 [Search (internal)] Building Index:  64% |▋| 326170/510984 [00:02:57 / 00:01:40]
+
+
+16:26:51 [Search (internal)] Building Index:  64% |▋| 327089/510984 [00:02:57 / 00:01:39]
+16:26:51 [Search (internal)] Building Index:  64% |▋| 327089/510984 [00:02:57 / 00:01:39]
+
+
+16:26:52 [Search (internal)] Building Index:  64% |▋| 328022/510984 [00:02:58 / 00:01:39]
+16:26:52 [Search (internal)] Building Index:  64% |▋| 328022/510984 [00:02:58 / 00:01:39]
+
+
+16:26:52 [Search (internal)] Building Index:  64% |▋| 328981/510984 [00:02:58 / 00:01:38]
+16:26:52 [Search (internal)] Building Index:  64% |▋| 328981/510984 [00:02:58 / 00:01:38]
+
+
+16:26:53 [Search (internal)] Building Index:  65% |▋| 329946/510984 [00:02:59 / 00:01:38]
+16:26:53 [Search (internal)] Building Index:  65% |▋| 329946/510984 [00:02:59 / 00:01:38]
+
+
+16:26:53 [Search (internal)] Building Index:  65% |▋| 330884/510984 [00:02:59 / 00:01:37]
+16:26:53 [Search (internal)] Building Index:  65% |▋| 330884/510984 [00:02:59 / 00:01:37]
+
+
+16:26:54 [Search (internal)] Building Index:  65% |▋| 331755/510984 [00:03:00 / 00:01:37]
+16:26:54 [Search (internal)] Building Index:  65% |▋| 331755/510984 [00:03:00 / 00:01:37]
+
+
+16:26:55 [Search (internal)] Building Index:  65% |▋| 332711/510984 [00:03:00 / 00:01:36]
+16:26:55 [Search (internal)] Building Index:  65% |▋| 332711/510984 [00:03:00 / 00:01:36]
+
+
+16:26:55 [Search (internal)] Building Index:  65% |▋| 333641/510984 [00:03:01 / 00:01:36]
+16:26:55 [Search (internal)] Building Index:  65% |▋| 333641/510984 [00:03:01 / 00:01:36]
+
+
+16:26:56 [Search (internal)] Building Index:  65% |▋| 334573/510984 [00:03:01 / 00:01:35]
+16:26:56 [Search (internal)] Building Index:  65% |▋| 334573/510984 [00:03:01 / 00:01:35]
+
+
+16:26:56 [Search (internal)] Building Index:  66% |▋| 335469/510984 [00:03:02 / 00:01:35]
+16:26:56 [Search (internal)] Building Index:  66% |▋| 335469/510984 [00:03:02 / 00:01:35]
+
+
+16:26:57 [Search (internal)] Building Index:  66% |▋| 336302/510984 [00:03:02 / 00:01:35]
+16:26:57 [Search (internal)] Building Index:  66% |▋| 336302/510984 [00:03:02 / 00:01:35]
+
+
+16:26:57 [Search (internal)] Building Index:  66% |▋| 337182/510984 [00:03:03 / 00:01:34]
+16:26:57 [Search (internal)] Building Index:  66% |▋| 337182/510984 [00:03:03 / 00:01:34]
+
+
+16:26:58 [Search (internal)] Building Index:  66% |▋| 338032/510984 [00:03:03 / 00:01:34]
+16:26:58 [Search (internal)] Building Index:  66% |▋| 338032/510984 [00:03:03 / 00:01:34]
+
+
+16:26:58 [Search (internal)] Building Index:  66% |▋| 338947/510984 [00:03:04 / 00:01:33]
+16:26:58 [Search (internal)] Building Index:  66% |▋| 338947/510984 [00:03:04 / 00:01:33]
+
+
+16:26:59 [Search (internal)] Building Index:  67% |▋| 339870/510984 [00:03:05 / 00:01:33]
+16:26:59 [Search (internal)] Building Index:  67% |▋| 339870/510984 [00:03:05 / 00:01:33]
+
+
+16:26:59 [Search (internal)] Building Index:  67% |▊| 340814/510984 [00:03:05 / 00:01:32]
+16:26:59 [Search (internal)] Building Index:  67% |▊| 340814/510984 [00:03:05 / 00:01:32]
+
+
+16:27:00 [Search (internal)] Building Index:  67% |▊| 341755/510984 [00:03:06 / 00:01:32]
+16:27:00 [Search (internal)] Building Index:  67% |▊| 341755/510984 [00:03:06 / 00:01:32]
+
+
+16:27:00 [Search (internal)] Building Index:  67% |▊| 342755/510984 [00:03:06 / 00:01:31]
+16:27:00 [Search (internal)] Building Index:  67% |▊| 342755/510984 [00:03:06 / 00:01:31]
+
+
+16:27:01 [Search (internal)] Building Index:  67% |▊| 343745/510984 [00:03:07 / 00:01:30]
+16:27:01 [Search (internal)] Building Index:  67% |▊| 343745/510984 [00:03:07 / 00:01:30]
+
+
+16:27:01 [Search (internal)] Building Index:  67% |▊| 344717/510984 [00:03:07 / 00:01:30]
+16:27:01 [Search (internal)] Building Index:  67% |▊| 344717/510984 [00:03:07 / 00:01:30]
+
+
+16:27:02 [Search (internal)] Building Index:  68% |▊| 345624/510984 [00:03:08 / 00:01:29]
+16:27:02 [Search (internal)] Building Index:  68% |▊| 345624/510984 [00:03:08 / 00:01:29]
+
+
+16:27:02 [Search (internal)] Building Index:  68% |▊| 346524/510984 [00:03:08 / 00:01:29]
+16:27:02 [Search (internal)] Building Index:  68% |▊| 346524/510984 [00:03:08 / 00:01:29]
+
+
+16:27:03 [Search (internal)] Building Index:  68% |▊| 347417/510984 [00:03:09 / 00:01:29]
+16:27:03 [Search (internal)] Building Index:  68% |▊| 347417/510984 [00:03:09 / 00:01:29]
+
+
+16:27:03 [Search (internal)] Building Index:  68% |▊| 348309/510984 [00:03:09 / 00:01:28]
+16:27:03 [Search (internal)] Building Index:  68% |▊| 348309/510984 [00:03:09 / 00:01:28]
+
+
+16:27:04 [Search (internal)] Building Index:  68% |▊| 349215/510984 [00:03:10 / 00:01:28]
+16:27:04 [Search (internal)] Building Index:  68% |▊| 349215/510984 [00:03:10 / 00:01:28]
+
+
+16:27:04 [Search (internal)] Building Index:  69% |▊| 350098/510984 [00:03:10 / 00:01:27]
+16:27:04 [Search (internal)] Building Index:  69% |▊| 350098/510984 [00:03:10 / 00:01:27]
+
+
+16:27:05 [Search (internal)] Building Index:  69% |▊| 351067/510984 [00:03:11 / 00:01:27]
+16:27:05 [Search (internal)] Building Index:  69% |▊| 351067/510984 [00:03:11 / 00:01:27]
+
+
+16:27:05 [Search (internal)] Building Index:  69% |▊| 352055/510984 [00:03:11 / 00:01:26]
+16:27:05 [Search (internal)] Building Index:  69% |▊| 352055/510984 [00:03:11 / 00:01:26]
+
+
+16:27:06 [Search (internal)] Building Index:  69% |▊| 353043/510984 [00:03:12 / 00:01:25]
+16:27:06 [Search (internal)] Building Index:  69% |▊| 353043/510984 [00:03:12 / 00:01:25]
+
+
+16:27:06 [Search (internal)] Building Index:  69% |▊| 354017/510984 [00:03:12 / 00:01:25]
+16:27:06 [Search (internal)] Building Index:  69% |▊| 354017/510984 [00:03:12 / 00:01:25]
+
+
+16:27:07 [Search (internal)] Building Index:  69% |▊| 354950/510984 [00:03:13 / 00:01:24]
+16:27:07 [Search (internal)] Building Index:  69% |▊| 354950/510984 [00:03:13 / 00:01:24]
+
+
+16:27:07 [Search (internal)] Building Index:  70% |▊| 355906/510984 [00:03:13 / 00:01:24]
+16:27:07 [Search (internal)] Building Index:  70% |▊| 355906/510984 [00:03:13 / 00:01:24]
+
+
+16:27:08 [Search (internal)] Building Index:  70% |▊| 356872/510984 [00:03:14 / 00:01:23]
+16:27:08 [Search (internal)] Building Index:  70% |▊| 356872/510984 [00:03:14 / 00:01:23]
+
+
+16:27:08 [Search (internal)] Building Index:  70% |▊| 357835/510984 [00:03:14 / 00:01:23]
+16:27:08 [Search (internal)] Building Index:  70% |▊| 357835/510984 [00:03:14 / 00:01:23]
+
+
+16:27:09 [Search (internal)] Building Index:  70% |▊| 358636/510984 [00:03:15 / 00:01:22]
+16:27:09 [Search (internal)] Building Index:  70% |▊| 358636/510984 [00:03:15 / 00:01:22]
+
+
+16:27:09 [Search (internal)] Building Index:  70% |▊| 359399/510984 [00:03:15 / 00:01:22]
+16:27:09 [Search (internal)] Building Index:  70% |▊| 359399/510984 [00:03:15 / 00:01:22]
+
+
+16:27:10 [Search (internal)] Building Index:  70% |▊| 360128/510984 [00:03:16 / 00:01:22]
+16:27:10 [Search (internal)] Building Index:  70% |▊| 360128/510984 [00:03:16 / 00:01:22]
+
+
+16:27:10 [Search (internal)] Building Index:  71% |▊| 361018/510984 [00:03:16 / 00:01:21]
+16:27:10 [Search (internal)] Building Index:  71% |▊| 361018/510984 [00:03:16 / 00:01:21]
+
+
+16:27:11 [Search (internal)] Building Index:  71% |▊| 361930/510984 [00:03:17 / 00:01:21]
+16:27:11 [Search (internal)] Building Index:  71% |▊| 361930/510984 [00:03:17 / 00:01:21]
+
+
+16:27:11 [Search (internal)] Building Index:  71% |▊| 362826/510984 [00:03:17 / 00:01:20]
+16:27:11 [Search (internal)] Building Index:  71% |▊| 362826/510984 [00:03:17 / 00:01:20]
+
+
+16:27:12 [Search (internal)] Building Index:  71% |▊| 363822/510984 [00:03:18 / 00:01:20]
+16:27:12 [Search (internal)] Building Index:  71% |▊| 363822/510984 [00:03:18 / 00:01:20]
+
+
+16:27:12 [Search (internal)] Building Index:  71% |▊| 364815/510984 [00:03:18 / 00:01:19]
+16:27:12 [Search (internal)] Building Index:  71% |▊| 364815/510984 [00:03:18 / 00:01:19]
+
+
+16:27:13 [Search (internal)] Building Index:  72% |▊| 365689/510984 [00:03:19 / 00:01:19]
+16:27:13 [Search (internal)] Building Index:  72% |▊| 365689/510984 [00:03:19 / 00:01:19]
+
+
+16:27:13 [Search (internal)] Building Index:  72% |▊| 366579/510984 [00:03:19 / 00:01:18]
+16:27:13 [Search (internal)] Building Index:  72% |▊| 366579/510984 [00:03:19 / 00:01:18]
+
+
+16:27:14 [Search (internal)] Building Index:  72% |▊| 367484/510984 [00:03:20 / 00:01:18]
+16:27:14 [Search (internal)] Building Index:  72% |▊| 367484/510984 [00:03:20 / 00:01:18]
+
+
+16:27:14 [Search (internal)] Building Index:  72% |▊| 368395/510984 [00:03:20 / 00:01:17]
+16:27:14 [Search (internal)] Building Index:  72% |▊| 368395/510984 [00:03:20 / 00:01:17]
+
+
+16:27:15 [Search (internal)] Building Index:  72% |▊| 369298/510984 [00:03:21 / 00:01:17]
+16:27:15 [Search (internal)] Building Index:  72% |▊| 369298/510984 [00:03:21 / 00:01:17]
+
+
+16:27:15 [Search (internal)] Building Index:  72% |▊| 370095/510984 [00:03:21 / 00:01:16]
+16:27:15 [Search (internal)] Building Index:  72% |▊| 370095/510984 [00:03:21 / 00:01:16]
+
+
+16:27:16 [Search (internal)] Building Index:  73% |▊| 371024/510984 [00:03:22 / 00:01:16]
+16:27:16 [Search (internal)] Building Index:  73% |▊| 371024/510984 [00:03:22 / 00:01:16]
+
+
+16:27:17 [Search (internal)] Building Index:  73% |▊| 371941/510984 [00:03:22 / 00:01:15]
+16:27:17 [Search (internal)] Building Index:  73% |▊| 371941/510984 [00:03:22 / 00:01:15]
+
+
+16:27:17 [Search (internal)] Building Index:  73% |▊| 372728/510984 [00:03:23 / 00:01:15]
+16:27:17 [Search (internal)] Building Index:  73% |▊| 372728/510984 [00:03:23 / 00:01:15]
+
+
+16:27:18 [Search (internal)] Building Index:  73% |▊| 373591/510984 [00:03:23 / 00:01:14]
+16:27:18 [Search (internal)] Building Index:  73% |▊| 373591/510984 [00:03:23 / 00:01:14]
+
+
+16:27:18 [Search (internal)] Building Index:  73% |▊| 374471/510984 [00:03:24 / 00:01:14]
+16:27:18 [Search (internal)] Building Index:  73% |▊| 374471/510984 [00:03:24 / 00:01:14]
+
+
+16:27:19 [Search (internal)] Building Index:  73% |▊| 375344/510984 [00:03:24 / 00:01:14]
+16:27:19 [Search (internal)] Building Index:  73% |▊| 375344/510984 [00:03:24 / 00:01:14]
+
+
+16:27:19 [Search (internal)] Building Index:  74% |▊| 376263/510984 [00:03:25 / 00:01:13]
+16:27:19 [Search (internal)] Building Index:  74% |▊| 376263/510984 [00:03:25 / 00:01:13]
+
+
+16:27:20 [Search (internal)] Building Index:  74% |▊| 377175/510984 [00:03:25 / 00:01:13]
+16:27:20 [Search (internal)] Building Index:  74% |▊| 377175/510984 [00:03:25 / 00:01:13]
+
+
+16:27:20 [Search (internal)] Building Index:  74% |▊| 378067/510984 [00:03:26 / 00:01:12]
+16:27:20 [Search (internal)] Building Index:  74% |▊| 378067/510984 [00:03:26 / 00:01:12]
+
+
+16:27:21 [Search (internal)] Building Index:  74% |▊| 378902/510984 [00:03:26 / 00:01:12]
+16:27:21 [Search (internal)] Building Index:  74% |▊| 378902/510984 [00:03:26 / 00:01:12]
+
+
+16:27:21 [Search (internal)] Building Index:  74% |▊| 379806/510984 [00:03:27 / 00:01:11]
+16:27:21 [Search (internal)] Building Index:  74% |▊| 379806/510984 [00:03:27 / 00:01:11]
+
+
+16:27:22 [Search (internal)] Building Index:  75% |▊| 380686/510984 [00:03:27 / 00:01:11]
+16:27:22 [Search (internal)] Building Index:  75% |▊| 380686/510984 [00:03:27 / 00:01:11]
+
+
+16:27:22 [Search (internal)] Building Index:  75% |▊| 381597/510984 [00:03:28 / 00:01:10]
+16:27:22 [Search (internal)] Building Index:  75% |▊| 381597/510984 [00:03:28 / 00:01:10]
+
+
+16:27:23 [Search (internal)] Building Index:  75% |▊| 382500/510984 [00:03:28 / 00:01:10]
+16:27:23 [Search (internal)] Building Index:  75% |▊| 382500/510984 [00:03:28 / 00:01:10]
+
+
+16:27:23 [Search (internal)] Building Index:  75% |▊| 383381/510984 [00:03:29 / 00:01:09]
+16:27:23 [Search (internal)] Building Index:  75% |▊| 383381/510984 [00:03:29 / 00:01:09]
+
+
+16:27:24 [Search (internal)] Building Index:  75% |▊| 384152/510984 [00:03:30 / 00:01:09]
+16:27:24 [Search (internal)] Building Index:  75% |▊| 384152/510984 [00:03:30 / 00:01:09]
+
+
+16:27:24 [Search (internal)] Building Index:  75% |▊| 385035/510984 [00:03:30 / 00:01:08]
+16:27:24 [Search (internal)] Building Index:  75% |▊| 385035/510984 [00:03:30 / 00:01:08]
+
+
+16:27:25 [Search (internal)] Building Index:  76% |▊| 385909/510984 [00:03:31 / 00:01:08]
+16:27:25 [Search (internal)] Building Index:  76% |▊| 385909/510984 [00:03:31 / 00:01:08]
+
+
+16:27:25 [Search (internal)] Building Index:  76% |▊| 386777/510984 [00:03:31 / 00:01:07]
+16:27:25 [Search (internal)] Building Index:  76% |▊| 386777/510984 [00:03:31 / 00:01:07]
+
+
+16:27:26 [Search (internal)] Building Index:  76% |▊| 387662/510984 [00:03:32 / 00:01:07]
+16:27:26 [Search (internal)] Building Index:  76% |▊| 387662/510984 [00:03:32 / 00:01:07]
+
+
+16:27:26 [Search (internal)] Building Index:  76% |▊| 388537/510984 [00:03:32 / 00:01:06]
+16:27:26 [Search (internal)] Building Index:  76% |▊| 388537/510984 [00:03:32 / 00:01:06]
+
+
+16:27:27 [Search (internal)] Building Index:  76% |▊| 389440/510984 [00:03:33 / 00:01:06]
+16:27:27 [Search (internal)] Building Index:  76% |▊| 389440/510984 [00:03:33 / 00:01:06]
+
+
+16:27:27 [Search (internal)] Building Index:  76% |▊| 390296/510984 [00:03:33 / 00:01:06]
+16:27:27 [Search (internal)] Building Index:  76% |▊| 390296/510984 [00:03:33 / 00:01:06]
+
+
+16:27:28 [Search (internal)] Building Index:  77% |▊| 391226/510984 [00:03:34 / 00:01:05]
+16:27:28 [Search (internal)] Building Index:  77% |▊| 391226/510984 [00:03:34 / 00:01:05]
+
+
+16:27:28 [Search (internal)] Building Index:  77% |▊| 392147/510984 [00:03:34 / 00:01:05]
+16:27:28 [Search (internal)] Building Index:  77% |▊| 392147/510984 [00:03:34 / 00:01:05]
+
+
+16:27:29 [Search (internal)] Building Index:  77% |▊| 393129/510984 [00:03:35 / 00:01:04]
+16:27:29 [Search (internal)] Building Index:  77% |▊| 393129/510984 [00:03:35 / 00:01:04]
+
+
+16:27:29 [Search (internal)] Building Index:  77% |▊| 394082/510984 [00:03:35 / 00:01:03]
+16:27:29 [Search (internal)] Building Index:  77% |▊| 394082/510984 [00:03:35 / 00:01:03]
+
+
+16:27:30 [Search (internal)] Building Index:  77% |▊| 394845/510984 [00:03:36 / 00:01:03]
+16:27:30 [Search (internal)] Building Index:  77% |▊| 394845/510984 [00:03:36 / 00:01:03]
+
+
+16:27:30 [Search (internal)] Building Index:  77% |▊| 395709/510984 [00:03:36 / 00:01:03]
+16:27:30 [Search (internal)] Building Index:  77% |▊| 395709/510984 [00:03:36 / 00:01:03]
+
+
+16:27:31 [Search (internal)] Building Index:  78% |▊| 396546/510984 [00:03:37 / 00:01:02]
+16:27:31 [Search (internal)] Building Index:  78% |▊| 396546/510984 [00:03:37 / 00:01:02]
+
+
+16:27:31 [Search (internal)] Building Index:  78% |▉| 397489/510984 [00:03:37 / 00:01:02]
+16:27:31 [Search (internal)] Building Index:  78% |▉| 397489/510984 [00:03:37 / 00:01:02]
+
+
+16:27:32 [Search (internal)] Building Index:  78% |▉| 398461/510984 [00:03:38 / 00:01:01]
+16:27:32 [Search (internal)] Building Index:  78% |▉| 398461/510984 [00:03:38 / 00:01:01]
+
+
+16:27:32 [Search (internal)] Building Index:  78% |▉| 399405/510984 [00:03:38 / 00:01:01]
+16:27:32 [Search (internal)] Building Index:  78% |▉| 399405/510984 [00:03:38 / 00:01:01]
+
+
+16:27:33 [Search (internal)] Building Index:  78% |▉| 400307/510984 [00:03:39 / 00:01:00]
+16:27:33 [Search (internal)] Building Index:  78% |▉| 400307/510984 [00:03:39 / 00:01:00]
+
+
+16:27:33 [Search (internal)] Building Index:  79% |▉| 401260/510984 [00:03:39 / 00:01:00]
+16:27:33 [Search (internal)] Building Index:  79% |▉| 401260/510984 [00:03:39 / 00:01:00]
+
+
+16:27:34 [Search (internal)] Building Index:  79% |▉| 402198/510984 [00:03:40 / 00:00:59]
+16:27:34 [Search (internal)] Building Index:  79% |▉| 402198/510984 [00:03:40 / 00:00:59]
+
+
+16:27:34 [Search (internal)] Building Index:  79% |▉| 402866/510984 [00:03:40 / 00:00:59]
+16:27:34 [Search (internal)] Building Index:  79% |▉| 402866/510984 [00:03:40 / 00:00:59]
+
+
+16:27:35 [Search (internal)] Building Index:  79% |▉| 403781/510984 [00:03:41 / 00:00:58]
+16:27:35 [Search (internal)] Building Index:  79% |▉| 403781/510984 [00:03:41 / 00:00:58]
+
+
+16:27:35 [Search (internal)] Building Index:  79% |▉| 404781/510984 [00:03:41 / 00:00:58]
+16:27:35 [Search (internal)] Building Index:  79% |▉| 404781/510984 [00:03:41 / 00:00:58]
+
+
+16:27:36 [Search (internal)] Building Index:  79% |▉| 405770/510984 [00:03:42 / 00:00:57]
+16:27:36 [Search (internal)] Building Index:  79% |▉| 405770/510984 [00:03:42 / 00:00:57]
+
+
+16:27:36 [Search (internal)] Building Index:  80% |▉| 406686/510984 [00:03:42 / 00:00:57]
+16:27:36 [Search (internal)] Building Index:  80% |▉| 406686/510984 [00:03:42 / 00:00:57]
+
+
+16:27:37 [Search (internal)] Building Index:  80% |▉| 407567/510984 [00:03:43 / 00:00:56]
+16:27:37 [Search (internal)] Building Index:  80% |▉| 407567/510984 [00:03:43 / 00:00:56]
+
+
+16:27:37 [Search (internal)] Building Index:  80% |▉| 408503/510984 [00:03:43 / 00:00:56]
+16:27:37 [Search (internal)] Building Index:  80% |▉| 408503/510984 [00:03:43 / 00:00:56]
+
+
+16:27:38 [Search (internal)] Building Index:  80% |▉| 409416/510984 [00:03:44 / 00:00:55]
+16:27:38 [Search (internal)] Building Index:  80% |▉| 409416/510984 [00:03:44 / 00:00:55]
+
+
+16:27:38 [Search (internal)] Building Index:  80% |▉| 410420/510984 [00:03:44 / 00:00:55]
+16:27:38 [Search (internal)] Building Index:  80% |▉| 410420/510984 [00:03:44 / 00:00:55]
+
+
+16:27:39 [Search (internal)] Building Index:  81% |▉| 411425/510984 [00:03:45 / 00:00:54]
+16:27:39 [Search (internal)] Building Index:  81% |▉| 411425/510984 [00:03:45 / 00:00:54]
+
+
+16:27:39 [Search (internal)] Building Index:  81% |▉| 412390/510984 [00:03:45 / 00:00:53]
+16:27:39 [Search (internal)] Building Index:  81% |▉| 412390/510984 [00:03:45 / 00:00:53]
+
+
+16:27:40 [Search (internal)] Building Index:  81% |▉| 413396/510984 [00:03:46 / 00:00:53]
+16:27:40 [Search (internal)] Building Index:  81% |▉| 413396/510984 [00:03:46 / 00:00:53]
+
+
+16:27:40 [Search (internal)] Building Index:  81% |▉| 414391/510984 [00:03:46 / 00:00:52]
+16:27:40 [Search (internal)] Building Index:  81% |▉| 414391/510984 [00:03:46 / 00:00:52]
+
+
+16:27:41 [Search (internal)] Building Index:  81% |▉| 415375/510984 [00:03:47 / 00:00:52]
+16:27:41 [Search (internal)] Building Index:  81% |▉| 415375/510984 [00:03:47 / 00:00:52]
+
+
+16:27:41 [Search (internal)] Building Index:  81% |▉| 416325/510984 [00:03:47 / 00:00:51]
+16:27:41 [Search (internal)] Building Index:  81% |▉| 416325/510984 [00:03:47 / 00:00:51]
+
+
+16:27:42 [Search (internal)] Building Index:  82% |▉| 417314/510984 [00:03:48 / 00:00:51]
+16:27:42 [Search (internal)] Building Index:  82% |▉| 417314/510984 [00:03:48 / 00:00:51]
+
+
+16:27:42 [Search (internal)] Building Index:  82% |▉| 418296/510984 [00:03:48 / 00:00:50]
+16:27:42 [Search (internal)] Building Index:  82% |▉| 418296/510984 [00:03:48 / 00:00:50]
+
+
+16:27:43 [Search (internal)] Building Index:  82% |▉| 419217/510984 [00:03:49 / 00:00:50]
+16:27:43 [Search (internal)] Building Index:  82% |▉| 419217/510984 [00:03:49 / 00:00:50]
+
+
+16:27:44 [Search (internal)] Building Index:  82% |▉| 420108/510984 [00:03:49 / 00:00:49]
+16:27:44 [Search (internal)] Building Index:  82% |▉| 420108/510984 [00:03:49 / 00:00:49]
+
+
+16:27:44 [Search (internal)] Building Index:  82% |▉| 421077/510984 [00:03:50 / 00:00:49]
+16:27:44 [Search (internal)] Building Index:  82% |▉| 421077/510984 [00:03:50 / 00:00:49]
+
+
+16:27:45 [Search (internal)] Building Index:  83% |▉| 422018/510984 [00:03:50 / 00:00:48]
+16:27:45 [Search (internal)] Building Index:  83% |▉| 422018/510984 [00:03:50 / 00:00:48]
+
+
+16:27:45 [Search (internal)] Building Index:  83% |▉| 422922/510984 [00:03:51 / 00:00:48]
+16:27:45 [Search (internal)] Building Index:  83% |▉| 422922/510984 [00:03:51 / 00:00:48]
+
+
+16:27:46 [Search (internal)] Building Index:  83% |▉| 423854/510984 [00:03:51 / 00:00:47]
+16:27:46 [Search (internal)] Building Index:  83% |▉| 423854/510984 [00:03:51 / 00:00:47]
+
+
+16:27:46 [Search (internal)] Building Index:  83% |▉| 424794/510984 [00:03:52 / 00:00:47]
+16:27:46 [Search (internal)] Building Index:  83% |▉| 424794/510984 [00:03:52 / 00:00:47]
+
+
+16:27:47 [Search (internal)] Building Index:  83% |▉| 425722/510984 [00:03:52 / 00:00:46]
+16:27:47 [Search (internal)] Building Index:  83% |▉| 425722/510984 [00:03:52 / 00:00:46]
+
+
+16:27:47 [Search (internal)] Building Index:  83% |▉| 426652/510984 [00:03:53 / 00:00:46]
+16:27:47 [Search (internal)] Building Index:  83% |▉| 426652/510984 [00:03:53 / 00:00:46]
+
+
+16:27:48 [Search (internal)] Building Index:  84% |▉| 427577/510984 [00:03:54 / 00:00:45]
+16:27:48 [Search (internal)] Building Index:  84% |▉| 427577/510984 [00:03:54 / 00:00:45]
+
+
+16:27:48 [Search (internal)] Building Index:  84% |▉| 428579/510984 [00:03:54 / 00:00:45]
+16:27:48 [Search (internal)] Building Index:  84% |▉| 428579/510984 [00:03:54 / 00:00:45]
+
+
+16:27:49 [Search (internal)] Building Index:  84% |▉| 429571/510984 [00:03:55 / 00:00:44]
+16:27:49 [Search (internal)] Building Index:  84% |▉| 429571/510984 [00:03:55 / 00:00:44]
+
+
+16:27:49 [Search (internal)] Building Index:  84% |▉| 430467/510984 [00:03:55 / 00:00:44]
+16:27:49 [Search (internal)] Building Index:  84% |▉| 430467/510984 [00:03:55 / 00:00:44]
+
+
+16:27:50 [Search (internal)] Building Index:  84% |▉| 431334/510984 [00:03:56 / 00:00:43]
+16:27:50 [Search (internal)] Building Index:  84% |▉| 431334/510984 [00:03:56 / 00:00:43]
+
+
+16:27:51 [Search (internal)] Building Index:  85% |▉| 432173/510984 [00:03:56 / 00:00:43]
+16:27:51 [Search (internal)] Building Index:  85% |▉| 432173/510984 [00:03:56 / 00:00:43]
+
+
+16:27:51 [Search (internal)] Building Index:  85% |▉| 433107/510984 [00:03:57 / 00:00:42]
+16:27:51 [Search (internal)] Building Index:  85% |▉| 433107/510984 [00:03:57 / 00:00:42]
+
+
+16:27:52 [Search (internal)] Building Index:  85% |▉| 434096/510984 [00:03:57 / 00:00:42]
+16:27:52 [Search (internal)] Building Index:  85% |▉| 434096/510984 [00:03:57 / 00:00:42]
+
+
+16:27:52 [Search (internal)] Building Index:  85% |▉| 435146/510984 [00:03:58 / 00:00:41]
+16:27:52 [Search (internal)] Building Index:  85% |▉| 435146/510984 [00:03:58 / 00:00:41]
+
+
+16:27:53 [Search (internal)] Building Index:  85% |▉| 436162/510984 [00:03:58 / 00:00:40]
+16:27:53 [Search (internal)] Building Index:  85% |▉| 436162/510984 [00:03:58 / 00:00:40]
+
+
+16:27:53 [Search (internal)] Building Index:  86% |▉| 437061/510984 [00:03:59 / 00:00:40]
+16:27:53 [Search (internal)] Building Index:  86% |▉| 437061/510984 [00:03:59 / 00:00:40]
+
+
+16:27:54 [Search (internal)] Building Index:  86% |▉| 437987/510984 [00:03:59 / 00:00:39]
+16:27:54 [Search (internal)] Building Index:  86% |▉| 437987/510984 [00:03:59 / 00:00:39]
+
+
+16:27:54 [Search (internal)] Building Index:  86% |▉| 438907/510984 [00:04:00 / 00:00:39]
+16:27:54 [Search (internal)] Building Index:  86% |▉| 438907/510984 [00:04:00 / 00:00:39]
+
+
+16:27:55 [Search (internal)] Building Index:  86% |▉| 439766/510984 [00:04:00 / 00:00:39]
+16:27:55 [Search (internal)] Building Index:  86% |▉| 439766/510984 [00:04:00 / 00:00:39]
+
+
+16:27:55 [Search (internal)] Building Index:  86% |▉| 440583/510984 [00:04:01 / 00:00:38]
+16:27:55 [Search (internal)] Building Index:  86% |▉| 440583/510984 [00:04:01 / 00:00:38]
+
+
+16:27:56 [Search (internal)] Building Index:  86% |▉| 441416/510984 [00:04:02 / 00:00:38]
+16:27:56 [Search (internal)] Building Index:  86% |▉| 441416/510984 [00:04:02 / 00:00:38]
+
+
+16:27:56 [Search (internal)] Building Index:  87% |▉| 442384/510984 [00:04:02 / 00:00:37]
+16:27:56 [Search (internal)] Building Index:  87% |▉| 442384/510984 [00:04:02 / 00:00:37]
+
+
+16:27:57 [Search (internal)] Building Index:  87% |▉| 443390/510984 [00:04:03 / 00:00:37]
+16:27:57 [Search (internal)] Building Index:  87% |▉| 443390/510984 [00:04:03 / 00:00:37]
+
+
+16:27:57 [Search (internal)] Building Index:  87% |▉| 444482/510984 [00:04:03 / 00:00:36]
+16:27:57 [Search (internal)] Building Index:  87% |▉| 444482/510984 [00:04:03 / 00:00:36]
+
+
+16:27:58 [Search (internal)] Building Index:  87% |▉| 445527/510984 [00:04:04 / 00:00:35]
+16:27:58 [Search (internal)] Building Index:  87% |▉| 445527/510984 [00:04:04 / 00:00:35]
+
+
+16:27:58 [Search (internal)] Building Index:  87% |▉| 446657/510984 [00:04:04 / 00:00:35]
+16:27:58 [Search (internal)] Building Index:  87% |▉| 446657/510984 [00:04:04 / 00:00:35]
+
+
+16:27:59 [Search (internal)] Building Index:  88% |▉| 447769/510984 [00:04:05 / 00:00:34]
+16:27:59 [Search (internal)] Building Index:  88% |▉| 447769/510984 [00:04:05 / 00:00:34]
+
+
+16:27:59 [Search (internal)] Building Index:  88% |▉| 448873/510984 [00:04:05 / 00:00:34]
+16:27:59 [Search (internal)] Building Index:  88% |▉| 448873/510984 [00:04:05 / 00:00:34]
+
+
+16:28:00 [Search (internal)] Building Index:  88% |▉| 449877/510984 [00:04:06 / 00:00:33]
+16:28:00 [Search (internal)] Building Index:  88% |▉| 449877/510984 [00:04:06 / 00:00:33]
+
+
+16:28:01 [Search (internal)] Building Index:  88% |▉| 450855/510984 [00:04:06 / 00:00:32]
+16:28:01 [Search (internal)] Building Index:  88% |▉| 450855/510984 [00:04:06 / 00:00:32]
+
+
+16:28:01 [Search (internal)] Building Index:  88% |▉| 451838/510984 [00:04:07 / 00:00:32]
+16:28:01 [Search (internal)] Building Index:  88% |▉| 451838/510984 [00:04:07 / 00:00:32]
+
+
+16:28:02 [Search (internal)] Building Index:  89% |▉| 452870/510984 [00:04:07 / 00:00:31]
+16:28:02 [Search (internal)] Building Index:  89% |▉| 452870/510984 [00:04:07 / 00:00:31]
+
+
+16:28:02 [Search (internal)] Building Index:  89% |▉| 453855/510984 [00:04:08 / 00:00:31]
+16:28:02 [Search (internal)] Building Index:  89% |▉| 453855/510984 [00:04:08 / 00:00:31]
+
+
+16:28:03 [Search (internal)] Building Index:  89% |█| 454744/510984 [00:04:08 / 00:00:30]
+16:28:03 [Search (internal)] Building Index:  89% |█| 454744/510984 [00:04:08 / 00:00:30]
+
+
+16:28:03 [Search (internal)] Building Index:  89% |█| 455573/510984 [00:04:09 / 00:00:30]
+16:28:03 [Search (internal)] Building Index:  89% |█| 455573/510984 [00:04:09 / 00:00:30]
+
+
+16:28:04 [Search (internal)] Building Index:  89% |█| 456486/510984 [00:04:10 / 00:00:29]
+16:28:04 [Search (internal)] Building Index:  89% |█| 456486/510984 [00:04:10 / 00:00:29]
+
+
+16:28:04 [Search (internal)] Building Index:  90% |█| 457384/510984 [00:04:10 / 00:00:29]
+16:28:04 [Search (internal)] Building Index:  90% |█| 457384/510984 [00:04:10 / 00:00:29]
+
+
+16:28:05 [Search (internal)] Building Index:  90% |█| 458234/510984 [00:04:11 / 00:00:28]
+16:28:05 [Search (internal)] Building Index:  90% |█| 458234/510984 [00:04:11 / 00:00:28]
+
+
+16:28:05 [Search (internal)] Building Index:  90% |█| 459057/510984 [00:04:11 / 00:00:28]
+16:28:05 [Search (internal)] Building Index:  90% |█| 459057/510984 [00:04:11 / 00:00:28]
+
+
+16:28:06 [Search (internal)] Building Index:  90% |█| 459906/510984 [00:04:12 / 00:00:28]
+16:28:06 [Search (internal)] Building Index:  90% |█| 459906/510984 [00:04:12 / 00:00:28]
+
+
+16:28:06 [Search (internal)] Building Index:  90% |█| 460805/510984 [00:04:12 / 00:00:27]
+16:28:06 [Search (internal)] Building Index:  90% |█| 460805/510984 [00:04:12 / 00:00:27]
+
+
+16:28:07 [Search (internal)] Building Index:  90% |█| 461735/510984 [00:04:13 / 00:00:27]
+16:28:07 [Search (internal)] Building Index:  90% |█| 461735/510984 [00:04:13 / 00:00:27]
+
+
+16:28:07 [Search (internal)] Building Index:  91% |█| 462694/510984 [00:04:13 / 00:00:26]
+16:28:07 [Search (internal)] Building Index:  91% |█| 462694/510984 [00:04:13 / 00:00:26]
+
+
+16:28:08 [Search (internal)] Building Index:  91% |█| 463619/510984 [00:04:14 / 00:00:25]
+16:28:08 [Search (internal)] Building Index:  91% |█| 463619/510984 [00:04:14 / 00:00:25]
+
+
+16:28:08 [Search (internal)] Building Index:  91% |█| 464562/510984 [00:04:14 / 00:00:25]
+16:28:08 [Search (internal)] Building Index:  91% |█| 464562/510984 [00:04:14 / 00:00:25]
+
+
+16:28:09 [Search (internal)] Building Index:  91% |█| 465487/510984 [00:04:15 / 00:00:24]
+16:28:09 [Search (internal)] Building Index:  91% |█| 465487/510984 [00:04:15 / 00:00:24]
+
+
+16:28:09 [Search (internal)] Building Index:  91% |█| 466176/510984 [00:04:15 / 00:00:24]
+16:28:09 [Search (internal)] Building Index:  91% |█| 466176/510984 [00:04:15 / 00:00:24]
+
+
+16:28:10 [Search (internal)] Building Index:  91% |█| 466690/510984 [00:04:16 / 00:00:24]
+16:28:10 [Search (internal)] Building Index:  91% |█| 466690/510984 [00:04:16 / 00:00:24]
+
+
+16:28:10 [Search (internal)] Building Index:  91% |█| 467477/510984 [00:04:16 / 00:00:23]
+16:28:10 [Search (internal)] Building Index:  91% |█| 467477/510984 [00:04:16 / 00:00:23]
+
+
+16:28:11 [Search (internal)] Building Index:  92% |█| 468446/510984 [00:04:17 / 00:00:23]
+16:28:11 [Search (internal)] Building Index:  92% |█| 468446/510984 [00:04:17 / 00:00:23]
+
+
+16:28:11 [Search (internal)] Building Index:  92% |█| 469392/510984 [00:04:17 / 00:00:22]
+16:28:11 [Search (internal)] Building Index:  92% |█| 469392/510984 [00:04:17 / 00:00:22]
+
+
+16:28:12 [Search (internal)] Building Index:  92% |█| 470244/510984 [00:04:18 / 00:00:22]
+16:28:12 [Search (internal)] Building Index:  92% |█| 470244/510984 [00:04:18 / 00:00:22]
+
+
+16:28:12 [Search (internal)] Building Index:  92% |█| 471164/510984 [00:04:18 / 00:00:21]
+16:28:12 [Search (internal)] Building Index:  92% |█| 471164/510984 [00:04:18 / 00:00:21]
+
+
+16:28:13 [Search (internal)] Building Index:  92% |█| 472134/510984 [00:04:19 / 00:00:21]
+16:28:13 [Search (internal)] Building Index:  92% |█| 472134/510984 [00:04:19 / 00:00:21]
+
+
+16:28:13 [Search (internal)] Building Index:  93% |█| 473074/510984 [00:04:19 / 00:00:20]
+16:28:13 [Search (internal)] Building Index:  93% |█| 473074/510984 [00:04:19 / 00:00:20]
+
+
+16:28:14 [Search (internal)] Building Index:  93% |█| 473981/510984 [00:04:20 / 00:00:20]
+16:28:14 [Search (internal)] Building Index:  93% |█| 473981/510984 [00:04:20 / 00:00:20]
+
+
+16:28:14 [Search (internal)] Building Index:  93% |█| 474948/510984 [00:04:20 / 00:00:19]
+16:28:14 [Search (internal)] Building Index:  93% |█| 474948/510984 [00:04:20 / 00:00:19]
+
+
+16:28:15 [Search (internal)] Building Index:  93% |█| 475883/510984 [00:04:21 / 00:00:19]
+16:28:15 [Search (internal)] Building Index:  93% |█| 475883/510984 [00:04:21 / 00:00:19]
+
+
+16:28:16 [Search (internal)] Building Index:  93% |█| 476644/510984 [00:04:21 / 00:00:18]
+16:28:16 [Search (internal)] Building Index:  93% |█| 476644/510984 [00:04:21 / 00:00:18]
+
+
+16:28:16 [Search (internal)] Building Index:  93% |█| 477391/510984 [00:04:22 / 00:00:18]
+16:28:16 [Search (internal)] Building Index:  93% |█| 477391/510984 [00:04:22 / 00:00:18]
+
+
+16:28:17 [Search (internal)] Building Index:  94% |█| 478240/510984 [00:04:22 / 00:00:17]
+16:28:17 [Search (internal)] Building Index:  94% |█| 478240/510984 [00:04:22 / 00:00:17]
+
+
+16:28:17 [Search (internal)] Building Index:  94% |█| 479204/510984 [00:04:23 / 00:00:17]
+16:28:17 [Search (internal)] Building Index:  94% |█| 479204/510984 [00:04:23 / 00:00:17]
+
+
+16:28:18 [Search (internal)] Building Index:  94% |█| 480133/510984 [00:04:23 / 00:00:16]
+16:28:18 [Search (internal)] Building Index:  94% |█| 480133/510984 [00:04:23 / 00:00:16]
+
+
+16:28:18 [Search (internal)] Building Index:  94% |█| 480884/510984 [00:04:24 / 00:00:16]
+16:28:18 [Search (internal)] Building Index:  94% |█| 480884/510984 [00:04:24 / 00:00:16]
+
+
+16:28:19 [Search (internal)] Building Index:  94% |█| 481717/510984 [00:04:24 / 00:00:16]
+16:28:19 [Search (internal)] Building Index:  94% |█| 481717/510984 [00:04:24 / 00:00:16]
+
+
+16:28:19 [Search (internal)] Building Index:  94% |█| 482582/510984 [00:04:25 / 00:00:15]
+16:28:19 [Search (internal)] Building Index:  94% |█| 482582/510984 [00:04:25 / 00:00:15]
+
+
+16:28:20 [Search (internal)] Building Index:  95% |█| 483426/510984 [00:04:25 / 00:00:15]
+16:28:20 [Search (internal)] Building Index:  95% |█| 483426/510984 [00:04:25 / 00:00:15]
+
+
+16:28:20 [Search (internal)] Building Index:  95% |█| 484251/510984 [00:04:26 / 00:00:14]
+16:28:20 [Search (internal)] Building Index:  95% |█| 484251/510984 [00:04:26 / 00:00:14]
+
+
+16:28:21 [Search (internal)] Building Index:  95% |█| 484826/510984 [00:04:27 / 00:00:14]
+16:28:21 [Search (internal)] Building Index:  95% |█| 484826/510984 [00:04:27 / 00:00:14]
+
+
+16:28:21 [Search (internal)] Building Index:  95% |█| 485290/510984 [00:04:27 / 00:00:14]
+16:28:21 [Search (internal)] Building Index:  95% |█| 485290/510984 [00:04:27 / 00:00:14]
+
+
+16:28:22 [Search (internal)] Building Index:  95% |█| 485937/510984 [00:04:28 / 00:00:13]
+16:28:22 [Search (internal)] Building Index:  95% |█| 485937/510984 [00:04:28 / 00:00:13]
+
+
+16:28:22 [Search (internal)] Building Index:  95% |█| 486808/510984 [00:04:28 / 00:00:13]
+16:28:22 [Search (internal)] Building Index:  95% |█| 486808/510984 [00:04:28 / 00:00:13]
+
+
+16:28:23 [Search (internal)] Building Index:  95% |█| 487704/510984 [00:04:29 / 00:00:12]
+16:28:23 [Search (internal)] Building Index:  95% |█| 487704/510984 [00:04:29 / 00:00:12]
+
+
+16:28:23 [Search (internal)] Building Index:  96% |█| 488584/510984 [00:04:29 / 00:00:12]
+16:28:23 [Search (internal)] Building Index:  96% |█| 488584/510984 [00:04:29 / 00:00:12]
+
+
+16:28:24 [Search (internal)] Building Index:  96% |█| 489176/510984 [00:04:30 / 00:00:12]
+16:28:24 [Search (internal)] Building Index:  96% |█| 489176/510984 [00:04:30 / 00:00:12]
+
+
+16:28:24 [Search (internal)] Building Index:  96% |█| 489983/510984 [00:04:30 / 00:00:11]
+16:28:24 [Search (internal)] Building Index:  96% |█| 489983/510984 [00:04:30 / 00:00:11]
+
+
+16:28:25 [Search (internal)] Building Index:  96% |█| 490753/510984 [00:04:31 / 00:00:11]
+16:28:25 [Search (internal)] Building Index:  96% |█| 490753/510984 [00:04:31 / 00:00:11]
+
+
+16:28:25 [Search (internal)] Building Index:  96% |█| 491627/510984 [00:04:31 / 00:00:10]
+16:28:25 [Search (internal)] Building Index:  96% |█| 491627/510984 [00:04:31 / 00:00:10]
+
+
+16:28:26 [Search (internal)] Building Index:  96% |█| 492465/510984 [00:04:32 / 00:00:10]
+16:28:26 [Search (internal)] Building Index:  96% |█| 492465/510984 [00:04:32 / 00:00:10]
+
+
+16:28:27 [Search (internal)] Building Index:  96% |█| 493062/510984 [00:04:32 / 00:00:09]
+16:28:27 [Search (internal)] Building Index:  96% |█| 493062/510984 [00:04:32 / 00:00:09]
+
+
+16:28:27 [Search (internal)] Building Index:  97% |█| 493929/510984 [00:04:33 / 00:00:09]
+16:28:27 [Search (internal)] Building Index:  97% |█| 493929/510984 [00:04:33 / 00:00:09]
+
+
+16:28:28 [Search (internal)] Building Index:  97% |█| 494781/510984 [00:04:33 / 00:00:08]
+16:28:28 [Search (internal)] Building Index:  97% |█| 494781/510984 [00:04:33 / 00:00:08]
+
+
+16:28:28 [Search (internal)] Building Index:  97% |█| 495533/510984 [00:04:34 / 00:00:08]
+16:28:28 [Search (internal)] Building Index:  97% |█| 495533/510984 [00:04:34 / 00:00:08]
+
+
+16:28:29 [Search (internal)] Building Index:  97% |█| 496352/510984 [00:04:34 / 00:00:08]
+16:28:29 [Search (internal)] Building Index:  97% |█| 496352/510984 [00:04:34 / 00:00:08]
+
+
+16:28:29 [Search (internal)] Building Index:  97% |█| 497164/510984 [00:04:35 / 00:00:07]
+16:28:29 [Search (internal)] Building Index:  97% |█| 497164/510984 [00:04:35 / 00:00:07]
+
+
+16:28:30 [Search (internal)] Building Index:  97% |█| 497978/510984 [00:04:35 / 00:00:07]
+16:28:30 [Search (internal)] Building Index:  97% |█| 497978/510984 [00:04:35 / 00:00:07]
+
+
+16:28:30 [Search (internal)] Building Index:  98% |█| 498791/510984 [00:04:36 / 00:00:06]
+16:28:30 [Search (internal)] Building Index:  98% |█| 498791/510984 [00:04:36 / 00:00:06]
+
+
+16:28:31 [Search (internal)] Building Index:  98% |█| 499351/510984 [00:04:37 / 00:00:06]
+16:28:31 [Search (internal)] Building Index:  98% |█| 499351/510984 [00:04:37 / 00:00:06]
+
+
+16:28:31 [Search (internal)] Building Index:  98% |█| 500142/510984 [00:04:37 / 00:00:06]
+16:28:31 [Search (internal)] Building Index:  98% |█| 500142/510984 [00:04:37 / 00:00:06]
+
+
+16:28:32 [Search (internal)] Building Index:  98% |█| 500933/510984 [00:04:38 / 00:00:05]
+16:28:32 [Search (internal)] Building Index:  98% |█| 500933/510984 [00:04:38 / 00:00:05]
+
+
+16:28:32 [Search (internal)] Building Index:  98% |█| 501683/510984 [00:04:38 / 00:00:05]
+16:28:32 [Search (internal)] Building Index:  98% |█| 501683/510984 [00:04:38 / 00:00:05]
+
+
+16:28:33 [Search (internal)] Building Index:  98% |█| 502398/510984 [00:04:39 / 00:00:04]
+16:28:33 [Search (internal)] Building Index:  98% |█| 502398/510984 [00:04:39 / 00:00:04]
+
+
+16:28:33 [Search (internal)] Building Index:  98% |█| 503090/510984 [00:04:39 / 00:00:04]
+16:28:33 [Search (internal)] Building Index:  98% |█| 503090/510984 [00:04:39 / 00:00:04]
+
+
+16:28:34 [Search (internal)] Building Index:  99% |█| 503691/510984 [00:04:40 / 00:00:04]
+16:28:34 [Search (internal)] Building Index:  99% |█| 503691/510984 [00:04:40 / 00:00:04]
+
+
+16:28:34 [Search (internal)] Building Index:  99% |█| 504274/510984 [00:04:40 / 00:00:03]
+16:28:34 [Search (internal)] Building Index:  99% |█| 504274/510984 [00:04:40 / 00:00:03]
+
+
+16:28:35 [Search (internal)] Building Index:  99% |█| 504905/510984 [00:04:41 / 00:00:03]
+16:28:35 [Search (internal)] Building Index:  99% |█| 504905/510984 [00:04:41 / 00:00:03]
+
+
+16:28:35 [Search (internal)] Building Index:  99% |█| 505640/510984 [00:04:41 / 00:00:02]
+16:28:35 [Search (internal)] Building Index:  99% |█| 505640/510984 [00:04:41 / 00:00:02]
+
+
+16:28:36 [Search (internal)] Building Index:  99% |█| 506357/510984 [00:04:42 / 00:00:02]
+16:28:36 [Search (internal)] Building Index:  99% |█| 506357/510984 [00:04:42 / 00:00:02]
+
+
+16:28:36 [Search (internal)] Building Index:  99% |█| 507024/510984 [00:04:42 / 00:00:02]
+16:28:36 [Search (internal)] Building Index:  99% |█| 507024/510984 [00:04:42 / 00:00:02]
+
+
+16:28:37 [Search (internal)] Building Index:  99% |█| 507784/510984 [00:04:43 / 00:00:01]
+16:28:37 [Search (internal)] Building Index:  99% |█| 507784/510984 [00:04:43 / 00:00:01]
+
+
+16:28:37 [Search (internal)] Building Index: 100% |█| 508511/510984 [00:04:43 / 00:00:01]
+16:28:37 [Search (internal)] Building Index: 100% |█| 508511/510984 [00:04:43 / 00:00:01]
+
+
+16:28:38 [Search (internal)] Building Index: 100% |█| 509193/510984 [00:04:44 / 00:00:00]
+16:28:38 [Search (internal)] Building Index: 100% |█| 509193/510984 [00:04:44 / 00:00:00]
+
+
+16:28:39 [Search (internal)] Building Index: 100% |█| 509832/510984 [00:04:44 / 00:00:00]
+16:28:39 [Search (internal)] Building Index: 100% |█| 509832/510984 [00:04:44 / 00:00:00]
+
+
+16:28:39 [Search (internal)] Building Index: 100% |█| 510243/510984 [00:04:45 / 00:00:00]
+16:28:39 [Search (internal)] Building Index: 100% |█| 510243/510984 [00:04:45 / 00:00:00]
+
+
+16:28:40 [Search (internal)] Building Index: 100% |█| 510529/510984 [00:04:46 / 00:00:00]
+16:28:40 [Search (internal)] Building Index: 100% |█| 510529/510984 [00:04:46 / 00:00:00]
+
+
+16:28:40 [Search (internal)] Building Index: 100% |█| 510866/510984 [00:04:46 / 00:00:00]
+16:28:40 [Search (internal)] Building Index: 100% |█| 510866/510984 [00:04:46 / 00:00:00]
+
+
+16:28:42 [Search (internal)] Building Index: 100% |█| 510984/510984 [00:04:48 / 00:00:00]
+16:28:42 [Search (internal)] Building Index: 100% |█| 510984/510984 [00:04:48 / 00:00:00]
+
+
+16:28:43 [famfinder] Using internal engine for reference search
+16:28:43 [famfinder] Using internal engine for reference search
+16:28:43 [SINA] Aligner ready. Processing sequences
+16:28:43 [SINA] Aligner ready. Processing sequences
+16:28:43 [SINA] Processing:   0% |            | 1/1412 [00:04:55 / 19:54:28]
+16:28:43 [SINA] Processing:   0% |            | 1/1412 [00:04:55 / 19:54:28]
+
+
+16:28:44 [SINA] Processing:   2% |▏          | 25/1411 [00:04:56 / 04:33:43]
+16:28:44 [SINA] Processing:   2% |▏          | 25/1411 [00:04:56 / 04:33:43]
+
+
+16:28:44 [SINA] Processing:   5% |▌          | 67/1409 [00:04:56 / 01:39:03]
+16:28:44 [SINA] Processing:   5% |▌          | 67/1409 [00:04:56 / 01:39:03]
+
+
+16:28:45 [SINA] Processing:  10% |█         | 142/1408 [00:04:57 / 00:44:10]
+16:28:45 [SINA] Processing:  10% |█         | 142/1408 [00:04:57 / 00:44:10]
+
+
+16:28:45 [SINA] Processing:  14% |█▍        | 203/1408 [00:04:57 / 00:29:27]
+16:28:45 [SINA] Processing:  14% |█▍        | 203/1408 [00:04:57 / 00:29:27]
+
+
+16:28:46 [SINA] Processing:  20% |██        | 278/1408 [00:04:58 / 00:20:12]
+16:28:46 [SINA] Processing:  20% |██        | 278/1408 [00:04:58 / 00:20:12]
+
+
+16:28:46 [SINA] Processing:  26% |██▋       | 371/1407 [00:04:58 / 00:13:54]
+16:28:46 [SINA] Processing:  26% |██▋       | 371/1407 [00:04:58 / 00:13:54]
+
+
+16:28:47 [SINA] Processing:  32% |███▏      | 448/1407 [00:04:59 / 00:10:40]
+16:28:47 [SINA] Processing:  32% |███▏      | 448/1407 [00:04:59 / 00:10:40]
+
+
+16:28:47 [SINA] Processing:  38% |███▉      | 536/1407 [00:04:59 / 00:08:07]
+16:28:47 [SINA] Processing:  38% |███▉      | 536/1407 [00:04:59 / 00:08:07]
+
+
+16:28:48 [SINA] Processing:  45% |████▌     | 638/1407 [00:05:00 / 00:06:02]
+16:28:48 [SINA] Processing:  45% |████▌     | 638/1407 [00:05:00 / 00:06:02]
+
+
+16:28:48 [SINA] Processing:  52% |█████▏    | 730/1406 [00:05:00 / 00:04:38]
+16:28:48 [SINA] Processing:  52% |█████▏    | 730/1406 [00:05:00 / 00:04:38]
+
+
+16:28:49 [SINA] Processing:  61% |██████    | 857/1405 [00:05:01 / 00:03:12]
+16:28:49 [SINA] Processing:  61% |██████    | 857/1405 [00:05:01 / 00:03:12]
+
+
+16:28:49 [SINA] Processing:  71% |███████▏  | 999/1404 [00:05:01 / 00:02:02]
+16:28:49 [SINA] Processing:  71% |███████▏  | 999/1404 [00:05:01 / 00:02:02]
+
+
+16:28:50 [SINA] Processing:  79% |███████▏ | 1110/1404 [00:05:02 / 00:01:20]
+16:28:50 [SINA] Processing:  79% |███████▏ | 1110/1404 [00:05:02 / 00:01:20]
+
+
+16:28:50 [SINA] Processing:  88% |████████ | 1240/1404 [00:05:02 / 00:00:40]
+16:28:50 [SINA] Processing:  88% |████████ | 1240/1404 [00:05:02 / 00:00:40]
+
+
+16:28:51 [SINA] Processing:  98% |████████▉| 1380/1404 [00:05:03 / 00:00:05]
+16:28:51 [SINA] Processing:  98% |████████▉| 1380/1404 [00:05:03 / 00:00:05]
+
+
+16:28:51 [SINA] Took 8.213s to align 1404 sequences (170.931 sequences/s)
+16:28:51 [SINA] Took 8.213s to align 1404 sequences (170.931 sequences/s)
+16:28:51 [SINA] SINA finished.
+16:28:51 [SINA] SINA finished.
+16:28:51 [ARB I/O] Closing ARB database '"/data/Resources/SILVA/SILVA_138_SSURef_NR99_05_01_20_opt.arb"' ...
+16:28:51 [ARB I/O] Closing ARB database '"/data/Resources/SILVA/SILVA_138_SSURef_NR99_05_01_20_opt.arb"' ...
+	Command being timed: "sina -i DADA2_reps_seq_prev_filt.fa --db /data/Resources/SILVA/SILVA_138_SSURef_NR99_05_01_20_opt.arb -o DADA2_reps_seq_prev_filt.align"
+	Command being timed: "sina -i DADA2_reps_seq_prev_filt.fa --db /data/Resources/SILVA/SILVA_138_SSURef_NR99_05_01_20_opt.arb -o DADA2_reps_seq_prev_filt.align"
+	User time (seconds): 571.02
+	User time (seconds): 571.02
+	System time (seconds): 29.96
+	System time (seconds): 29.96
+	Percent of CPU this job got: 195%
+	Percent of CPU this job got: 195%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:07.27
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 5:07.27
+	Average shared text size (kbytes): 0
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 9228828
+	Maximum resident set size (kbytes): 9228828
+	Average resident set size (kbytes): 0
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 10049597
+	Minor (reclaiming a frame) page faults: 10049597
+	Voluntary context switches: 557946
+	Voluntary context switches: 557946
+	Involuntary context switches: 572388
+	Involuntary context switches: 572388
+	Swaps: 0
+	Swaps: 0
+	File system inputs: 0
+	File system inputs: 0
+	File system outputs: 137368
+	File system outputs: 137368
+	Socket messages sent: 0
+	Socket messages sent: 0
+	Socket messages received: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Page size (bytes): 4096
+	Exit status: 0
+	Exit status: 0
+Linux version
+Linux version
+
+
+Using ReadLine,Boost,HDF5
+Using ReadLine,Boost,HDF5
+mothur v.1.43.0
+mothur v.1.43.0
+Last updated: 10/21/19
+Last updated: 10/21/19
+by
+by
+Patrick D. Schloss
+Patrick D. Schloss
+
+
+Department of Microbiology & Immunology
+Department of Microbiology & Immunology
+
+
+University of Michigan
+University of Michigan
+http://www.mothur.org
+http://www.mothur.org
+
+
+When using, please cite:
+When using, please cite:
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+Schloss, P.D., et al., Introducing mothur: Open-source, platform-independent, community-supported software for describing and comparing microbial communities. Appl Environ Microbiol, 2009. 75(23):7537-41.
+
+
+Distributed under the GNU General Public License
+Distributed under the GNU General Public License
+
+
+Type 'help()' for information on the commands that are available
+Type 'help()' for information on the commands that are available
+
+
+For questions and analysis support, please visit our forum at https://forum.mothur.org
+For questions and analysis support, please visit our forum at https://forum.mothur.org
+
+
+Type 'quit()' to exit program
+Type 'quit()' to exit program
+
+
+[NOTE]: Setting random seed to 19760620.
+[NOTE]: Setting random seed to 19760620.
+
+
+Script Mode
+Script Mode
+
+
+
+
+mothur >  filter.seqs(fasta=DADA2_reps_seq_prev_filt.align, vertical=T, processors=20)
+mothur >  filter.seqs(fasta=DADA2_reps_seq_prev_filt.align, vertical=T, processors=20)
+
+
+Using 20 processors.
+Using 20 processors.
+Creating Filter... 
+Creating Filter... 
+It took 0 secs to create filter for 1404 sequences.
+It took 0 secs to create filter for 1404 sequences.
+
+
+
+
+Running Filter... 
+Running Filter... 
+It took 0 secs to filter 1404 sequences.
+It took 0 secs to filter 1404 sequences.
+
+
+
+
+
+
+Length of filtered alignment: 295
+Length of filtered alignment: 295
+Number of columns removed: 49705
+Number of columns removed: 49705
+Length of the original alignment: 50000
+Length of the original alignment: 50000
+Number of sequences used to construct filter: 1404
+Number of sequences used to construct filter: 1404
+
+
+Output File Names: 
+Output File Names: 
+DADA2_reps_seq_prev_filt.filter
+DADA2_reps_seq_prev_filt.filter
+DADA2_reps_seq_prev_filt.filter.fasta
+DADA2_reps_seq_prev_filt.filter.fasta
+
+
+
+
+mothur > quit()
+mothur > quit()
+
+
+
+
+It took 0 seconds to run 2 commands from your script.
+It took 0 seconds to run 2 commands from your script.
+
+
+
+
+ Make a quick tree using FastTree
+ Make a quick tree using FastTree
+
+ Calculate an iqtree using fast and normal bootstrapping
+IQ-TREE multicore version 2.1.1 COVID-edition for Linux 64-bit built Aug 22 2020
+Developed by Bui Quang Minh, James Barbetti, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    anaerobe (AVX2, FMA3, 472 GB RAM)
+Command: iqtree -nt AUTO -s DADA2_reps_seq_prev_filt.filtered.align -fast
+Seed:    197899 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Oct 15 16:29:19 2021
+Kernel:  AVX+FMA - auto-detect threads (96 CPU cores detected)
+
+Reading alignment file DADA2_reps_seq_prev_filt.filtered.align ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 1404 sequences with 295 columns, 255 distinct patterns
+208 parsimony-informative, 21 singleton sites, 66 constant sites
+           Gap/Ambiguity  Composition  p-value
+   1  Seq_788     14.24%    passed     67.77%
+   2  Seq_591     14.24%    passed     97.21%
+   3  Seq_793     14.24%    passed     59.91%
+   4  Seq_797     14.24%    failed      4.01%
+   5  Seq_824     14.24%    passed     92.46%
+   6  Seq_470     14.24%    passed     38.56%
+   7  Seq_810     14.24%    passed     15.13%
+   8  Seq_707     14.24%    passed     75.40%
+   9  Seq_511     14.24%    passed     81.99%
+  10  Seq_713     13.90%    passed     98.46%
+  11  Seq_512     14.24%    passed      6.57%
+  12  Seq_445     13.90%    passed     55.09%
+  13  Seq_676     14.24%    passed     95.33%
+  14  Seq_837     14.24%    passed     88.59%
+  15  Seq_821     14.24%    passed      6.29%
+  16  Seq_534     13.90%    passed     93.23%
+  17  Seq_840     14.24%    passed     94.99%
+  18  Seq_668     14.24%    passed     88.17%
+  19  Seq_527     14.24%    passed     83.53%
+  20  Seq_836     14.24%    passed     77.85%
+  21  Seq_835     14.24%    passed     97.44%
+  22  Seq_743     14.24%    passed     79.62%
+  23  Seq_673     14.24%    failed      1.20%
+  24  Seq_859     14.24%    passed     36.54%
+  25  Seq_846     14.24%    passed     51.84%
+  26  Seq_589     14.24%    passed     85.53%
+  27  Seq_803     14.58%    passed     92.98%
+  28  Seq_769     14.24%    passed     84.21%
+  29  Seq_747     14.24%    passed     45.43%
+  30  Seq_857     14.24%    failed      1.82%
+  31  Seq_879     14.24%    passed     91.51%
+  32  Seq_817     14.24%    passed     65.48%
+  33  Seq_849     14.24%    passed     31.72%
+  34  Seq_597     14.24%    passed     58.37%
+  35  Seq_612     13.90%    passed     51.32%
+  36  Seq_869     14.24%    passed     15.81%
+  37  Seq_515     14.24%    passed     75.68%
+  38  Seq_864     14.24%    passed     63.43%
+  39  Seq_798     14.24%    passed     86.88%
+  40  Seq_253     14.24%    passed     25.88%
+  41  Seq_863     14.24%    passed      6.75%
+  42  Seq_866     14.24%    passed     97.57%
+  43  Seq_851     14.24%    passed     53.05%
+  44  Seq_873     14.24%    passed     55.65%
+  45  Seq_841     14.24%    passed     94.60%
+  46  Seq_468     13.90%    passed      7.04%
+  47  Seq_874     14.24%    passed     14.27%
+  48  Seq_860     14.24%    passed     50.76%
+  49  Seq_877     13.90%    passed     23.12%
+  50  Seq_875     14.24%    failed      0.25%
+  51  Seq_914     14.24%    passed     55.43%
+  52  Seq_780     14.24%    passed     82.14%
+  53  Seq_763     14.24%    passed     26.77%
+  54  Seq_881     14.24%    passed     65.48%
+  55  Seq_808     14.24%    passed     79.49%
+  56  Seq_812     14.24%    passed     91.94%
+  57  Seq_825     14.24%    passed     80.89%
+  58  Seq_893     14.24%    passed     77.35%
+  59  Seq_756     14.24%    passed     94.96%
+  60  Seq_815     14.24%    passed     89.77%
+  61  Seq_887     13.90%    passed     97.84%
+  62  Seq_926     14.24%    passed     81.19%
+  63  Seq_902     14.24%    passed      5.53%
+  64  Seq_916     14.24%    passed     66.90%
+  65  Seq_630     13.90%    passed     77.15%
+  66  Seq_922     14.24%    passed     46.27%
+  67  Seq_789     14.24%    failed      4.50%
+  68  Seq_853     14.24%    passed     69.92%
+  69  Seq_934     14.24%    passed     80.19%
+  70  Seq_573     14.24%    passed     74.01%
+  71  Seq_1999    14.24%    passed     59.14%
+  72  Seq_1419    14.24%    failed      0.10%
+  73  Seq_2372    13.90%    passed     45.21%
+  74  Seq_2083    14.24%    passed     68.01%
+  75  Seq_2379    14.24%    passed     91.36%
+  76  Seq_1644    14.24%    passed     97.83%
+  77  Seq_2373    14.24%    passed     70.33%
+  78  Seq_1830    14.24%    passed     97.69%
+  79  Seq_1669    14.24%    passed     53.05%
+  80  Seq_2200    14.24%    failed      0.35%
+  81  Seq_2098    14.24%    passed     58.37%
+  82  Seq_2081    14.24%    passed     72.96%
+  83  Seq_1771    13.90%    passed     85.79%
+  84  Seq_1997    13.90%    passed     16.39%
+  85  Seq_1921    14.24%    passed     77.23%
+  86  Seq_2358    14.24%    passed     40.91%
+  87  Seq_1059    13.90%    failed      1.79%
+  88  Seq_1774    14.24%    passed     55.46%
+  89  Seq_1919    14.24%    passed     96.63%
+  90  Seq_2380    14.24%    passed     26.02%
+  91  Seq_1751    14.24%    passed     11.38%
+  92  Seq_2324    13.90%    passed     12.19%
+  93  Seq_2349    14.24%    passed     25.04%
+  94  Seq_1462    14.24%    passed     97.57%
+  95  Seq_2338    13.90%    passed     17.49%
+  96  Seq_2350    14.24%    passed     73.76%
+  97  Seq_1940    14.24%    passed     16.66%
+  98  Seq_2394    14.24%    passed     91.26%
+  99  Seq_2487    14.24%    passed     93.32%
+ 100  Seq_1972    14.24%    failed      4.30%
+ 101  Seq_1620    14.24%    passed     87.47%
+ 102  Seq_1992    14.24%    passed     71.80%
+ 103  Seq_2073    14.24%    passed     54.86%
+ 104  Seq_2396    13.90%    passed     92.02%
+ 105  Seq_2395    13.90%    passed     96.83%
+ 106  Seq_2336    14.24%    passed     75.40%
+ 107  Seq_2444    14.24%    passed      8.56%
+ 108  Seq_1945    14.24%    passed     66.04%
+ 109  Seq_2384    14.24%    passed     42.50%
+ 110  Seq_2400    14.24%    failed      2.81%
+ 111  Seq_2516    14.24%    passed     64.68%
+ 112  Seq_2320    14.24%    passed     67.96%
+ 113  Seq_2139    14.24%    passed     91.81%
+ 114  Seq_2082    14.24%    passed     80.55%
+ 115  Seq_2392    14.24%    passed     91.11%
+ 116  Seq_2205    14.24%    passed     94.02%
+ 117  Seq_2637    14.24%    passed     96.55%
+ 118  Seq_1608    14.24%    passed     36.77%
+ 119  Seq_2006    14.24%    passed     96.78%
+ 120  Seq_2505    13.90%    failed      2.02%
+ 121  Seq_2075    13.90%    passed     72.53%
+ 122  Seq_2408    13.90%    passed     92.65%
+ 123  Seq_1686    14.24%    passed     90.22%
+ 124  Seq_1889    13.90%    passed     82.32%
+ 125  Seq_2393    13.90%    failed      1.12%
+ 126  Seq_2580    14.24%    passed     98.06%
+ 127  Seq_1504    14.24%    passed     83.16%
+ 128  Seq_2410    13.90%    passed     19.08%
+ 129  Seq_2450    14.24%    passed     44.90%
+ 130  Seq_2452    14.24%    passed     75.15%
+ 131  Seq_2561    14.24%    passed     84.08%
+ 132  Seq_2456    13.90%    passed      6.72%
+ 133  Seq_2474    14.24%    passed     33.07%
+ 134  Seq_2340    14.24%    passed     72.56%
+ 135  Seq_2532    14.24%    passed     97.35%
+ 136  Seq_2520    14.24%    passed     61.51%
+ 137  Seq_2368    14.24%    passed     85.22%
+ 138  Seq_2665    14.24%    passed     63.19%
+ 139  Seq_2551    14.24%    passed     97.69%
+ 140  Seq_2527    13.90%    passed     92.03%
+ 141  Seq_1055    14.24%    passed     52.94%
+ 142  Seq_1001    14.24%    passed      9.51%
+ 143  Seq_1064    13.90%    passed     81.35%
+ 144  Seq_1074    14.24%    passed     72.97%
+ 145  Seq_1085    14.24%    passed     85.08%
+ 146  Seq_720     14.24%    passed     75.62%
+ 147  Seq_983     14.24%    failed      3.93%
+ 148  Seq_804     14.24%    passed     53.58%
+ 149  Seq_995     14.24%    passed      6.01%
+ 150  Seq_641     14.24%    passed     94.17%
+ 151  Seq_1091    14.24%    failed      0.00%
+ 152  Seq_1017    13.90%    passed      7.86%
+ 153  Seq_1028    14.24%    passed     99.14%
+ 154  Seq_588     14.24%    passed     77.63%
+ 155  Seq_1044    13.90%    passed     93.32%
+ 156  Seq_1087    14.24%    passed     81.32%
+ 157  Seq_1082    13.90%    passed     95.43%
+ 158  Seq_977     14.24%    passed     62.83%
+ 159  Seq_759     14.24%    passed     99.09%
+ 160  Seq_1115    14.24%    passed     48.09%
+ 161  Seq_1101    13.90%    passed     98.76%
+ 162  Seq_1107    14.24%    passed     56.74%
+ 163  Seq_1057    14.24%    passed     87.23%
+ 164  Seq_1065    13.56%    passed     15.12%
+ 165  Seq_839     13.90%    passed     91.30%
+ 166  Seq_1024    14.24%    passed     54.75%
+ 167  Seq_1025    14.24%    passed     42.05%
+ 168  Seq_1111    14.24%    passed     79.97%
+ 169  Seq_1090    14.24%    passed     86.46%
+ 170  Seq_847     14.24%    passed     89.51%
+ 171  Seq_936     14.24%    passed      8.06%
+ 172  Seq_1109    14.24%    passed     12.07%
+ 173  Seq_1036    14.24%    passed     87.92%
+ 174  Seq_1058    14.24%    failed      0.72%
+ 175  Seq_1006    14.24%    failed      0.10%
+ 176  Seq_1095    14.24%    passed     97.21%
+ 177  Seq_1146    14.24%    passed     93.51%
+ 178  Seq_997     14.24%    passed     93.33%
+ 179  Seq_938     14.24%    passed     89.71%
+ 180  Seq_998     14.24%    passed     72.28%
+ 181  Seq_1038    14.24%    passed     49.45%
+ 182  Seq_652     14.24%    passed     95.22%
+ 183  Seq_1112    14.24%    passed     85.30%
+ 184  Seq_838     14.24%    passed     83.16%
+ 185  Seq_782     14.24%    passed     36.22%
+ 186  Seq_1129    14.24%    passed     75.68%
+ 187  Seq_1007    14.24%    passed     44.90%
+ 188  Seq_924     14.24%    passed     29.41%
+ 189  Seq_1021    13.90%    passed      5.29%
+ 190  Seq_854     14.24%    passed     95.29%
+ 191  Seq_871     14.24%    passed     72.56%
+ 192  Seq_816     14.24%    passed     95.44%
+ 193  Seq_1123    14.24%    passed     94.91%
+ 194  Seq_1136    14.24%    passed     54.14%
+ 195  Seq_827     14.24%    passed     99.37%
+ 196  Seq_1157    14.24%    failed      1.68%
+ 197  Seq_1119    14.24%    passed     92.15%
+ 198  Seq_1116    14.58%    passed     96.04%
+ 199  Seq_861     14.24%    passed     89.12%
+ 200  Seq_1060    14.24%    passed     87.43%
+ 201  Seq_1208    14.24%    passed     77.75%
+ 202  Seq_1207    13.56%    passed     23.72%
+ 203  Seq_1026    14.24%    passed     98.42%
+ 204  Seq_781     14.24%    passed     52.04%
+ 205  Seq_1039    13.22%    passed     53.48%
+ 206  Seq_807     14.24%    passed     82.47%
+ 207  Seq_918     14.24%    passed     96.87%
+ 208  Seq_1089    13.90%    passed     94.47%
+ 209  Seq_1194    14.24%    passed     82.36%
+ 210  Seq_1097    14.24%    passed     16.29%
+ 211  Seq_2415    14.24%    passed     72.35%
+ 212  Seq_2483    14.24%    passed     89.53%
+ 213  Seq_2562    14.24%    passed     99.88%
+ 214  Seq_1254    14.24%    failed      2.40%
+ 215  Seq_2127    14.24%    passed     98.98%
+ 216  Seq_1641    14.24%    passed     10.67%
+ 217  Seq_1852    14.24%    passed     91.94%
+ 218  Seq_2437    14.24%    passed     88.49%
+ 219  Seq_2594    14.24%    passed     97.30%
+ 220  Seq_2478    14.24%    passed     77.39%
+ 221  Seq_2219    14.24%    passed     81.06%
+ 222  Seq_2576    14.24%    passed     31.73%
+ 223  Seq_1895    14.24%    passed     71.80%
+ 224  Seq_2678    14.24%    passed     73.76%
+ 225  Seq_2673    14.24%    passed     85.26%
+ 226  Seq_2351    14.24%    failed      0.60%
+ 227  Seq_2609    14.24%    passed     81.19%
+ 228  Seq_2606    14.24%    passed     88.71%
+ 229  Seq_2374    13.90%    passed      6.81%
+ 230  Seq_2425    13.56%    passed     26.63%
+ 231  Seq_2295    14.24%    passed     73.76%
+ 232  Seq_2603    14.24%    passed     82.03%
+ 233  Seq_2681    14.24%    passed     12.48%
+ 234  Seq_2397    14.24%    passed     84.57%
+ 235  Seq_2688    14.24%    failed      0.25%
+ 236  Seq_2327    14.24%    passed     87.47%
+ 237  Seq_2786    14.24%    passed     97.58%
+ 238  Seq_2667    14.24%    passed     67.46%
+ 239  Seq_2401    14.24%    passed     82.83%
+ 240  Seq_2484    14.24%    passed     32.45%
+ 241  Seq_2535    14.24%    passed     38.97%
+ 242  Seq_2659    14.24%    passed     52.87%
+ 243  Seq_2552    14.24%    passed      8.80%
+ 244  Seq_2411    14.24%    passed     90.66%
+ 245  Seq_2545    14.24%    passed     99.07%
+ 246  Seq_2715    14.24%    passed     58.69%
+ 247  Seq_2053    14.24%    passed     94.26%
+ 248  Seq_2749    14.24%    failed      0.09%
+ 249  Seq_2716    14.24%    passed     62.25%
+ 250  Seq_2163    14.24%    passed     87.88%
+ 251  Seq_2794    14.24%    passed     88.71%
+ 252  Seq_2774    14.24%    passed     75.68%
+ 253  Seq_2766    14.24%    passed     89.54%
+ 254  Seq_2718    14.24%    passed     37.33%
+ 255  Seq_2700    14.24%    passed     91.68%
+ 256  Seq_2236    13.90%    passed     97.17%
+ 257  Seq_3024    13.90%    passed     92.65%
+ 258  Seq_1640    14.24%    passed     93.51%
+ 259  Seq_2526    14.24%    passed     78.95%
+ 260  Seq_2244    14.24%    passed     32.15%
+ 261  Seq_3060    14.24%    passed     15.96%
+ 262  Seq_3019    14.24%    passed     32.36%
+ 263  Seq_1676    14.24%    failed      0.10%
+ 264  Seq_2302    14.24%    passed     86.13%
+ 265  Seq_3097    14.24%    passed     29.89%
+ 266  Seq_2691    14.24%    passed     81.31%
+ 267  Seq_2725    14.24%    passed     97.87%
+ 268  Seq_2840    14.24%    passed     99.75%
+ 269  Seq_2998    14.24%    passed     74.79%
+ 270  Seq_2668    14.24%    passed     52.08%
+ 271  Seq_2948    14.24%    passed     94.19%
+ 272  Seq_2660    14.24%    passed     69.04%
+ 273  Seq_2420    14.24%    passed     94.89%
+ 274  Seq_2719    14.24%    passed     42.32%
+ 275  Seq_2859    14.24%    passed     86.78%
+ 276  Seq_2629    14.24%    passed     65.07%
+ 277  Seq_2746    13.90%    passed     21.85%
+ 278  Seq_3133    14.24%    passed     90.53%
+ 279  Seq_2925    14.24%    passed     88.43%
+ 280  Seq_2847    14.24%    failed      3.96%
+ 281  Seq_2564    14.24%    passed     28.15%
+ 282  Seq_2056    14.24%    passed     94.99%
+ 283  Seq_2767    14.24%    passed     78.55%
+ 284  Seq_2800    14.24%    passed     96.07%
+ 285  Seq_3012    14.24%    passed     57.88%
+ 286  Seq_3072    14.24%    passed     82.03%
+ 287  Seq_2259    14.24%    passed     40.91%
+ 288  Seq_2985    14.24%    passed     93.69%
+ 289  Seq_3092    14.24%    passed     34.62%
+ 290  Seq_2615    14.24%    passed     89.71%
+ 291  Seq_2891    14.24%    passed     31.83%
+ 292  Seq_2972    14.24%    passed     59.76%
+ 293  Seq_3120    14.24%    passed     31.97%
+ 294  Seq_3115    13.56%    passed     31.88%
+ 295  Seq_3144    14.24%    passed     45.76%
+ 296  Seq_3252    14.24%    passed     25.58%
+ 297  Seq_2402    14.24%    passed     46.32%
+ 298  Seq_2852    14.24%    passed     61.12%
+ 299  Seq_3412    14.24%    passed     94.02%
+ 300  Seq_3210    14.24%    passed     93.88%
+ 301  Seq_3345    14.24%    passed     64.82%
+ 302  Seq_2941    14.24%    passed     74.80%
+ 303  Seq_3588    14.24%    passed      5.83%
+ 304  Seq_3317    14.24%    passed     92.92%
+ 305  Seq_3010    13.90%    passed     17.81%
+ 306  Seq_2844    14.24%    passed     80.14%
+ 307  Seq_3296    14.24%    passed     79.31%
+ 308  Seq_3037    13.90%    passed     40.21%
+ 309  Seq_3337    14.24%    passed     47.47%
+ 310  Seq_2890    14.24%    passed     77.30%
+ 311  Seq_3336    14.24%    passed     76.04%
+ 312  Seq_2301    14.24%    passed     86.33%
+ 313  Seq_1801    14.24%    passed     98.51%
+ 314  Seq_3286    13.90%    passed     54.55%
+ 315  Seq_4010    14.24%    passed     86.89%
+ 316  Seq_3596    14.24%    passed     79.03%
+ 317  Seq_2345    14.24%    passed     74.22%
+ 318  Seq_5002    14.24%    passed     83.79%
+ 319  Seq_3184    13.90%    passed     93.30%
+ 320  Seq_3129    14.24%    passed     80.21%
+ 321  Seq_3231    14.24%    passed     45.82%
+ 322  Seq_3389    13.90%    passed     88.08%
+ 323  Seq_3482    13.90%    passed     72.46%
+ 324  Seq_3567    13.90%    passed     77.82%
+ 325  Seq_3366    14.24%    passed     17.46%
+ 326  Seq_3361    14.24%    passed     29.79%
+ 327  Seq_3545    14.24%    passed     85.53%
+ 328  Seq_3505    13.90%    passed      9.24%
+ 329  Seq_3544    14.24%    passed     99.09%
+ 330  Seq_3674    14.24%    passed     95.32%
+ 331  Seq_3492    14.24%    passed     92.02%
+ 332  Seq_3360    13.90%    failed      1.66%
+ 333  Seq_3454    14.24%    passed     99.22%
+ 334  Seq_2990    13.90%    passed      6.81%
+ 335  Seq_3586    13.56%    passed     55.48%
+ 336  Seq_3551    14.24%    passed     98.71%
+ 337  Seq_3200    14.24%    passed     96.87%
+ 338  Seq_3561    14.24%    passed     69.53%
+ 339  Seq_4044    13.90%    passed     90.16%
+ 340  Seq_3387    13.90%    passed     57.70%
+ 341  Seq_3656    14.24%    passed     91.40%
+ 342  Seq_3385    13.90%    passed     99.51%
+ 343  Seq_3644    14.24%    passed     51.76%
+ 344  Seq_3750    13.90%    passed      9.97%
+ 345  Seq_3044    13.90%    passed     95.94%
+ 346  Seq_3685    14.24%    passed     85.82%
+ 347  Seq_4802    14.24%    failed      0.54%
+ 348  Seq_3547    12.88%    passed      8.89%
+ 349  Seq_3798    13.90%    failed      2.29%
+ 350  Seq_3844    14.24%    passed     95.18%
+ 351  Seq_4019    14.24%    failed      3.16%
+ 352  Seq_4032    14.24%    passed     93.88%
+ 353  Seq_3693    14.24%    passed     96.95%
+ 354  Seq_3692    13.90%    failed      3.88%
+ 355  Seq_3784    13.90%    passed     90.16%
+ 356  Seq_3884    14.24%    passed     83.24%
+ 357  Seq_3872    13.90%    passed     59.94%
+ 358  Seq_3751    14.24%    passed     66.40%
+ 359  Seq_4013    14.24%    passed     61.83%
+ 360  Seq_4030    14.24%    passed     71.64%
+ 361  Seq_3788    14.24%    passed      7.09%
+ 362  Seq_4073    13.90%    failed      0.49%
+ 363  Seq_3789    14.24%    passed     81.18%
+ 364  Seq_4380    14.24%    passed     83.16%
+ 365  Seq_4265    14.24%    passed     47.76%
+ 366  Seq_3915    14.24%    passed     80.51%
+ 367  Seq_4317    14.24%    passed     53.05%
+ 368  Seq_3724    14.24%    passed     99.45%
+ 369  Seq_3942    14.24%    passed     77.91%
+ 370  Seq_4673    13.90%    passed     93.23%
+ 371  Seq_4337    14.24%    passed     81.31%
+ 372  Seq_4959    14.24%    passed     32.45%
+ 373  Seq_4109    13.90%    failed      1.41%
+ 374  Seq_5567    14.24%    passed     94.45%
+ 375  Seq_3759    13.90%    failed      3.54%
+ 376  Seq_3777    12.88%    failed      1.86%
+ 377  Seq_4173    14.24%    passed     96.00%
+ 378  Seq_9693    13.90%    failed      2.43%
+ 379  Seq_5027    14.24%    passed     50.64%
+ 380  Seq_5166    14.24%    passed     75.50%
+ 381  Seq_6431    14.24%    passed     90.34%
+ 382  Seq_4660    13.90%    passed     77.61%
+ 383  Seq_5314    14.24%    passed     77.91%
+ 384  Seq_5742    14.24%    passed     99.89%
+ 385  Seq_4209    14.24%    passed     71.04%
+ 386  Seq_5850    14.24%    passed     80.10%
+ 387  Seq_6149    13.90%    passed     86.42%
+ 388  Seq_4708    14.24%    passed     88.49%
+ 389  Seq_6111    13.90%    passed     93.30%
+ 390  Seq_4792    14.58%    passed     99.97%
+ 391  Seq_7355    14.24%    passed     38.50%
+ 392  Seq_7253    14.24%    passed     93.51%
+ 393  Seq_8030    14.24%    passed     77.39%
+ 394  Seq_6925    14.24%    passed     13.98%
+ 395  Seq_4707    14.24%    passed     37.33%
+ 396  Seq_3800    14.24%    passed     59.14%
+ 397  Seq_6623    14.24%    passed     97.82%
+ 398  Seq_4174    13.56%    passed     26.92%
+ 399  Seq_5286    14.24%    passed     67.46%
+ 400  Seq_7774    14.24%    passed     80.21%
+ 401  Seq_7251    14.24%    passed     82.25%
+ 402  Seq_6664    13.90%    passed     88.28%
+ 403  Seq_7274    14.24%    passed     85.75%
+ 404  Seq_3769    14.24%    passed     82.87%
+ 405  Seq_8941    14.24%    passed     98.93%
+ 406  Seq_9397    14.24%    passed     76.62%
+ 407  Seq_5973    13.90%    failed      0.51%
+ 408  Seq_9768    14.24%    passed     99.99%
+ 409  Seq_9853    14.24%    passed     94.80%
+ 410  Seq_6611    14.24%    passed     86.42%
+ 411  Seq_8321    14.24%    passed     61.12%
+ 412  Seq_7224    14.24%    passed     28.72%
+ 413  Seq_9332    14.24%    passed     49.91%
+ 414  Seq_8957    14.24%    passed     93.14%
+ 415  Seq_9715    14.24%    passed     62.16%
+ 416  Seq_7632    14.24%    passed     87.89%
+ 417  Seq_7588    14.24%    passed     94.00%
+ 418  Seq_10049   14.24%    passed     91.80%
+ 419  Seq_9714    14.24%    passed     51.84%
+ 420  Seq_3776    13.22%    failed      0.01%
+ 421  Seq_1998    14.24%    failed      0.67%
+ 422  Seq_1318    13.90%    passed     58.67%
+ 423  Seq_2153    14.24%    passed     91.26%
+ 424  Seq_2116    14.24%    passed     85.38%
+ 425  Seq_2140    13.90%    passed     97.53%
+ 426  Seq_2258    14.24%    failed      1.16%
+ 427  Seq_1623    14.24%    passed     10.43%
+ 428  Seq_2225    14.24%    passed     75.68%
+ 429  Seq_1375    14.24%    passed     88.57%
+ 430  Seq_2164    13.90%    passed     34.38%
+ 431  Seq_1918    14.24%    passed     93.74%
+ 432  Seq_2227    14.24%    passed     19.50%
+ 433  Seq_2233    14.24%    passed     54.21%
+ 434  Seq_1369    13.90%    passed     69.98%
+ 435  Seq_1755    14.24%    passed     67.77%
+ 436  Seq_2238    14.24%    passed     49.56%
+ 437  Seq_1735    14.24%    passed     42.32%
+ 438  Seq_2245    14.24%    passed     15.81%
+ 439  Seq_1816    14.24%    passed      6.69%
+ 440  Seq_1659    14.24%    passed     93.89%
+ 441  Seq_2268    14.24%    passed     93.18%
+ 442  Seq_2190    14.24%    passed     67.36%
+ 443  Seq_2269    14.24%    passed     81.80%
+ 444  Seq_1917    13.90%    passed     97.04%
+ 445  Seq_1619    14.24%    passed     90.29%
+ 446  Seq_1845    14.24%    passed     24.90%
+ 447  Seq_2265    14.24%    passed     67.16%
+ 448  Seq_1163    14.24%    passed     93.51%
+ 449  Seq_2092    14.24%    passed     16.66%
+ 450  Seq_2276    14.24%    passed     69.50%
+ 451  Seq_2287    14.24%    passed     50.32%
+ 452  Seq_2209    14.24%    passed     74.36%
+ 453  Seq_2279    14.24%    passed     21.22%
+ 454  Seq_2263    14.24%    failed      0.77%
+ 455  Seq_1844    14.24%    failed      0.17%
+ 456  Seq_1668    14.24%    passed     34.09%
+ 457  Seq_1604    13.56%    passed      8.00%
+ 458  Seq_2289    14.24%    passed     93.74%
+ 459  Seq_2213    14.24%    failed      0.23%
+ 460  Seq_1910    14.24%    passed     99.99%
+ 461  Seq_2300    14.24%    passed     96.95%
+ 462  Seq_2291    14.24%    passed     97.21%
+ 463  Seq_2260    14.24%    passed     70.86%
+ 464  Seq_1144    14.24%    passed     88.11%
+ 465  Seq_2144    14.24%    passed     80.83%
+ 466  Seq_2128    14.24%    passed     38.28%
+ 467  Seq_2048    14.24%    passed     82.40%
+ 468  Seq_1939    14.24%    passed     44.03%
+ 469  Seq_2054    14.24%    passed     43.93%
+ 470  Seq_2335    14.24%    passed     91.41%
+ 471  Seq_1490    14.24%    failed      0.01%
+ 472  Seq_1805    14.24%    passed     95.18%
+ 473  Seq_2174    14.24%    passed     26.06%
+ 474  Seq_2273    14.24%    passed     88.61%
+ 475  Seq_1903    14.24%    passed     79.36%
+ 476  Seq_1670    14.24%    passed     77.05%
+ 477  Seq_2034    14.24%    passed     51.95%
+ 478  Seq_2334    14.24%    passed     65.48%
+ 479  Seq_2348    14.24%    passed     13.18%
+ 480  Seq_1836    14.24%    passed     78.95%
+ 481  Seq_2099    14.24%    passed     99.03%
+ 482  Seq_2095    14.24%    passed     76.15%
+ 483  Seq_1824    14.24%    passed     97.56%
+ 484  Seq_1364    14.24%    passed     58.37%
+ 485  Seq_2136    14.24%    passed     90.12%
+ 486  Seq_1948    14.24%    passed     57.03%
+ 487  Seq_1329    14.24%    passed     71.63%
+ 488  Seq_1843    14.24%    failed      0.01%
+ 489  Seq_1991    14.24%    passed     73.10%
+ 490  Seq_2094    13.90%    passed     84.26%
+ 491  Seq_899     13.90%    passed      9.78%
+ 492  Seq_1181    14.24%    passed     20.06%
+ 493  Seq_919     13.90%    passed     20.00%
+ 494  Seq_748     13.90%    passed     38.65%
+ 495  Seq_1131    13.90%    passed     96.83%
+ 496  Seq_986     13.90%    passed     96.22%
+ 497  Seq_973     14.24%    passed     94.56%
+ 498  Seq_820     14.24%    passed     99.94%
+ 499  Seq_1126    14.58%    passed     96.83%
+ 500  Seq_1201    14.24%    passed     82.47%
+ 501  Seq_1206    13.90%    passed     98.85%
+ 502  Seq_832     13.90%    passed     16.39%
+ 503  Seq_925     14.24%    failed      2.14%
+ 504  Seq_1155    14.24%    passed     89.16%
+ 505  Seq_1175    14.24%    passed     37.86%
+ 506  Seq_921     14.24%    passed     71.89%
+ 507  Seq_1219    13.90%    passed     29.73%
+ 508  Seq_778     14.24%    failed      4.64%
+ 509  Seq_1197    14.24%    passed     93.88%
+ 510  Seq_1174    14.24%    passed     98.24%
+ 511  Seq_1027    14.24%    passed     86.89%
+ 512  Seq_1243    14.24%    passed     93.56%
+ 513  Seq_1135    14.24%    failed      0.47%
+ 514  Seq_1149    13.22%    passed     33.09%
+ 515  Seq_822     14.24%    passed     45.18%
+ 516  Seq_885     14.24%    failed      0.35%
+ 517  Seq_737     14.24%    passed     97.35%
+ 518  Seq_1285    14.24%    passed     24.01%
+ 519  Seq_1291    14.24%    passed     93.56%
+ 520  Seq_1249    14.24%    passed     84.08%
+ 521  Seq_1260    14.24%    passed     87.92%
+ 522  Seq_1287    14.24%    failed      0.25%
+ 523  Seq_1273    14.24%    passed     93.88%
+ 524  Seq_1186    14.24%    passed     83.16%
+ 525  Seq_1302    14.24%    passed     54.14%
+ 526  Seq_1231    14.24%    passed      5.79%
+ 527  Seq_1294    14.24%    passed     57.75%
+ 528  Seq_1306    14.24%    passed     77.85%
+ 529  Seq_1292    14.24%    passed     96.63%
+ 530  Seq_1300    14.24%    failed      0.00%
+ 531  Seq_1196    14.24%    passed     88.17%
+ 532  Seq_1235    14.24%    passed      6.57%
+ 533  Seq_1344    14.24%    passed     94.56%
+ 534  Seq_671     14.24%    passed     74.39%
+ 535  Seq_956     13.90%    failed      0.27%
+ 536  Seq_1166    14.24%    passed     62.86%
+ 537  Seq_1018    14.24%    passed     91.23%
+ 538  Seq_1233    14.24%    passed     97.21%
+ 539  Seq_1125    13.56%    passed     13.31%
+ 540  Seq_960     13.56%    passed     58.79%
+ 541  Seq_1335    13.90%    passed     91.03%
+ 542  Seq_590     14.24%    passed     99.89%
+ 543  Seq_939     14.24%    passed     57.55%
+ 544  Seq_1086    13.90%    passed     96.27%
+ 545  Seq_1352    13.22%    passed     13.60%
+ 546  Seq_1365    14.24%    passed     95.08%
+ 547  Seq_1203    14.24%    passed     96.49%
+ 548  Seq_1313    14.24%    passed     99.00%
+ 549  Seq_1363    13.90%    passed      7.04%
+ 550  Seq_990     14.24%    passed     87.88%
+ 551  Seq_1337    14.24%    failed      0.91%
+ 552  Seq_1002    14.24%    passed     73.34%
+ 553  Seq_1220    14.24%    passed     83.10%
+ 554  Seq_1324    14.24%    passed     74.38%
+ 555  Seq_1271    14.24%    passed     98.18%
+ 556  Seq_1078    13.90%    passed     81.68%
+ 557  Seq_1183    14.24%    passed     79.58%
+ 558  Seq_1216    14.24%    passed     79.62%
+ 559  Seq_1014    14.24%    passed     98.98%
+ 560  Seq_1281    14.24%    passed     80.31%
+ 561  Seq_220     14.24%    passed     83.23%
+ 562  Seq_181     14.24%    passed     33.24%
+ 563  Seq_112     13.90%    passed     65.19%
+ 564  Seq_228     14.58%    passed     89.14%
+ 565  Seq_162     14.24%    passed     90.83%
+ 566  Seq_255     14.24%    passed     14.96%
+ 567  Seq_185     14.24%    passed     92.23%
+ 568  Seq_248     14.24%    passed     49.65%
+ 569  Seq_168     14.24%    passed     22.14%
+ 570  Seq_25      14.24%    failed      0.38%
+ 571  Seq_258     14.24%    passed      9.75%
+ 572  Seq_184     14.24%    failed      0.37%
+ 573  Seq_230     13.90%    passed     98.01%
+ 574  Seq_175     14.24%    passed     99.09%
+ 575  Seq_261     14.24%    passed      8.56%
+ 576  Seq_129     14.24%    passed     97.42%
+ 577  Seq_263     14.24%    passed     24.01%
+ 578  Seq_209     14.24%    passed     77.29%
+ 579  Seq_267     14.24%    passed     94.02%
+ 580  Seq_61      14.24%    passed     59.91%
+ 581  Seq_224     14.24%    passed     42.73%
+ 582  Seq_77      14.24%    passed     94.60%
+ 583  Seq_241     14.24%    passed     97.33%
+ 584  Seq_167     14.24%    passed     99.14%
+ 585  Seq_207     14.24%    failed      0.32%
+ 586  Seq_269     13.90%    passed     55.23%
+ 587  Seq_196     14.24%    passed     40.29%
+ 588  Seq_115     14.24%    passed     88.26%
+ 589  Seq_250     14.24%    passed     22.40%
+ 590  Seq_254     14.24%    passed      6.13%
+ 591  Seq_153     14.24%    passed     74.84%
+ 592  Seq_118     14.24%    passed     59.60%
+ 593  Seq_217     14.24%    passed     87.47%
+ 594  Seq_204     14.24%    failed      4.33%
+ 595  Seq_104     14.24%    passed     97.82%
+ 596  Seq_210     13.90%    passed     53.69%
+ 597  Seq_182     14.24%    passed     76.08%
+ 598  Seq_296     14.24%    passed     96.87%
+ 599  Seq_195     14.24%    passed     31.65%
+ 600  Seq_244     14.24%    passed     94.21%
+ 601  Seq_272     14.24%    passed     97.44%
+ 602  Seq_132     14.24%    passed     98.73%
+ 603  Seq_87      14.24%    passed     94.21%
+ 604  Seq_141     14.24%    passed     84.71%
+ 605  Seq_247     14.24%    failed      2.76%
+ 606  Seq_160     14.24%    passed     96.78%
+ 607  Seq_302     14.24%    passed     15.81%
+ 608  Seq_150     13.90%    passed     97.84%
+ 609  Seq_227     14.24%    passed     11.77%
+ 610  Seq_307     13.90%    passed     99.71%
+ 611  Seq_264     14.24%    passed     20.90%
+ 612  Seq_251     14.24%    passed     98.03%
+ 613  Seq_194     14.24%    passed     93.44%
+ 614  Seq_211     14.24%    failed      0.54%
+ 615  Seq_315     14.24%    passed     16.72%
+ 616  Seq_130     14.24%    passed     97.30%
+ 617  Seq_236     14.24%    passed     68.12%
+ 618  Seq_14      14.24%    passed     95.07%
+ 619  Seq_245     14.24%    passed     81.80%
+ 620  Seq_289     14.24%    passed     51.76%
+ 621  Seq_262     14.24%    failed      0.23%
+ 622  Seq_140     14.24%    passed     69.53%
+ 623  Seq_310     14.24%    passed     93.56%
+ 624  Seq_165     13.90%    passed     97.60%
+ 625  Seq_203     14.24%    passed     99.56%
+ 626  Seq_319     14.24%    passed     94.02%
+ 627  Seq_277     14.24%    passed      9.02%
+ 628  Seq_321     14.58%    passed     99.58%
+ 629  Seq_282     14.24%    passed     78.55%
+ 630  Seq_293     14.24%    passed     99.65%
+ 631  Seq_928     14.24%    passed     13.65%
+ 632  Seq_957     14.24%    passed     82.40%
+ 633  Seq_683     14.24%    passed     67.11%
+ 634  Seq_486     14.24%    passed     90.15%
+ 635  Seq_943     13.90%    passed     99.64%
+ 636  Seq_669     13.56%    failed      0.36%
+ 637  Seq_951     13.90%    passed     99.64%
+ 638  Seq_955     14.24%    passed     89.15%
+ 639  Seq_963     14.24%    failed      0.26%
+ 640  Seq_958     14.24%    passed     99.89%
+ 641  Seq_826     14.24%    passed     99.99%
+ 642  Seq_771     14.24%    passed     54.98%
+ 643  Seq_452     14.58%    passed     91.40%
+ 644  Seq_872     14.24%    passed     30.52%
+ 645  Seq_601     14.24%    passed     98.06%
+ 646  Seq_702     14.24%    passed     74.22%
+ 647  Seq_906     14.24%    passed     93.51%
+ 648  Seq_659     13.90%    passed     15.28%
+ 649  Seq_942     13.90%    passed     93.30%
+ 650  Seq_862     14.24%    passed     93.42%
+ 651  Seq_716     14.24%    passed     53.05%
+ 652  Seq_865     14.24%    passed     81.53%
+ 653  Seq_999     14.24%    passed     58.78%
+ 654  Seq_770     13.90%    passed     58.05%
+ 655  Seq_842     14.24%    passed     69.15%
+ 656  Seq_910     14.58%    passed     86.73%
+ 657  Seq_643     14.24%    passed     95.32%
+ 658  Seq_510     13.90%    passed     70.31%
+ 659  Seq_932     14.24%    passed     96.84%
+ 660  Seq_795     14.24%    passed     99.70%
+ 661  Seq_729     14.24%    passed     59.14%
+ 662  Seq_945     14.24%    passed     97.15%
+ 663  Seq_1003    14.24%    passed     47.81%
+ 664  Seq_882     14.24%    passed     82.25%
+ 665  Seq_907     14.24%    failed      1.31%
+ 666  Seq_980     14.24%    passed     79.58%
+ 667  Seq_979     14.24%    passed     74.42%
+ 668  Seq_933     14.24%    passed     29.23%
+ 669  Seq_1010    14.24%    failed      0.02%
+ 670  Seq_1013    13.90%    passed     97.53%
+ 671  Seq_1029    14.24%    passed     98.21%
+ 672  Seq_1008    13.90%    passed     97.04%
+ 673  Seq_867     14.24%    passed     84.57%
+ 674  Seq_1030    14.24%    passed     77.46%
+ 675  Seq_843     14.24%    passed     80.43%
+ 676  Seq_904     14.24%    passed     94.26%
+ 677  Seq_1034    14.24%    passed     82.25%
+ 678  Seq_731     14.24%    passed     98.16%
+ 679  Seq_896     14.24%    passed     98.82%
+ 680  Seq_574     14.24%    failed      0.93%
+ 681  Seq_657     14.24%    passed     17.63%
+ 682  Seq_818     14.24%    passed     98.89%
+ 683  Seq_773     14.24%    passed     50.30%
+ 684  Seq_1022    14.24%    passed     93.33%
+ 685  Seq_271     14.24%    passed     88.93%
+ 686  Seq_785     14.24%    passed     69.14%
+ 687  Seq_992     14.24%    passed     26.29%
+ 688  Seq_1005    14.24%    passed     89.98%
+ 689  Seq_655     14.24%    passed     96.49%
+ 690  Seq_712     14.24%    passed     90.99%
+ 691  Seq_594     13.90%    passed     13.35%
+ 692  Seq_766     14.24%    passed     32.50%
+ 693  Seq_753     14.24%    passed     36.97%
+ 694  Seq_1045    14.24%    passed     57.88%
+ 695  Seq_976     14.24%    passed     98.06%
+ 696  Seq_1048    13.90%    passed     55.23%
+ 697  Seq_787     14.24%    passed     79.12%
+ 698  Seq_1056    14.24%    passed     32.45%
+ 699  Seq_1066    14.24%    passed     82.76%
+ 700  Seq_697     14.24%    passed     84.57%
+ 701  Seq_1052    14.24%    passed     12.48%
+ 702  Seq_1424    14.24%    passed     83.53%
+ 703  Seq_1288    14.24%    passed     95.08%
+ 704  Seq_1221    13.56%    passed      5.88%
+ 705  Seq_1445    13.90%    passed     98.94%
+ 706  Seq_1418    14.24%    passed      8.34%
+ 707  Seq_1547    14.24%    passed     88.94%
+ 708  Seq_1509    14.24%    failed      1.56%
+ 709  Seq_823     14.24%    passed     92.50%
+ 710  Seq_1310    13.90%    passed     88.08%
+ 711  Seq_1537    14.24%    passed     94.56%
+ 712  Seq_1311    13.90%    failed      1.07%
+ 713  Seq_1094    14.24%    passed     67.40%
+ 714  Seq_1524    14.24%    passed     96.87%
+ 715  Seq_556     14.24%    passed     40.85%
+ 716  Seq_1525    14.24%    passed     75.68%
+ 717  Seq_1449    14.24%    passed     29.57%
+ 718  Seq_1559    14.24%    passed     42.88%
+ 719  Seq_1413    14.24%    passed     48.60%
+ 720  Seq_1567    14.24%    passed     91.94%
+ 721  Seq_1505    14.24%    passed     31.71%
+ 722  Seq_1535    14.24%    passed     45.37%
+ 723  Seq_1616    13.56%    passed      5.39%
+ 724  Seq_1237    14.24%    passed     77.20%
+ 725  Seq_1405    14.24%    passed     96.78%
+ 726  Seq_1575    14.24%    passed     97.73%
+ 727  Seq_1595    14.24%    failed      1.22%
+ 728  Seq_1588    14.24%    passed     93.51%
+ 729  Seq_1440    13.90%    passed     96.27%
+ 730  Seq_1613    14.24%    passed     65.48%
+ 731  Seq_1579    14.24%    passed     67.36%
+ 732  Seq_1563    14.24%    passed     56.36%
+ 733  Seq_1523    14.24%    passed     91.40%
+ 734  Seq_1606    14.24%    passed     51.71%
+ 735  Seq_1422    14.24%    passed     64.73%
+ 736  Seq_1519    14.24%    passed     95.51%
+ 737  Seq_1456    14.24%    failed      0.52%
+ 738  Seq_1386    14.24%    passed     77.85%
+ 739  Seq_762     14.24%    passed     90.42%
+ 740  Seq_1417    14.24%    failed      2.00%
+ 741  Seq_1632    14.24%    passed     86.85%
+ 742  Seq_1527    14.24%    passed     30.20%
+ 743  Seq_1102    14.24%    passed     98.16%
+ 744  Seq_1442    14.24%    passed     93.72%
+ 745  Seq_1520    14.24%    passed     89.53%
+ 746  Seq_1650    14.24%    passed     89.71%
+ 747  Seq_1377    13.90%    passed     53.30%
+ 748  Seq_1657    14.24%    passed     51.44%
+ 749  Seq_1076    14.24%    failed      0.71%
+ 750  Seq_1622    13.90%    passed     94.00%
+ 751  Seq_1447    14.24%    passed     10.09%
+ 752  Seq_1631    14.24%    passed     37.86%
+ 753  Seq_1652    14.24%    passed     85.30%
+ 754  Seq_1532    14.24%    passed     77.91%
+ 755  Seq_1714    14.24%    passed     73.76%
+ 756  Seq_1723    14.24%    passed     60.98%
+ 757  Seq_1705    14.24%    passed     79.58%
+ 758  Seq_1717    13.90%    passed     14.63%
+ 759  Seq_1687    14.24%    passed     97.86%
+ 760  Seq_1712    14.24%    passed     16.97%
+ 761  Seq_1699    14.24%    failed      1.14%
+ 762  Seq_1658    14.24%    passed     93.15%
+ 763  Seq_1545    14.24%    passed     74.22%
+ 764  Seq_1628    13.90%    passed     89.80%
+ 765  Seq_1703    13.90%    passed     98.46%
+ 766  Seq_1517    14.24%    passed     73.05%
+ 767  Seq_1353    13.90%    passed     85.71%
+ 768  Seq_1083    14.24%    passed     81.23%
+ 769  Seq_1728    13.90%    passed      5.28%
+ 770  Seq_1740    14.24%    passed     50.30%
+ 771  Seq_1683    13.90%    passed     95.94%
+ 772  Seq_768     14.24%    passed     94.79%
+ 773  Seq_1210    14.24%    passed     67.77%
+ 774  Seq_1342    14.24%    failed      0.60%
+ 775  Seq_1268    14.24%    passed     85.42%
+ 776  Seq_1211    13.90%    failed      1.22%
+ 777  Seq_1226    14.24%    passed     67.77%
+ 778  Seq_1246    14.24%    passed     89.85%
+ 779  Seq_1214    14.24%    passed     92.81%
+ 780  Seq_1031    14.24%    passed     10.57%
+ 781  Seq_1261    14.24%    passed     74.19%
+ 782  Seq_1282    14.24%    passed     93.51%
+ 783  Seq_1283    14.24%    passed     95.32%
+ 784  Seq_1080    14.24%    failed      3.18%
+ 785  Seq_1061    13.90%    passed     15.48%
+ 786  Seq_1215    14.24%    passed     95.22%
+ 787  Seq_1032    14.24%    passed     99.00%
+ 788  Seq_1380    14.24%    passed     80.89%
+ 789  Seq_1242    14.24%    passed     97.09%
+ 790  Seq_1071    14.24%    passed     78.84%
+ 791  Seq_1173    14.24%    passed     81.31%
+ 792  Seq_1338    14.24%    failed      3.38%
+ 793  Seq_1158    14.24%    passed      8.58%
+ 794  Seq_1366    14.24%    passed     99.56%
+ 795  Seq_1319    14.24%    passed     45.19%
+ 796  Seq_1236    14.24%    passed     92.81%
+ 797  Seq_880     13.90%    passed     55.60%
+ 798  Seq_1458    14.24%    passed     33.97%
+ 799  Seq_1265    14.24%    passed     89.71%
+ 800  Seq_1227    14.24%    passed     81.62%
+ 801  Seq_1267    14.24%    passed     90.06%
+ 802  Seq_1142    14.24%    passed     90.46%
+ 803  Seq_1362    14.24%    passed     74.39%
+ 804  Seq_1106    14.24%    passed     75.58%
+ 805  Seq_1425    14.24%    passed     62.82%
+ 806  Seq_1421    14.24%    passed     64.68%
+ 807  Seq_1269    14.24%    passed     11.69%
+ 808  Seq_1483    14.24%    passed     97.10%
+ 809  Seq_889     14.24%    passed     98.27%
+ 810  Seq_1436    14.24%    passed     10.58%
+ 811  Seq_1238    14.24%    passed     90.83%
+ 812  Seq_1430    14.24%    passed     18.91%
+ 813  Seq_1343    14.24%    passed     99.99%
+ 814  Seq_1444    14.24%    passed     15.81%
+ 815  Seq_1407    14.24%    passed     50.50%
+ 816  Seq_900     14.24%    passed     95.06%
+ 817  Seq_1391    14.24%    passed     59.52%
+ 818  Seq_1376    14.24%    passed     73.05%
+ 819  Seq_1113    14.24%    passed     71.42%
+ 820  Seq_1245    14.24%    passed     88.59%
+ 821  Seq_1132    14.24%    passed     93.32%
+ 822  Seq_1354    13.90%    failed      2.43%
+ 823  Seq_1252    14.24%    failed      2.23%
+ 824  Seq_1289    14.24%    passed     83.16%
+ 825  Seq_1544    14.24%    passed     94.38%
+ 826  Seq_1305    14.24%    passed     59.31%
+ 827  Seq_1506    14.24%    passed     21.98%
+ 828  Seq_1480    14.24%    passed     93.88%
+ 829  Seq_1192    14.24%    passed     69.50%
+ 830  Seq_908     14.24%    passed     86.33%
+ 831  Seq_1473    13.90%    passed     99.57%
+ 832  Seq_1420    14.24%    passed     72.97%
+ 833  Seq_1470    14.24%    passed     59.31%
+ 834  Seq_1491    14.24%    passed     18.95%
+ 835  Seq_1218    14.24%    passed     93.86%
+ 836  Seq_1402    13.56%    passed      5.43%
+ 837  Seq_996     14.24%    passed     53.21%
+ 838  Seq_962     13.56%    passed     29.98%
+ 839  Seq_1325    14.24%    passed     30.50%
+ 840  Seq_1503    14.24%    passed     99.62%
+ 841  Seq_1340    14.24%    passed     94.94%
+ 842  Seq_559     14.24%    passed     72.65%
+ 843  Seq_378     14.24%    passed     95.77%
+ 844  Seq_395     14.24%    passed     80.83%
+ 845  Seq_192     14.24%    passed     86.99%
+ 846  Seq_532     14.24%    passed     96.51%
+ 847  Seq_549     14.24%    passed     93.71%
+ 848  Seq_205     14.24%    passed     94.82%
+ 849  Seq_578     14.24%    passed     99.07%
+ 850  Seq_456     14.24%    passed     84.66%
+ 851  Seq_444     13.90%    passed     40.36%
+ 852  Seq_568     14.24%    passed     65.12%
+ 853  Seq_533     13.90%    passed     72.68%
+ 854  Seq_386     14.24%    passed     99.09%
+ 855  Seq_604     14.24%    passed     69.03%
+ 856  Seq_552     14.24%    passed     40.92%
+ 857  Seq_602     14.24%    passed     34.29%
+ 858  Seq_335     14.24%    passed     98.10%
+ 859  Seq_561     14.24%    passed      5.51%
+ 860  Seq_480     14.24%    passed     78.84%
+ 861  Seq_592     14.24%    passed     69.14%
+ 862  Seq_614     14.24%    passed     77.39%
+ 863  Seq_611     14.24%    passed     50.92%
+ 864  Seq_381     13.90%    passed     48.11%
+ 865  Seq_432     13.22%    passed     28.32%
+ 866  Seq_172     13.22%    passed     45.97%
+ 867  Seq_583     14.24%    passed     98.03%
+ 868  Seq_526     13.90%    passed     59.25%
+ 869  Seq_423     14.24%    passed     99.86%
+ 870  Seq_352     14.24%    passed     95.18%
+ 871  Seq_501     14.24%    passed     85.62%
+ 872  Seq_498     14.24%    passed     73.45%
+ 873  Seq_617     14.24%    failed      3.73%
+ 874  Seq_632     14.24%    failed      1.24%
+ 875  Seq_487     14.24%    passed     97.00%
+ 876  Seq_575     14.24%    passed      7.02%
+ 877  Seq_639     13.90%    passed     81.68%
+ 878  Seq_647     14.24%    passed     74.22%
+ 879  Seq_564     14.24%    passed     97.13%
+ 880  Seq_616     14.24%    failed      0.82%
+ 881  Seq_593     13.90%    passed     78.60%
+ 882  Seq_453     13.90%    passed     47.94%
+ 883  Seq_560     14.24%    passed     31.71%
+ 884  Seq_656     14.24%    passed     59.96%
+ 885  Seq_373     14.24%    passed     94.89%
+ 886  Seq_660     14.24%    passed     91.41%
+ 887  Seq_519     14.24%    passed     70.91%
+ 888  Seq_607     14.24%    passed     90.16%
+ 889  Seq_623     13.90%    passed     35.43%
+ 890  Seq_664     14.24%    passed     52.58%
+ 891  Seq_504     14.24%    passed     79.12%
+ 892  Seq_651     14.24%    passed     69.52%
+ 893  Seq_627     14.24%    passed     19.20%
+ 894  Seq_650     14.58%    failed      1.72%
+ 895  Seq_582     14.24%    passed     90.46%
+ 896  Seq_465     14.24%    passed     43.35%
+ 897  Seq_618     13.90%    passed     98.94%
+ 898  Seq_499     14.24%    passed     96.13%
+ 899  Seq_675     13.90%    passed     98.54%
+ 900  Seq_605     14.24%    passed     76.63%
+ 901  Seq_681     14.58%    passed     96.28%
+ 902  Seq_684     14.24%    failed      1.68%
+ 903  Seq_696     14.24%    passed     95.86%
+ 904  Seq_699     14.24%    passed     94.56%
+ 905  Seq_622     14.24%    passed     32.15%
+ 906  Seq_608     14.24%    passed     98.82%
+ 907  Seq_621     14.24%    failed      0.16%
+ 908  Seq_530     13.90%    passed     91.74%
+ 909  Seq_409     14.24%    passed     79.07%
+ 910  Seq_628     14.24%    passed     13.62%
+ 911  Seq_545     13.90%    failed      2.39%
+ 912  Seq_495     14.24%    passed     84.00%
+ 913  Seq_278     14.24%    passed     72.96%
+ 914  Seq_318     14.24%    passed     76.62%
+ 915  Seq_329     14.24%    passed      9.62%
+ 916  Seq_372     14.58%    passed      6.69%
+ 917  Seq_341     14.24%    passed     93.23%
+ 918  Seq_497     14.24%    passed     90.15%
+ 919  Seq_439     14.24%    passed     86.46%
+ 920  Seq_503     14.24%    passed     59.09%
+ 921  Seq_291     14.24%    passed     98.81%
+ 922  Seq_426     14.24%    passed     12.48%
+ 923  Seq_382     13.90%    failed      4.76%
+ 924  Seq_391     14.24%    failed      2.76%
+ 925  Seq_401     14.24%    passed     80.37%
+ 926  Seq_509     13.90%    passed     97.17%
+ 927  Seq_490     14.24%    passed     90.16%
+ 928  Seq_388     14.24%    failed      0.15%
+ 929  Seq_513     14.24%    passed      8.56%
+ 930  Seq_518     14.24%    passed     67.16%
+ 931  Seq_436     14.24%    passed     40.49%
+ 932  Seq_540     14.24%    passed     95.21%
+ 933  Seq_485     14.24%    passed     51.44%
+ 934  Seq_531     14.24%    passed     59.91%
+ 935  Seq_383     14.24%    passed     45.19%
+ 936  Seq_233     14.24%    passed     95.59%
+ 937  Seq_476     14.24%    passed     96.55%
+ 938  Seq_421     14.24%    passed     98.03%
+ 939  Seq_489     14.24%    passed     54.98%
+ 940  Seq_447     14.24%    passed     79.49%
+ 941  Seq_537     14.24%    passed     67.16%
+ 942  Seq_446     14.24%    passed     60.49%
+ 943  Seq_539     14.24%    passed     96.61%
+ 944  Seq_460     14.24%    passed     90.15%
+ 945  Seq_544     14.24%    passed     21.27%
+ 946  Seq_542     14.24%    passed     97.13%
+ 947  Seq_322     14.24%    passed     65.99%
+ 948  Seq_546     13.90%    passed     98.96%
+ 949  Seq_551     14.24%    passed     18.95%
+ 950  Seq_550     14.24%    passed     67.16%
+ 951  Seq_524     14.24%    passed     89.71%
+ 952  Seq_554     14.24%    passed     21.40%
+ 953  Seq_370     14.24%    passed     97.67%
+ 954  Seq_416     14.24%    passed     85.24%
+ 955  Seq_473     14.24%    passed     97.01%
+ 956  Seq_376     14.24%    failed      3.85%
+ 957  Seq_522     14.24%    passed     76.63%
+ 958  Seq_443     14.24%    passed     38.19%
+ 959  Seq_483     14.24%    passed     95.10%
+ 960  Seq_294     14.24%    passed     65.07%
+ 961  Seq_484     14.24%    passed     42.06%
+ 962  Seq_364     14.24%    passed     92.51%
+ 963  Seq_448     14.24%    passed     45.19%
+ 964  Seq_517     14.24%    passed      9.36%
+ 965  Seq_216     14.24%    passed     77.05%
+ 966  Seq_455     14.24%    passed     86.02%
+ 967  Seq_351     14.24%    passed     45.43%
+ 968  Seq_467     14.24%    passed     93.00%
+ 969  Seq_326     14.24%    passed     71.58%
+ 970  Seq_402     14.24%    passed      5.24%
+ 971  Seq_579     14.24%    passed     96.49%
+ 972  Seq_369     14.24%    failed      0.98%
+ 973  Seq_481     14.24%    passed     87.88%
+ 974  Seq_595     14.24%    passed     78.30%
+ 975  Seq_362     14.24%    failed      3.70%
+ 976  Seq_442     14.24%    passed     97.58%
+ 977  Seq_508     14.24%    passed     48.09%
+ 978  Seq_505     14.24%    passed     28.38%
+ 979  Seq_430     14.24%    passed     99.70%
+ 980  Seq_520     14.24%    passed     16.62%
+ 981  Seq_587     14.24%    passed     95.29%
+ 982  Seq_1240    14.24%    failed      0.43%
+ 983  Seq_1812    14.24%    passed     98.71%
+ 984  Seq_1388    14.24%    passed     74.42%
+ 985  Seq_1731    14.24%    passed     42.88%
+ 986  Seq_1736    14.24%    failed      2.84%
+ 987  Seq_1497    14.24%    failed      0.09%
+ 988  Seq_1749    13.90%    passed     95.60%
+ 989  Seq_1529    14.24%    passed     90.21%
+ 990  Seq_1489    14.58%    passed     94.34%
+ 991  Seq_1485    14.24%    failed      3.67%
+ 992  Seq_1766    14.24%    failed      0.40%
+ 993  Seq_1770    14.24%    passed     47.81%
+ 994  Seq_1806    14.24%    passed     54.98%
+ 995  Seq_1230    14.24%    passed     98.29%
+ 996  Seq_1592    13.90%    failed      4.33%
+ 997  Seq_1781    14.24%    passed     42.98%
+ 998  Seq_1761    14.24%    passed     75.68%
+ 999  Seq_1630    14.24%    passed     74.82%
+1000  Seq_1842    14.24%    passed     93.85%
+1001  Seq_1773    14.24%    passed     62.82%
+1002  Seq_1734    14.24%    passed     91.11%
+1003  Seq_1784    14.24%    passed     89.71%
+1004  Seq_1722    14.24%    passed     92.39%
+1005  Seq_1787    14.24%    passed     62.65%
+1006  Seq_1777    14.24%    passed     70.41%
+1007  Seq_1908    14.24%    passed     89.54%
+1008  Seq_1548    14.24%    passed     26.82%
+1009  Seq_1890    14.24%    passed     86.46%
+1010  Seq_1724    13.90%    passed      6.72%
+1011  Seq_1182    14.24%    passed     99.80%
+1012  Seq_1877    14.24%    failed      0.22%
+1013  Seq_1807    13.90%    passed     97.84%
+1014  Seq_1786    14.24%    passed     78.84%
+1015  Seq_1538    14.24%    passed     81.53%
+1016  Seq_1872    14.24%    passed     99.07%
+1017  Seq_1947    14.24%    failed      2.28%
+1018  Seq_1356    14.24%    passed     91.40%
+1019  Seq_1860    14.24%    passed     39.66%
+1020  Seq_1808    13.90%    passed     11.76%
+1021  Seq_1979    14.24%    passed     97.21%
+1022  Seq_1498    14.24%    passed     90.83%
+1023  Seq_1911    14.24%    passed     86.33%
+1024  Seq_1937    14.24%    passed     60.44%
+1025  Seq_1403    14.24%    passed     59.09%
+1026  Seq_1500    13.90%    failed      1.41%
+1027  Seq_1554    13.90%    failed      0.51%
+1028  Seq_1747    14.24%    passed     81.92%
+1029  Seq_1902    13.90%    passed     80.79%
+1030  Seq_1894    14.24%    failed      0.09%
+1031  Seq_1952    14.24%    passed     83.72%
+1032  Seq_1431    14.24%    passed     97.75%
+1033  Seq_1779    14.24%    passed     99.09%
+1034  Seq_1924    14.24%    failed      0.23%
+1035  Seq_1704    14.24%    passed     15.96%
+1036  Seq_2103    14.24%    passed     89.71%
+1037  Seq_1876    14.24%    passed     66.22%
+1038  Seq_1775    13.22%    passed     40.09%
+1039  Seq_1626    13.90%    failed      4.33%
+1040  Seq_2026    14.24%    passed     19.50%
+1041  Seq_1933    14.24%    passed      8.59%
+1042  Seq_1957    13.90%    passed     97.04%
+1043  Seq_2021    13.90%    passed     95.44%
+1044  Seq_2025    13.90%    failed      0.80%
+1045  Seq_2041    14.24%    passed     14.87%
+1046  Seq_1741    14.24%    passed     51.40%
+1047  Seq_2013    13.90%    passed     99.71%
+1048  Seq_2049    14.24%    failed      3.89%
+1049  Seq_2126    14.24%    passed     97.10%
+1050  Seq_1950    14.24%    passed     97.10%
+1051  Seq_2160    14.24%    passed     85.12%
+1052  Seq_1893    14.24%    passed     67.67%
+1053  Seq_312     14.24%    passed     92.61%
+1054  Seq_128     14.24%    passed     79.62%
+1055  Seq_298     14.24%    passed     95.22%
+1056  Seq_266     14.24%    passed     90.81%
+1057  Seq_259     14.24%    passed     94.38%
+1058  Seq_320     14.24%    passed     75.68%
+1059  Seq_305     14.24%    passed     99.45%
+1060  Seq_256     14.24%    passed     95.21%
+1061  Seq_313     14.24%    passed     98.21%
+1062  Seq_208     14.24%    passed     87.23%
+1063  Seq_120     14.24%    passed     86.85%
+1064  Seq_334     14.24%    passed     72.43%
+1065  Seq_323     14.24%    passed     72.35%
+1066  Seq_340     14.24%    passed     53.42%
+1067  Seq_347     14.24%    passed     94.99%
+1068  Seq_350     14.24%    passed     82.58%
+1069  Seq_270     14.58%    failed      1.76%
+1070  Seq_145     14.24%    passed     87.88%
+1071  Seq_304     14.24%    passed     72.96%
+1072  Seq_292     14.24%    passed     98.93%
+1073  Seq_281     14.24%    passed     60.44%
+1074  Seq_178     14.24%    passed     60.73%
+1075  Seq_222     14.24%    passed     90.11%
+1076  Seq_300     14.24%    passed     70.14%
+1077  Seq_336     14.24%    passed     91.41%
+1078  Seq_189     14.24%    passed     22.87%
+1079  Seq_344     14.24%    passed     25.74%
+1080  Seq_186     14.24%    passed     97.33%
+1081  Seq_246     14.24%    passed     95.42%
+1082  Seq_314     14.24%    failed      0.14%
+1083  Seq_124     13.90%    passed     87.89%
+1084  Seq_161     14.24%    passed     99.09%
+1085  Seq_239     13.90%    passed     44.44%
+1086  Seq_273     14.24%    passed     51.85%
+1087  Seq_301     14.24%    passed     97.42%
+1088  Seq_306     14.24%    passed     93.57%
+1089  Seq_353     14.24%    failed      0.41%
+1090  Seq_361     14.24%    passed     47.81%
+1091  Seq_365     14.24%    failed      4.41%
+1092  Seq_368     13.90%    passed     98.01%
+1093  Seq_226     14.24%    passed     95.29%
+1094  Seq_200     14.24%    passed     97.10%
+1095  Seq_234     14.24%    passed     38.71%
+1096  Seq_375     13.90%    passed     98.28%
+1097  Seq_235     13.90%    passed     16.08%
+1098  Seq_284     14.24%    passed     81.80%
+1099  Seq_286     14.24%    passed     43.90%
+1100  Seq_366     14.24%    passed      9.86%
+1101  Seq_332     14.24%    passed     25.24%
+1102  Seq_389     14.24%    passed     25.01%
+1103  Seq_330     14.24%    passed     69.58%
+1104  Seq_190     14.24%    passed     98.91%
+1105  Seq_345     14.24%    passed     15.87%
+1106  Seq_396     13.90%    passed     93.53%
+1107  Seq_360     14.24%    passed     53.07%
+1108  Seq_274     14.58%    passed     92.53%
+1109  Seq_187     14.24%    passed     27.82%
+1110  Seq_173     14.24%    passed      8.89%
+1111  Seq_43      14.24%    passed     65.81%
+1112  Seq_374     14.24%    passed     90.08%
+1113  Seq_283     13.90%    passed     64.84%
+1114  Seq_367     14.24%    failed      2.14%
+1115  Seq_358     14.24%    passed     94.19%
+1116  Seq_93      14.24%    passed     96.78%
+1117  Seq_333     14.24%    passed     49.66%
+1118  Seq_403     14.24%    passed     62.43%
+1119  Seq_411     14.24%    passed     15.58%
+1120  Seq_418     14.24%    passed     12.07%
+1121  Seq_288     14.24%    passed     88.59%
+1122  Seq_221     14.24%    passed     90.06%
+1123  Seq_86      13.90%    passed     97.84%
+1124  Seq_16      14.24%    passed     40.91%
+1125  Seq_35      14.24%    passed     31.97%
+1126  Seq_4       14.24%    passed     33.87%
+1127  Seq_51      14.24%    passed     75.68%
+1128  Seq_41      14.24%    passed     52.78%
+1129  Seq_7       14.24%    passed     90.34%
+1130  Seq_62      14.24%    passed     95.21%
+1131  Seq_12      14.24%    passed     31.72%
+1132  Seq_88      14.24%    passed     81.62%
+1133  Seq_17      14.24%    passed     63.43%
+1134  Seq_30      14.24%    passed     72.96%
+1135  Seq_64      13.90%    passed     96.08%
+1136  Seq_3       14.24%    passed     94.60%
+1137  Seq_113     13.90%    passed     91.93%
+1138  Seq_31      14.24%    passed     98.29%
+1139  Seq_13      14.24%    failed      0.37%
+1140  Seq_42      14.24%    passed     99.82%
+1141  Seq_39      14.24%    failed      1.16%
+1142  Seq_98      14.24%    passed     80.97%
+1143  Seq_10      14.24%    passed     77.39%
+1144  Seq_52      14.24%    passed     67.99%
+1145  Seq_58      14.24%    passed     89.76%
+1146  Seq_71      14.24%    passed     73.18%
+1147  Seq_80      13.90%    passed     97.17%
+1148  Seq_60      14.24%    passed     67.46%
+1149  Seq_32      14.24%    passed     39.89%
+1150  Seq_11      14.24%    passed     74.79%
+1151  Seq_5       13.90%    passed     97.06%
+1152  Seq_97      13.90%    passed      6.12%
+1153  Seq_66      14.24%    passed     62.53%
+1154  Seq_19      14.24%    passed     90.83%
+1155  Seq_9       14.24%    passed     94.91%
+1156  Seq_83      14.24%    passed     82.49%
+1157  Seq_75      14.24%    passed     99.99%
+1158  Seq_121     14.24%    passed     19.60%
+1159  Seq_91      14.24%    passed     16.66%
+1160  Seq_36      14.24%    passed     98.91%
+1161  Seq_27      14.24%    passed     94.72%
+1162  Seq_34      14.24%    passed     93.56%
+1163  Seq_57      14.58%    passed     26.00%
+1164  Seq_55      14.24%    passed     99.14%
+1165  Seq_122     14.24%    passed     79.58%
+1166  Seq_33      14.24%    passed     47.47%
+1167  Seq_139     13.90%    passed     96.08%
+1168  Seq_109     14.24%    passed     93.71%
+1169  Seq_23      14.24%    passed     57.20%
+1170  Seq_110     14.24%    passed     12.48%
+1171  Seq_8       14.24%    passed     16.60%
+1172  Seq_74      14.24%    passed     42.88%
+1173  Seq_102     14.24%    passed     99.03%
+1174  Seq_28      13.90%    passed     73.05%
+1175  Seq_105     14.24%    passed     43.49%
+1176  Seq_119     14.24%    passed     89.71%
+1177  Seq_146     14.24%    passed     92.81%
+1178  Seq_92      14.24%    failed      2.24%
+1179  Seq_107     14.24%    passed     82.76%
+1180  Seq_76      14.24%    passed     76.62%
+1181  Seq_56      14.24%    passed     72.35%
+1182  Seq_53      14.24%    passed     82.03%
+1183  Seq_96      14.24%    passed     96.78%
+1184  Seq_2       14.24%    passed     71.12%
+1185  Seq_48      14.58%    passed     92.98%
+1186  Seq_54      14.24%    passed     90.08%
+1187  Seq_148     14.24%    passed     98.29%
+1188  Seq_127     14.58%    passed     42.03%
+1189  Seq_29      14.24%    passed     37.34%
+1190  Seq_149     14.24%    failed      4.02%
+1191  Seq_131     14.24%    passed     12.47%
+1192  Seq_50      13.56%    passed     35.18%
+1193  Seq_37      14.24%    passed     93.86%
+1194  Seq_151     14.24%    passed     85.53%
+1195  Seq_100     14.24%    passed     78.92%
+1196  Seq_89      14.24%    passed     74.93%
+1197  Seq_78      14.58%    passed     87.67%
+1198  Seq_79      14.24%    passed     94.82%
+1199  Seq_114     14.24%    passed     10.03%
+1200  Seq_65      14.24%    passed     93.33%
+1201  Seq_116     14.24%    passed     92.35%
+1202  Seq_20      13.56%    passed     30.68%
+1203  Seq_68      14.24%    passed     85.30%
+1204  Seq_47      13.90%    passed     65.90%
+1205  Seq_135     14.24%    passed     42.50%
+1206  Seq_59      14.24%    passed     87.65%
+1207  Seq_69      14.24%    passed     28.09%
+1208  Seq_24      14.24%    passed     99.32%
+1209  Seq_26      14.24%    passed     29.52%
+1210  Seq_134     14.24%    passed     91.03%
+1211  Seq_108     14.24%    passed     69.52%
+1212  Seq_99      14.24%    passed     19.23%
+1213  Seq_106     14.24%    passed     97.75%
+1214  Seq_38      13.90%    passed     11.02%
+1215  Seq_126     14.24%    passed     25.74%
+1216  Seq_188     14.24%    passed     28.54%
+1217  Seq_1       14.24%    passed     66.62%
+1218  Seq_147     14.24%    passed     95.10%
+1219  Seq_154     14.24%    passed     25.26%
+1220  Seq_142     14.24%    passed     14.75%
+1221  Seq_111     14.24%    passed     45.60%
+1222  Seq_82      14.24%    passed      8.56%
+1223  Seq_174     14.24%    passed     92.81%
+1224  Seq_138     14.24%    passed     87.43%
+1225  Seq_193     13.90%    passed     95.44%
+1226  Seq_46      14.24%    passed     84.91%
+1227  Seq_201     14.24%    failed      0.25%
+1228  Seq_202     14.24%    passed     83.79%
+1229  Seq_158     14.24%    passed     77.63%
+1230  Seq_157     14.24%    passed     91.11%
+1231  Seq_49      14.24%    passed     92.46%
+1232  Seq_176     14.24%    passed     99.22%
+1233  Seq_177     14.24%    passed     25.26%
+1234  Seq_183     13.90%    passed     94.15%
+1235  Seq_67      14.58%    passed     98.80%
+1236  Seq_143     14.24%    passed     57.85%
+1237  Seq_144     14.24%    passed     67.46%
+1238  Seq_206     14.24%    passed     20.91%
+1239  Seq_213     13.90%    passed     98.54%
+1240  Seq_136     14.24%    passed     70.91%
+1241  Seq_63      14.24%    passed     97.82%
+1242  Seq_84      14.24%    passed     37.33%
+1243  Seq_171     13.56%    passed     21.71%
+1244  Seq_103     14.24%    passed     22.33%
+1245  Seq_73      14.24%    passed     43.52%
+1246  Seq_166     14.24%    passed     23.23%
+1247  Seq_15      14.24%    passed     81.62%
+1248  Seq_163     14.24%    passed     85.23%
+1249  Seq_225     14.24%    passed     13.60%
+1250  Seq_123     14.24%    passed     85.53%
+1251  Seq_218     14.24%    passed     50.92%
+1252  Seq_117     14.24%    passed     89.12%
+1253  Seq_44      14.24%    passed     74.89%
+1254  Seq_170     14.24%    passed     42.50%
+1255  Seq_223     14.24%    passed     54.95%
+1256  Seq_40      14.24%    passed     39.71%
+1257  Seq_232     13.90%    passed     81.68%
+1258  Seq_180     14.24%    failed      3.32%
+1259  Seq_156     14.24%    passed     98.18%
+1260  Seq_70      14.24%    passed     42.26%
+1261  Seq_133     14.24%    passed     69.04%
+1262  Seq_197     14.24%    passed     87.65%
+1263  Seq_22      14.24%    passed     85.13%
+1264  Seq_548     14.24%    passed     86.88%
+1265  Seq_609     14.24%    passed     70.84%
+1266  Seq_461     14.24%    passed     72.96%
+1267  Seq_661     13.90%    passed     63.63%
+1268  Seq_441     14.24%    passed     92.30%
+1269  Seq_708     14.24%    passed     82.46%
+1270  Seq_700     13.90%    passed     99.08%
+1271  Seq_543     14.24%    passed     93.34%
+1272  Seq_709     14.24%    passed     58.37%
+1273  Seq_705     14.24%    passed     15.58%
+1274  Seq_349     14.24%    passed     52.60%
+1275  Seq_682     14.24%    failed      0.02%
+1276  Seq_717     14.24%    passed     19.50%
+1277  Seq_665     14.24%    passed     95.52%
+1278  Seq_619     13.90%    passed     95.86%
+1279  Seq_563     14.24%    failed      2.40%
+1280  Seq_721     14.24%    failed      2.88%
+1281  Seq_674     14.24%    passed     55.43%
+1282  Seq_502     14.24%    passed     93.44%
+1283  Seq_751     13.56%    passed     61.79%
+1284  Seq_741     14.24%    passed     73.76%
+1285  Seq_466     14.24%    passed     76.63%
+1286  Seq_723     13.90%    passed     78.97%
+1287  Seq_390     14.24%    passed     89.37%
+1288  Seq_726     14.24%    passed     95.80%
+1289  Seq_603     14.24%    passed     69.16%
+1290  Seq_662     14.24%    passed     81.18%
+1291  Seq_475     14.24%    passed     91.87%
+1292  Seq_482     14.24%    passed     83.80%
+1293  Seq_565     14.24%    passed     10.91%
+1294  Seq_629     14.24%    passed     38.97%
+1295  Seq_615     14.24%    passed     15.87%
+1296  Seq_577     14.24%    passed     65.58%
+1297  Seq_571     14.24%    passed     99.42%
+1298  Seq_558     14.24%    passed     84.54%
+1299  Seq_555     13.90%    passed     15.17%
+1300  Seq_732     14.24%    passed     97.69%
+1301  Seq_757     14.24%    passed     85.53%
+1302  Seq_744     14.24%    passed     25.58%
+1303  Seq_734     14.24%    passed     53.87%
+1304  Seq_765     14.24%    passed     16.72%
+1305  Seq_746     13.90%    passed     58.14%
+1306  Seq_493     14.24%    passed     95.32%
+1307  Seq_642     14.24%    passed     93.42%
+1308  Seq_758     14.24%    passed     89.97%
+1309  Seq_764     14.24%    passed     73.70%
+1310  Seq_695     14.24%    passed     96.78%
+1311  Seq_672     14.24%    passed     98.83%
+1312  Seq_576     14.24%    passed     88.50%
+1313  Seq_774     14.24%    passed      6.26%
+1314  Seq_459     13.90%    passed     90.16%
+1315  Seq_634     13.22%    passed     40.09%
+1316  Seq_680     14.24%    passed     88.94%
+1317  Seq_686     14.24%    passed     33.87%
+1318  Seq_786     13.56%    passed     44.11%
+1319  Seq_638     14.58%    passed     32.61%
+1320  Seq_626     14.24%    passed     79.14%
+1321  Seq_198     14.58%    passed     23.22%
+1322  Seq_606     13.90%    passed     93.28%
+1323  Seq_694     13.90%    passed     92.65%
+1324  Seq_733     14.24%    passed     99.59%
+1325  Seq_715     14.24%    failed      1.89%
+1326  Seq_801     14.24%    passed     98.82%
+1327  Seq_317     14.24%    passed     81.75%
+1328  Seq_562     13.56%    passed     20.16%
+1329  Seq_525     14.24%    failed      0.49%
+1330  Seq_692     14.24%    failed      0.01%
+1331  Seq_792     13.90%    passed     83.22%
+1332  Seq_625     14.24%    passed     12.44%
+1333  Seq_799     14.24%    passed      7.41%
+1334  Seq_384     14.24%    passed     91.94%
+1335  Seq_238     14.24%    passed     86.46%
+1336  Seq_357     14.58%    passed     99.58%
+1337  Seq_94      14.24%    passed     97.10%
+1338  Seq_379     14.24%    passed     25.58%
+1339  Seq_287     14.24%    passed     93.71%
+1340  Seq_240     14.24%    failed      1.49%
+1341  Seq_355     14.24%    passed     60.53%
+1342  Seq_279     14.24%    passed     95.08%
+1343  Seq_297     14.24%    passed     93.88%
+1344  Seq_425     13.90%    passed     86.70%
+1345  Seq_428     13.90%    passed     12.41%
+1346  Seq_410     14.24%    failed      3.18%
+1347  Seq_405     14.24%    passed     85.99%
+1348  Seq_324     14.24%    passed     99.14%
+1349  Seq_433     14.24%    passed     53.07%
+1350  Seq_275     13.90%    passed     83.20%
+1351  Seq_179     13.90%    passed     70.22%
+1352  Seq_257     14.24%    passed     71.64%
+1353  Seq_229     14.24%    passed     88.92%
+1354  Seq_348     14.24%    passed     62.86%
+1355  Seq_440     14.24%    passed     88.59%
+1356  Seq_394     14.24%    passed     97.30%
+1357  Seq_265     14.24%    failed      0.04%
+1358  Seq_400     14.24%    passed     94.07%
+1359  Seq_215     14.24%    passed     98.98%
+1360  Seq_424     14.24%    passed     91.51%
+1361  Seq_422     14.24%    passed     99.65%
+1362  Seq_354     14.24%    passed     76.62%
+1363  Seq_339     14.24%    passed      8.34%
+1364  Seq_243     14.24%    passed     97.32%
+1365  Seq_356     14.24%    passed      7.86%
+1366  Seq_449     14.24%    passed     97.13%
+1367  Seq_399     14.24%    passed     63.62%
+1368  Seq_303     13.90%    passed     79.64%
+1369  Seq_415     14.24%    passed     97.21%
+1370  Seq_338     14.24%    passed     58.37%
+1371  Seq_331     14.24%    passed     99.09%
+1372  Seq_316     14.24%    passed     58.65%
+1373  Seq_404     14.24%    passed     89.88%
+1374  Seq_328     14.24%    failed      0.01%
+1375  Seq_406     14.24%    passed     58.37%
+1376  Seq_454     14.24%    passed     93.56%
+1377  Seq_398     14.24%    passed     76.62%
+1378  Seq_408     14.24%    passed     67.67%
+1379  Seq_95      14.24%    passed     91.10%
+1380  Seq_252     14.24%    passed     87.97%
+1381  Seq_191     14.24%    passed     25.97%
+1382  Seq_451     14.24%    passed     86.85%
+1383  Seq_419     14.24%    passed     65.48%
+1384  Seq_249     14.24%    passed     97.87%
+1385  Seq_199     14.24%    passed     82.80%
+1386  Seq_290     14.24%    passed     93.47%
+1387  Seq_137     14.24%    passed     82.83%
+1388  Seq_371     14.24%    passed     48.49%
+1389  Seq_407     14.24%    passed     72.99%
+1390  Seq_457     14.24%    failed      0.16%
+1391  Seq_81      14.24%    passed     56.91%
+1392  Seq_431     14.24%    passed     88.17%
+1393  Seq_450     14.24%    passed     19.50%
+1394  Seq_464     14.24%    passed     74.89%
+1395  Seq_462     13.90%    passed     97.04%
+1396  Seq_478     14.24%    passed     16.35%
+1397  Seq_385     14.24%    failed      0.16%
+1398  Seq_479     13.90%    passed     86.95%
+1399  Seq_435     14.24%    passed     79.60%
+1400  Seq_429     14.24%    passed     74.18%
+1401  Seq_311     14.24%    passed     52.64%
+1402  Seq_337     14.24%    passed     93.56%
+1403  Seq_491     14.24%    passed     18.91%
+1404  Seq_494     14.24%    passed     57.88%
+****  TOTAL       14.18%  126 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.776 seconds
+Measuring multi-threading efficiency up to 96 CPU cores
+Increase to 10 rounds for branch lengths
+30 trees examined
+Threads: 1 / Time: 99.084 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -189957
+Threads: 2 / Time: 119.691 sec / Speedup: 0.828 / Efficiency: 41% / LogL: -189957
+BEST NUMBER OF THREADS: 1
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -47270.425
+Optimal log-likelihood: -47269.566
+Rate parameters:  A-C: 0.83896  A-G: 2.17034  A-T: 1.45560  C-G: 0.72355  C-T: 4.40925  G-T: 1.00000
+Base frequencies:  A: 0.245  C: 0.199  G: 0.367  T: 0.188
+Proportion of invariable sites: 0.151
+Gamma shape alpha: 0.602
+Parameters optimization took 1 rounds (2.437 sec)
+Time for fast ML tree search: 15.056 seconds
+
+NOTE: ModelFinder requires 118 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 295) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         54731.263    2813 115088.525   15946652.525 125459.987
+  2  GTR+F+I       53039.941    2814 111707.883   15954527.883 122083.031
+  3  GTR+F+G4      47384.589    2814 100397.178   15943217.178 110772.327
+  4  GTR+F+I+G4    47269.745    2815 100169.490   15954249.490 110548.326
+  5  GTR+F+R2      49029.096    2815 103688.193   15957768.193 114067.028
+  6  GTR+F+R3      47801.368    2817 101236.736   15977848.736 111622.946
+  7  GTR+F+R4      47302.779    2819 100243.558   15999403.558 110637.141
+  8  GTR+F+R5      47113.180    2821 99868.361    16021592.361 110269.318
+  9  GTR+F+R6      47011.734    2823 99669.467    16043973.467 110077.799
+ 10  GTR+F+R7      46965.811    2825 99581.621    16066481.621 109997.327
+ 11  GTR+F+R8      46940.067    2827 99534.133    16089046.133 109957.213
+ 12  GTR+F+R9      46932.945    2829 99523.889    16111663.889 109954.343
+ 13  GTR+F+R10     46917.962    2831 99497.924    16134281.924 109935.752
+ 26  SYM+R10       46948.314    2828 99552.629    16100376.629 109979.395
+ 39  TVM+F+R10     47121.610    2830 99903.220    16123363.220 110337.360
+ 52  TVMe+R10      46956.149    2827 99566.298    16089078.298 109989.377
+ 65  TIM3+F+R10    46954.597    2829 99567.194    16111707.194 109997.647
+ 78  TIM3e+R10     46952.295    2826 99556.590    16077760.590 109975.983
+ 91  TIM2+F+R10    46989.654    2829 99637.309    16111777.309 110067.762
+104  TIM2e+R10     47009.456    2826 99670.912    16077874.912 110090.304
+117  TIM+F+R10     47021.076    2829 99700.152    16111840.152 110130.605
+130  TIMe+R10      47008.608    2826 99669.216    16077873.216 110088.608
+143  TPM3u+F+R10   47158.502    2828 99973.004    16100797.004 110399.770
+156  TPM3+F+R10    47158.502    2828 99973.004    16100797.004 110399.770
+169  TPM2u+F+R10   47198.093    2828 100052.185   16100876.185 110478.952
+182  TPM2+F+R10    47198.093    2828 100052.185   16100876.185 110478.952
+195  K3Pu+F+R10    47229.162    2828 100114.325   16100938.325 110541.091
+208  K3P+R10       47016.561    2825 99683.122    16066583.122 110098.828
+221  TN+F+R10      47021.924    2828 99699.848    16100523.848 110126.614
+234  TNe+R10       47009.528    2825 99669.057    16066569.057 110084.762
+247  HKY+F+R10     47229.825    2827 100113.651   16089625.651 110536.730
+260  K2P+R10       47017.360    2824 99682.720    16055282.720 110094.739
+273  F81+F+R10     48517.591    2826 102687.182   16080891.182 113106.574
+286  JC+R10        48271.651    2823 102189.301   16046493.301 112597.633
+Akaike Information Criterion:           GTR+F+R10
+Corrected Akaike Information Criterion: GTR+F+G4
+Bayesian Information Criterion:         GTR+F+R10
+Best-fit model: GTR+F+R10 chosen according to BIC
+
+All model information printed to DADA2_reps_seq_prev_filt.filtered.align.model.gz
+CPU time for ModelFinder: 6354.886 seconds (1h:45m:54s)
+Wall-clock time for ModelFinder: 6260.102 seconds (1h:44m:20s)
+
+NOTE: 118 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.500)
+1. Initial log-likelihood: -46917.962
+2. Current log-likelihood: -46917.215
+Optimal log-likelihood: -46917.067
+Rate parameters:  A-C: 0.82293  A-G: 2.18082  A-T: 1.47313  C-G: 0.68190  C-T: 4.37442  G-T: 1.00000
+Base frequencies:  A: 0.245  C: 0.199  G: 0.367  T: 0.188
+Site proportion and rates:  (0.304,0.022) (0.098,0.114) (0.090,0.265) (0.084,0.461) (0.102,0.760) (0.109,1.291) (0.083,1.866) (0.055,2.753) (0.041,3.915) (0.033,7.134)
+Parameters optimization took 2 rounds (22.638 sec)
+Computing ML distances based on estimated model parameters...
+Computing ML distances took 87.117149 sec (of wall-clock time) 87.071700 sec(of CPU time)
+WARNING: Some pairwise ML distances are too long (saturated)
+Computing RapidNJ tree took 0.244881 sec (of wall-clock time) 0.468537 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -49025.646
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+
+Do NNI search on 2 best initial trees
+Estimate model parameters (epsilon = 0.500)
+BETTER TREE FOUND at iteration 1: -46895.369
+Finish initializing candidate tree set (4)
+Current best tree score: -46895.369 / CPU time: 28.448
+Number of iterations: 2
+TREE SEARCH COMPLETED AFTER 2 ITERATIONS / Time: 0h:2m:28s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.050)
+1. Initial log-likelihood: -46895.369
+2. Current log-likelihood: -46895.287
+3. Current log-likelihood: -46895.159
+4. Current log-likelihood: -46895.037
+5. Current log-likelihood: -46894.961
+6. Current log-likelihood: -46894.837
+7. Current log-likelihood: -46894.766
+8. Current log-likelihood: -46894.649
+9. Current log-likelihood: -46894.581
+10. Current log-likelihood: -46894.508
+11. Current log-likelihood: -46894.398
+12. Current log-likelihood: -46894.336
+13. Current log-likelihood: -46894.271
+14. Current log-likelihood: -46894.205
+15. Current log-likelihood: -46894.141
+16. Current log-likelihood: -46894.079
+17. Current log-likelihood: -46894.018
+18. Current log-likelihood: -46893.960
+19. Current log-likelihood: -46893.903
+20. Current log-likelihood: -46893.847
+21. Current log-likelihood: -46893.792
+22. Current log-likelihood: -46893.739
+23. Current log-likelihood: -46893.686
+24. Current log-likelihood: -46893.634
+Optimal log-likelihood: -46893.550
+Rate parameters:  A-C: 0.82214  A-G: 2.18405  A-T: 1.46941  C-G: 0.68035  C-T: 4.38236  G-T: 1.00000
+Base frequencies:  A: 0.245  C: 0.199  G: 0.367  T: 0.188
+Site proportion and rates:  (0.299,0.020) (0.102,0.110) (0.092,0.262) (0.083,0.460) (0.104,0.758) (0.109,1.293) (0.081,1.867) (0.056,2.754) (0.040,3.920) (0.033,7.186)
+Parameters optimization took 24 rounds (285.878 sec)
+BEST SCORE FOUND : -46893.550
+Total tree length: 58.435
+
+Total number of iterations: 2
+CPU time used for tree search: 28.490 sec (0h:0m:28s)
+Wall-clock time used for tree search: 28.521 sec (0h:0m:28s)
+Total CPU time used: 434.361 sec (0h:7m:14s)
+Total wall-clock time used: 434.428 sec (0h:7m:14s)
+
+Analysis results written to: 
+  IQ-TREE report:                DADA2_reps_seq_prev_filt.filtered.align.iqtree
+  Maximum-likelihood tree:       DADA2_reps_seq_prev_filt.filtered.align.treefile
+  Likelihood distances:          DADA2_reps_seq_prev_filt.filtered.align.mldist
+  Screen log file:               DADA2_reps_seq_prev_filt.filtered.align.log
+
+Date and Time: Fri Oct 15 18:20:54 2021

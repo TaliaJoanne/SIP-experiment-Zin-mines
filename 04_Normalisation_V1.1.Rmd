@@ -1,0 +1,736 @@
+---
+title: "Zin restoration SIP"
+subtitle: "04 Read-depth normalisation attempts for DADA2-based analysis"
+description: "V1.1"
+author: "Roey Angel"
+date: "`r Sys.Date()`"
+bibliography: references.bib
+link-citations: yes
+csl: fems-microbiology-ecology.csl
+output:
+  rmarkdown::html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 5
+    keep_md: true
+    number_sections: false
+    highlight: "pygments"
+    theme: "flatly"
+    dev: "png"
+    df_print: "kable"
+    fig_caption: true
+    code_folding: "show"
+---
+
+```{r libraries, include=F}
+Sys.setenv(R_LIBS_USER = "~/R/library") # Uncomment if you have no write access to R path change to local library dir
+.libPaths(c(Sys.getenv("R_LIBS_USER"), .libPaths())) # Uncomment if you have no write access to R path
+library(svglite) # An 'SVG' Graphics Device, CRAN v2.0.0 
+library(ragg) # Graphic Devices Based on AGG, CRAN v1.1.2 
+library(kableExtra) # Construct Complex Table with 'kable' and Pipe Syntax, CRAN v1.3.4 
+library(rmarkdown) # Dynamic Documents for R, CRAN v2.10 
+library(extrafont) # Tools for using fonts, CRAN v0.17 
+library(tidyverse) # Easily Install and Load the 'Tidyverse', CRAN v1.3.1 
+library(broom) # Convert Statistical Objects into Tidy Tibbles, CRAN v0.7.9 
+library(magrittr) # A Forward-Pipe Operator for R, CRAN v2.0.1 
+library(scales) # Scale Functions for Visualization, CRAN v1.1.1 
+library(vegan) # Community Ecology Package, CRAN v2.5-7 
+library(vsn) # Variance stabilization and calibration for microarray data, Bioconductor v3.60.0
+library(metagenomeSeq) # Statistical analysis for sparse high-throughput sequencing, Bioconductor v1.34.0
+library(phyloseq) # Handling and analysis of high-throughput microbiome census data, Bioconductor v1.36.0 
+```
+
+```{r style settings, echo=FALSE, message=FALSE, warning=FALSE, results="asis"}
+options(width = 90, knitr.table.format = "html") 
+knitr::opts_chunk$set(
+  warning = FALSE,
+  message = FALSE,
+  cache = TRUE,
+  #dev = "ragg_png",
+  #fig.ext = "png",
+  dev = c("svglite", "ragg_png"),
+  dev.args = list(svglite = list(bg = 'white', fix_text_size = FALSE), ragg_png = list(bg = 'white')),
+  dpi = 300,
+  cache.path = "04_Normalisation_cache/",
+  fig.path = "04_Normalisation_figures/"
+)
+f_name <- "DejaVu Sans" #sub("\\s//", "", f_name)
+f_size <- 14
+font_import(pattern = "DejaVuSans\\.", prompt = FALSE)
+loadfonts() # registers fonts
+theme_set(theme_bw(base_size = f_size, base_family = f_name))
+```
+
+```{r functions, include=F}
+GMPR <- function(comm,
+                  intersect.no = 4,
+                  ct.min = 4) {
+  require(matrixStats)
+  # Computes the GMPR size factor
+  #
+  # Args:
+  #   comm: a matrix of counts, row - features (OTUs, genes, etc) , column - sample
+  #   intersect.no: the minimum number of shared features between sample pair, where the ratio is calculated
+  #   ct.min: the minimum number of counts required to calculate ratios （Empirical study found ct.min=4 is suitable)
+  
+  #
+  # Returns:
+  #   a list that contains:
+  #      gmpr： the GMPR size factors for all samples; Samples with distinct sets of features will be output as NA.
+  #      nss:   number of samples with significant sharing (> intersect.no) including itself
+  
+  # mask counts < ct.min
+  comm[comm < ct.min] <- 0
+  
+  if (is.null(colnames(comm))) {
+    colnames(comm) <- paste0('S', 1:ncol(comm))
+  }
+  
+  cat('Begin GMPR size factor calculation ...\n')
+  
+  comm.no <- numeric(ncol(comm))
+  gmpr <- sapply(1:ncol(comm),  function(i) {
+    if (i %% 50 == 0) {
+      cat(i, '\n')
+    }
+    x <- comm[, i]
+    # Compute the pairwise ratio
+    pr <- x / comm
+    # Handling of the NA, NaN, Inf
+    pr[is.nan(pr) | !is.finite(pr) | pr == 0] <- NA
+    # Counting the number of non-NA, NaN, Inf
+    incl.no <- colSums(!is.na(pr))
+    # Calculate the median of PR
+    pr.median <- colMedians(pr, na.rm = TRUE)
+    # Record the number of samples used for calculating the GMPR
+    comm.no[i] <<- sum(incl.no >= intersect.no)
+    # Geometric mean of PR median
+    if (comm.no[i] > 1) {
+      return(exp(mean(log(pr.median[incl.no >= intersect.no]))))
+    } else {
+      return(NA)
+    }
+  })
+  
+  if (sum(is.na(gmpr))) {
+    warning(
+      paste0(
+        'The following samples\n ',
+        paste(colnames(comm)[is.na(gmpr)], collapse = '\n'),
+        '\ndo not share at least ',
+        intersect.no,
+        ' common taxa with the rest samples! ',
+        'For these samples, their size factors are set to be NA! \n',
+        'You may consider removing these samples since they are potentially outliers or negative controls!\n',
+        'You may also consider decreasing the minimum number of intersecting taxa and rerun the procedure!\n'
+      )
+    )
+  }
+  
+  cat('Completed!\n')
+  cat(
+    'Please watch for the samples with limited sharing with other samples based on NSS! They may be outliers! \n'
+  )
+  names(gmpr) <- names(comm.no) <- colnames(comm)
+  return(list(gmpr = gmpr, nss = comm.no))
+}
+
+scale_libraries <- function(physeq, n = min(sample_sums(physeq)), round = "floor") {
+  require(phyloseq)
+    
+  # Transform counts to n
+  physeq.scale <- transform_sample_counts(physeq, 
+    function(x) {(n * x/sum(x))}
+  )
+  
+  # Pick the rounding functions
+  if (round == "floor") {
+    otu_table(physeq.scale) <- floor(otu_table(physeq.scale))
+  } else if (round == "round") {
+    otu_table(physeq.scale) <- round(otu_table(physeq.scale), digits = 0)
+  }
+  
+  # Prune taxa and return new phyloseq object
+  physeq.scale <- prune_taxa(taxa_sums(physeq.scale) > 0, physeq.scale)
+  return(physeq.scale)
+}
+
+
+plot_lib_size <- function(Ps_obj, x, fill, facet1 = ".", facet2 = "."){
+  require(ggplot2)
+  require(scales)
+  Library.size <- rowSums(otu_table(Ps_obj))
+  ggplot(get_variable(Ps_obj),
+         aes(x = !!sym(x), y = Library.size, fill = !!sym(fill))) +
+    geom_bar(stat = "identity",
+             position = "dodge",
+             color = "black") +
+    scale_y_log10(
+      breaks = trans_breaks("log10", function(x)
+        10 ^ x),
+      labels = trans_format("log10", math_format(10 ^ .x))
+    ) +
+    theme(panel.grid.minor = element_blank()) +
+    scale_fill_brewer(type = 'qual', palette = 'Set2', direction = -1) +
+    facet_grid(as.formula(paste(facet1, facet2, sep = "~"))) +
+    ylab("Library size") ->
+    lib_dist_plot
+  return(lib_dist_plot)
+}
+
+plot_read_dist <- function(Ps_obj, b.width = 10){
+  require(ggplot2)
+  require(scales)
+    
+  as(otu_table(Ps_obj), "matrix") %>%
+    t() %>%
+    as_tibble() %>%
+    gather(key = sample, value = abundance) %>%
+    ggplot(aes(abundance)) +
+    # geom_histogram(binwidth = 1000) +
+    geom_freqpoly(binwidth = b.width) +
+    scale_y_log10(
+      breaks = trans_breaks("log10", function(x)
+        10 ^ x),
+      labels = trans_format("log10", math_format(10 ^ .x))
+    ) ->
+    ASV_dist_plot
+  return(ASV_dist_plot)
+}
+
+plot_mean_SD <- function(Ps_obj){
+  require(phyloseq)
+  require(ggplot2)
+  require(vsn)
+  if (taxa_are_rows(Ps_obj)) {Ps_obj <- t(Ps_obj)} # transpose if taxa are rows
+  notAllZero <- (rowSums(t(otu_table(Ps_obj))) > 0)
+  meanSdPlot(as.matrix(log2(t(otu_table(Ps_obj))[notAllZero, ] + 1)))
+}
+
+# phyloseq_CLR code
+# Requires zCompositions package
+# adapted from https://link.springer.com/protocol/10.1007%2F978-1-4939-8728-3_10
+################################################################################
+zero_comp <- function(x) {
+  if (taxa_are_rows(x)) {x <- t(x)}
+  matx <- otu_table(x)
+  # `zCompositions::cmultRepl` expects the samples to be in rows and OTUs to be in columns 
+  matxzc <- zCompositions::cmultRepl(matx, method = "CZM", output = "p-counts")
+  otu_table(x) <- otu_table(matxzc, taxa_are_rows = FALSE)
+  return(x)
+}
+# CLR definition
+geometric_mean <- function(x) {
+  exp(mean(log(x)))
+}
+clr = function(x, base = 2) {
+  x <- log((x / geometric_mean(x)), base)
+}
+phyloseq_CLR <- function(physeq) {
+  suppressMessages({physeq <- zero_comp(physeq)})
+  return(transform_sample_counts(physeq, fun = clr))
+}
+```
+[roey.angel@bc.cas.cz](mailto: roey.angel@bc.cas.cz)  
+
+## Read-depth distribution and normalisation
+This analysis tests the effect of library read-depth distribution on the community composition. It then performs various read-depth normalisation methods on the DADA2 zOTU-based dataset, for determining the optimal strategy to handle the bias of uneven read distribution. 
+
+### Setting general parameters:
+```{r general parameters}
+set.seed(1000)
+min_lib_size <- 2500
+data_path <- "./DADA2_pseudo/"
+# Metadata_table <- "./Preservation_methods_metadataJS.csv"
+# Seq_table <- "DADA2.seqtab_nochim_decontam.tsv"
+Proj_name <- "Zin_SIP"
+Ps_file <- paste0(Proj_name, "_seq_prev_filt.Rds")
+Var1 = "Density..g.ml.1." # e.g sampling point / replicate
+Var2 = "Treatment" # e.g. a treatment or a manipulation
+Var3 = "Label..18O." # e.g. a treatment/manipulation or an important covariant
+Var4 = "" # e.g. an important covariant
+
+adonis_f <- as.formula(
+  paste("test_mat",
+    paste(c(Var3, Var2), collapse = " * "),
+  sep = " ~ "))
+```
+
+### Load phyloseq object
+Read a decontaminated and filtered phyloseq object generated by [03_Taxonomical_analysis.Rmd](03_Taxonomical_analysis.Rmd). 
+
+```{r load data, cache=T}
+readRDS(paste0(data_path, Ps_file)) ->
+  Ps_obj
+```
+
+### Exploring dataset features
+First let us look at the count data distribution
+```{r plot abundance, cache=T}
+qplot(rowSums(otu_table(Ps_obj)), geom = "histogram") + 
+  xlab("Library size")
+qplot(log10(rowSums(otu_table(Ps_obj)))) +
+  xlab("Logged library size")
+
+plot_lib_size(Ps_obj, Var1, Var2, Var3)
+
+sample_data(Ps_obj) %>% 
+  as_tibble() %>% 
+  select(Read1_file, Library.size) %>% 
+  as(., "data.frame") %>% 
+  kable(.) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = F)
+
+Ps_obj_ord <-
+  ordinate(Ps_obj,
+           "MDS",
+           "bray")
+plot_ordination(
+  Ps_obj,
+  Ps_obj_ord,
+  type = "samples",
+  color = Var2,
+  # label = Var4,
+  shape = Var3
+)  + 
+  geom_text(mapping = aes(label = get(Var2)), size = 4, alpha = 3/4) +
+  geom_point(size = 4)
+
+# geom_point(size = 5) +
+# geom_text(size = 5) 
+```
+The figure and table indicate only a small deviation in the number of reads per samples.
+The control samples look more or less OK and separate from the other samples.
+
+I will test now the effect of library size, and more importantly of the Illumina platform type on the community composition and also plot 
+```{r mod abundance, cache=T, fig.width=4, fig.asp=.8}
+(mod1 <- adonis(phyloseq::distance(Ps_obj, method = "bray") ~ Library.size,
+  data = get_variable(Ps_obj),
+  permutations = 9999
+))
+
+
+plot_read_dist(Ps_obj)
+plot_mean_SD(Ps_obj)
+```
+Modelling library size shows a significant effect of read depth on the community structure, but explaining only `r percent(mod1$aov.tab$R2[1])` of the variance.
+The reads histogram shows as expected a highly sparse and skewed sequence matrix.
+The mean vs SD also shows as expected large dependency of SD on the mean reads of a sequence across all samples.
+
+### Try various normalisation methods
+
+```{r test s pruning, cache=T}
+# subsample libraries from 1000 to max(sample_sums(Ps_obj)) and test
+for (i in seq(1000, max(sample_sums(Ps_obj)), 1000)) {
+  min_seqs <<- i
+  Ps_obj_pruned_harsh <- subset_samples(Ps_obj, sample_sums(Ps_obj) > i)
+  mod <-
+    adonis2(phyloseq::distance(Ps_obj_pruned_harsh, method = "bray") ~ sample_sums(Ps_obj_pruned_harsh), # I use adonis2 because it gives a data.frame
+      data = as(sample_data(Ps_obj_pruned_harsh), "data.frame"),
+      permutations = 9999
+    )
+  Pval <- tidy(mod)$p.value[1]
+  if (Pval > 0.05)
+    break()
+}
+```
+
+Only by subsetting the samples to a minimum library size of $`r min_seqs`$ sequences do we get independence from library size but this forces us to drop $`r sum(sample_sums(Ps_obj) < i)`$ out of $`r nsamples(Ps_obj)`$ samples.
+
+Let's see the effect of this
+```{r effect s pruning, cache=T, fig.width=4, fig.asp=.8}
+adonis(
+  phyloseq::distance(Ps_obj_pruned_harsh, method = "bray") ~ Library.size,
+  data =
+    get_variable(Ps_obj_pruned_harsh),
+  permutations = 9999
+)
+# 
+# test_mat <- phyloseq::distance(Ps_obj_pruned_harsh, method = "bray")
+# adonis(
+#   adonis_f,
+#   data =
+#     as(sample_data(Ps_obj_pruned_harsh), "data.frame"),
+#   permutations = 999
+# )
+
+plot_read_dist(Ps_obj_pruned_harsh)
+plot_mean_SD(Ps_obj_pruned_harsh)
+```
+
+```{r effect s pruning - ordinate, cache=T, fig.width=8, fig.aspect=.5}
+Ps_obj_ord <-
+  ordinate(Ps_obj_pruned_harsh,
+           "CAP",
+           "bray",
+           formula = Ps_obj_pruned_harsh ~ get(Var3) * get(Var2))
+plot_ordination(
+  Ps_obj_pruned_harsh,
+  Ps_obj_ord,
+  type = "samples",
+  color = Var2,
+  # label = Var4,
+  shape = Var3
+)  + 
+  geom_text(mapping = aes(label = get(Var2)), size = 4, alpha = 3/4) +
+  geom_point(size = 4)
+```
+
+Instead let's drop all samples below `r min_lib_size` reads and do try some correction methods for library depths
+```{r prune to min_lib_size reads, cache=T}
+Ps_obj_pruned_min <-
+  subset_samples(Ps_obj, sample_sums(Ps_obj) > min_lib_size)
+Ps_obj_pruned_min <-
+  filter_taxa(Ps_obj_pruned_min, function(x)
+    sum(x) > 0, TRUE)
+```
+
+#### Rarefaction
+```{r test rarefaction, cache=T}
+Ps_obj_pruned_rared <-
+  rarefy_even_depth(
+    Ps_obj_pruned_min,
+    sample.size = min(sample_sums(Ps_obj_pruned_min)),
+    rngseed = FALSE,
+    replace = FALSE
+  )
+sample_data(Ps_obj_pruned_rared)$Library.size <-
+  sample_sums(Ps_obj_pruned_rared)
+# Ps_obj_pruned_rared <- Ps_obj_pruned_min
+# Ps_obj_pruned_min %>%
+#   otu_table() %>%
+#   rowSums() %>%
+#   min() %>%
+#   rrarefy(otu_table(Ps_obj_pruned_min), .) ->
+#   otu_table(Ps_obj_pruned_rared)
+
+test_mat <- phyloseq::distance(Ps_obj_pruned_rared, method = "bray")
+adonis(
+  adonis_f,
+  data =
+    as(sample_data(Ps_obj_pruned_rared), "data.frame"),
+  permutations = 999
+)
+
+qplot(rowSums(otu_table(Ps_obj_pruned_rared)),binwidth = 100, geom = "histogram") +   xlab("Library size")
+qplot(log10(rowSums(otu_table(Ps_obj_pruned_rared)))) +
+  xlab("Logged library size")
+plot_lib_size(Ps_obj_pruned_rared, Var1, Var2, Var3)
+```
+```{r test rarefaction diag plots, cache=T, fig.width=4, fig.asp=.8}
+plot_read_dist(Ps_obj_pruned_rared)
+notAllZero <- (rowSums(t(otu_table(Ps_obj_pruned_rared))) > 0)
+plot_mean_SD(Ps_obj_pruned_rared)
+```
+
+```{r rarefaction - ordinate, cache=T, fig.width=8, fig.aspect=.5}
+Ps_obj_ord <-
+  ordinate(Ps_obj_pruned_rared,
+           "CAP",
+           "bray",
+           formula = Ps_obj_pruned_rared ~  get(Var3) * get(Var2))
+plot_ordination(
+  Ps_obj_pruned_rared,
+  Ps_obj_ord,
+  type = "samples",
+  color = Var2,
+  # label = Var4,
+  shape = Var3
+)  + 
+  geom_text(mapping = aes(label = get(Var2)), size = 4, alpha = 3/4) +
+  geom_point(size = 4)
+```
+
+#### Scale libraries 
+```{r scale, cache=T}
+Ps_obj_pruned_scaled <- Ps_obj_pruned_min
+Ps_obj_scaled <- scale_libraries(Ps_obj_pruned_min)
+sample_data(Ps_obj_scaled)$Library.size <- sample_sums(Ps_obj_scaled)
+
+adonis(
+  phyloseq::distance(Ps_obj_scaled, method = "bray") ~ Library.size,
+  data =
+    as(sample_data(Ps_obj_scaled), "data.frame"),
+  permutations = 9999
+)
+
+test_mat <- phyloseq::distance(Ps_obj_scaled, method = "bray")
+adonis(
+  adonis_f,
+  data =
+    as(sample_data(Ps_obj_scaled), "data.frame"),
+  permutations = 999
+)
+
+qplot(rowSums(otu_table(Ps_obj_scaled)), geom = "histogram") + 
+  xlab("Library size")
+qplot(log10(rowSums(otu_table(Ps_obj_scaled)))) +
+  xlab("Logged library size")
+plot_lib_size(Ps_obj_scaled, Var1, Var2, Var3)
+```
+```{r scaled diag plots, cache=T, fig.width=4, fig.asp=.8}
+plot_read_dist(Ps_obj_scaled)
+plot_mean_SD(Ps_obj_scaled)
+```
+
+```{r scaled - ordinate, cache=T, fig.width=8, fig.aspect=.5}
+Ps_obj_ord <-
+  ordinate(Ps_obj_scaled,
+           "CAP",
+           "bray",
+           formula = Ps_obj_scaled ~ get(Var3) * get(Var2))
+plot_ordination(
+  Ps_obj_scaled,
+  Ps_obj_ord,
+  type = "samples",
+  color = Var2,
+  # label = Var4,
+  shape = Var3
+)  + 
+  geom_text(mapping = aes(label = get(Var2)), size = 4, alpha = 3/4) +
+  geom_point(size = 4)
+```
+
+
+#### Cumulative sum scaling normalization [@paulson_differential_2013]
+```{r cumsum, cache=T}
+# Cumulative sum scaling normalization
+Ps_obj_pruned_CS <- Ps_obj_pruned_min
+
+Ps_obj_pruned_CS %>%
+  otu_table(.) %>%
+  t() %>%
+  as(., "matrix") %>%
+  newMRexperiment(.) ->
+  mr_obj
+p <- cumNormStatFast(mr_obj)
+cumNormMat(mr_obj, p = p) %>% 
+  otu_table(., taxa_are_rows = TRUE) ->
+  otu_table(Ps_obj_pruned_CS)
+
+# Did any OTU produce Na?
+Ps_obj_pruned_CS %>% 
+  otu_table() %>% 
+  as(., "matrix") %>% 
+  t(.) %>% 
+  apply(., 2, function(x) !any(is.na(x))) %>% 
+  unlist() ->
+  OTUs2keep
+Ps_obj_pruned_CS <- prune_taxa(OTUs2keep, Ps_obj_pruned_CS)
+sample_data(Ps_obj_pruned_CS)$Library.size <- sample_sums(Ps_obj_pruned_CS)
+
+# adonis(
+#   phyloseq::distance(Ps_obj_pruned_CS, method = "bray") ~ Library.size,
+#   data =
+#     as(sample_data(Ps_obj_pruned_CS), "data.frame"),
+#   permutations = 9999
+# )
+# adonis(
+#   phyloseq::distance(Ps_obj_pruned_CS, method = "bray") ~  get(Var4) * get(Var3) * get(Var2),
+#   data =
+#     as(sample_data(Ps_obj_pruned_CS), "data.frame"),
+#   permutations = 9999
+# )
+
+qplot(rowSums(otu_table(Ps_obj_pruned_CS)), geom = "histogram") + 
+  xlab("Library size")
+qplot(log10(rowSums(otu_table(Ps_obj_pruned_CS)))) +
+  xlab("Logged library size")
+plot_lib_size(Ps_obj_pruned_CS, Var1, Var2, Var3)
+```
+```{r cumsum diag plots, cache=T, fig.width=4, fig.asp=.8}
+plot_read_dist(Ps_obj_pruned_CS)
+plot_mean_SD(Ps_obj_pruned_CS)
+```
+
+```{r CS - ordinate, cache=T}
+Ps_obj_ord <-
+  ordinate(Ps_obj_pruned_CS,
+           "CAP",
+           "bray",
+           formula = Ps_obj_pruned_CS ~ get(Var3) * get(Var2))
+plot_ordination(
+  Ps_obj_pruned_CS,
+  Ps_obj_ord,
+  type = "samples",
+  color = Var2,
+  # label = Var4,
+  shape = Var3
+)  + 
+  geom_text(mapping = aes(label = get(Var2)), size = 4, alpha = 3/4) +
+  geom_point(size = 4)
+```
+
+#### Standardize abundances to the median sequencing depth (and convert to proportion)
+```{r median, cache=T}
+Ps_obj_pruned_min %>%
+  otu_table(.) %>%
+  as(., "matrix") %>%
+  rowSums() %>% 
+  median() ->
+  total
+standf = function(x, t=total) round(t * (x / sum(x)))
+Ps_obj_pruned_median <- transform_sample_counts(Ps_obj_pruned_min, standf) # Standardize abundances to median sequencing depth
+sample_data(Ps_obj_pruned_median)$Library.size <- sample_sums(Ps_obj_pruned_median)
+
+adonis(
+  phyloseq::distance(Ps_obj_pruned_median, method = "bray") ~ Library.size,
+  data =
+    as(sample_data(Ps_obj_pruned_median), "data.frame"),
+  permutations = 9999
+)
+
+test_mat <- phyloseq::distance(Ps_obj_pruned_median, method = "bray")
+adonis(
+  adonis_f,
+  data =
+    as(sample_data(Ps_obj_pruned_median), "data.frame"),
+  permutations = 999
+)
+
+qplot(rowSums(otu_table(Ps_obj_pruned_median)), geom = "histogram") + 
+  xlab("Library size")
+qplot(log10(rowSums(otu_table(Ps_obj_pruned_median)))) +
+  xlab("Logged library size")
+plot_lib_size(Ps_obj_pruned_median, Var1, Var2, Var3)
+```
+```{r median diag plots, cache=T, fig.width=4, fig.asp=.8}
+plot_read_dist(Ps_obj_pruned_median)
+plot_mean_SD(Ps_obj_pruned_median)
+```
+
+```{r median - ordinate, cache=T, fig.width=8, fig.aspect=.5}
+Ps_obj_ord <-
+  ordinate(Ps_obj_pruned_median,
+           "CAP",
+           "bray",
+           formula = Ps_obj_pruned_median ~ get(Var3) * get(Var2))
+plot_ordination(
+  Ps_obj_pruned_median,
+  Ps_obj_ord,
+  type = "samples",
+  color = Var2,
+  # label = Var4,
+  shape = Var3
+)  + 
+  geom_text(mapping = aes(label = get(Var2)), size = 4, alpha = 3/4) +
+  geom_point(size = 4)
+```
+
+#### Standardize abundances using log transformation for variance stabilisation
+```{r log, cache=T}
+Ps_obj_pruned_log <- transform_sample_counts(Ps_obj_pruned_min, function(x) log(1 + x))
+
+# Ps_obj_pruned_rlog <- Ps_obj_pruned_min
+# Ps_obj_pruned_min %>%
+#   transform_sample_counts(., function(x) (1 + x)) %>% # add pseudocount
+#   phyloseq_to_deseq2(., ~ Spill) %>%
+#   rlog(., blind = TRUE , fitType = "parametric") %>%
+#   assay() %>%
+#   otu_table(, taxa_are_rows = TRUE) ->
+#   otu_table(Ps_obj_pruned_rlog)
+sample_data(Ps_obj_pruned_log)$Library.size <- sample_sums(Ps_obj_pruned_log)
+
+adonis(
+  phyloseq::distance(Ps_obj_pruned_log, method = "bray") ~ Library.size,
+  data =
+    as(sample_data(Ps_obj_pruned_log), "data.frame"),
+  permutations = 9999
+)
+
+test_mat <- phyloseq::distance(Ps_obj_pruned_log, method = "bray")
+adonis(
+  adonis_f,
+  data =
+    as(sample_data(Ps_obj_pruned_log), "data.frame"),
+  permutations = 999
+)
+
+qplot(rowSums(otu_table(Ps_obj_pruned_log)), geom = "histogram") + 
+  xlab("Library size")
+qplot(log10(rowSums(otu_table(Ps_obj_pruned_log)))) +
+  xlab("Logged library size")
+plot_lib_size(Ps_obj_pruned_log, Var1, Var2, Var3)
+```
+```{r log diag plots, cache=T, fig.width=4, fig.asp=.8}
+plot_read_dist(Ps_obj_pruned_log)
+plot_mean_SD(Ps_obj_pruned_log)
+```
+
+```{r log - ordinate, cache=T, fig.width=8, fig.aspect=.5}
+Ps_obj_ord <-
+  ordinate(Ps_obj_pruned_log,
+           "CAP",
+           "bray",
+           formula = Ps_obj_pruned_log ~ get(Var3) * get(Var2))
+plot_ordination(
+  Ps_obj_pruned_log,
+  Ps_obj_ord,
+  type = "samples",
+  color = Var2,
+  # label = Var4,
+  shape = Var3
+)  + 
+  geom_text(mapping = aes(label = get(Var2)), size = 4, alpha = 3/4) +
+  geom_point(size = 4)
+```
+
+#### Standardize abundances using Centered-Log-Ratio transformation for variance stabilisation [@fernandes_anova-like_2013]
+```{r clr, cache=T}
+Ps_obj_pruned_CLR <- Ps_obj_pruned_min
+Ps_obj_pruned_CLR <- phyloseq_CLR(Ps_obj_pruned_min)
+
+sample_data(Ps_obj_pruned_CLR)$Library.size <- sample_sums(Ps_obj_pruned_CLR)
+
+adonis(
+  phyloseq::distance(Ps_obj_pruned_CLR, method = "euclidean") ~ Library.size,
+  data =
+    as(sample_data(Ps_obj_pruned_CLR), "data.frame"),
+  permutations = 9999
+)
+
+test_mat <- phyloseq::distance(Ps_obj_pruned_CLR, method = "euclidean")
+adonis(
+  adonis_f,
+  data =
+    as(sample_data(Ps_obj_pruned_CLR), "data.frame"),
+  permutations = 999
+)
+
+qplot(rowSums(otu_table(Ps_obj_pruned_CLR)), geom = "histogram") + 
+  xlab("Library size")
+qplot(log10(rowSums(otu_table(Ps_obj_pruned_CLR)))) +
+  xlab("Logged library size")
+plot_lib_size(Ps_obj_pruned_CLR, Var1, Var2, Var3)
+```
+```{r clr diag plots, cache=T, fig.width=4, fig.asp=.8}
+plot_read_dist(Ps_obj_pruned_CLR)
+plot_mean_SD(Ps_obj_pruned_CLR)
+```
+
+```{r clr - ordinate, cache=T, fig.width=8, fig.aspect=.5}
+Ps_obj_ord <-
+  ordinate(Ps_obj_pruned_CLR,
+           "CAP",
+           "euclidean",
+           formula = Ps_obj_pruned_CLR ~ get(Var3) * get(Var2))
+plot_ordination(
+  Ps_obj_pruned_CLR,
+  Ps_obj_ord,
+  type = "samples",
+  color = Var2,
+  # label = Var4,
+  shape = Var3
+)  + 
+  geom_text(mapping = aes(label = get(Var2)), size = 4, alpha = 3/4) +
+  geom_point(size = 4)
+```
+
+```{r colophon, eval=T}
+sessioninfo::session_info() %>%
+  details::details(
+    summary = 'Current session info',
+    open    = TRUE
+  )
+
+## References
