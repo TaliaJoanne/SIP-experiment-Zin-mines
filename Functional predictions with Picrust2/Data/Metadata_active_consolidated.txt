@@ -1,0 +1,10 @@
+SampleID	Treatment	Label_18O	Hours	Density_zone	
+Na_2	Natural	labelled	96	Heavy	
+Na_3	Natural	labelled	96	Heavy	
+Na_4	Natural	labelled	96	Heavy	
+Na_5	Natural	labelled	96	Heavy	
+Res_1	Restored	labelled	96	Heavy	
+Res_2	Restored	labelled	96	Heavy	
+Res_3	Restored	labelled	96	Heavy	
+Res_4	Restored	labelled	96	Heavy	
+Res_5	Restored	labelled	96	Heavy	

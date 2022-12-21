@@ -1,0 +1,137 @@
+---
+title: "SIP_functional_predictions"
+author: "Talia Gabay"
+date: "2022-12-21"
+output: html_document
+---
+
+## Load packages
+```{r libraries}
+library(phyloseq)
+library(ggplot2)
+library(vegan)
+library(magrittr)
+library(plyr)
+library(dplyr)
+library(scales)
+library(grid)
+library(reshape2)
+library(devtools)
+library(ggpubr)
+library(rlist)
+library(dunn.test)
+library(ggpattern)
+```
+
+## Load datasets
+```{r load tables}
+# table with sample names and their KO abundances
+KO_table <- read.table("C:/Users/Talia Gabay/OneDrive - post.bgu.ac.il/PhD/SIP experiment/Picrust/New_analyses/pred_metagenome_unstrat.tsv", header=TRUE, row.names = 1, check.names=F)
+# table with KO numbers and associated functions
+annotations <- read.table("C:/Users/Talia Gabay/OneDrive - post.bgu.ac.il/PhD/SIP experiment/Picrust/New_analyses/Annotations_Talia.txt", header=TRUE, row.names = 1, check.names=F, sep="\t")
+# Metadata table
+metadata <- read.table("C:/Users/Talia Gabay/OneDrive - post.bgu.ac.il/PhD/SIP experiment/Picrust/New_analyses/Metadata_active_consolidated.txt", header=TRUE, row.names = 1, sep="\t") 
+```
+
+## In this section, we create a list of KO numbers that appear both in the annotation file and the KO abundance table
+```{r find intersecting ko numbers in annotation and ko tables}
+#Create a list of the common row names (aka KEGG numbers) in the annotation file and the abundance table
+intersectkegg <- intersect(rownames(KO_table),rownames(annotations))
+
+#Create an empty data frame with the right names and number of columns
+#number of columns = number of colums in KO table
+df <- data.frame(matrix(0,ncol=9, nrow=1))
+colnames(df) <- colnames(KO_table)
+
+#To pick the rows of the KO abundance table that have a KO number matching the intersection list
+for (i in 1:nrow(KO_table)) {
+  if (rownames(KO_table)[i] %in% intersectkegg) {
+    df <- rbind(df,KO_table[i,])
+  } else print(FALSE)
+}
+
+#Rename the file and remove the first line that has only zero values
+KO_table <- df[-1,]
+
+
+#Create an empty data frame with the right names and number of columns
+#Here number of columns = number of columns in annotation table
+df2 <- data.frame(matrix(0,ncol=5, nrow=1))
+colnames(df2) <- colnames(annotations)
+
+
+#To pick the rows of the annotation file that have a KO number matching the intersection list 
+for (j in 1:nrow(annotations)) {
+  if (rownames(annotations)[j] %in% intersectkegg) {
+    df2 <- rbind(df2,annotations[j,])
+  } else print(FALSE)
+}
+#Rename the file and removing the first line that has only zeros
+annotations <- df2[-1,]
+```
+
+## Next, we make a phyloseq object 
+```{r make phyloseq object}
+KO_table <- otu_table(KO_table,taxa_are_rows=TRUE) #KO abundance table = otu table
+ps_annotations <- as.matrix(annotations)
+ps_annotations <-tax_table(ps_annotations) #annotations = taxa table
+metadata <- sample_data(metadata) 
+ps_picrust <- phyloseq(KO_table,ps_annotations,metadata)
+```
+
+## Aggregate data by functional groups
+```{r aggregate data}
+picrust_kingdom <- ps_picrust %>%
+  tax_glom(taxrank = "Kingdom") %>%                
+  psmelt() 
+agg_data <- aggregate(picrust_kingdom$Abundance, FUN=mean, by=list(Function_Group=picrust_kingdom$Kingdom, Treatment= picrust_kingdom$Treatment))
+```
+
+## make boxplots of different functional groups by treatment
+```{r function boxplots, fig.width=15, fig.height=10}
+picrust_kingdom %>%
+  ggplot( aes(x="", y=Abundance, fill= Treatment)) +
+  geom_boxplot()+
+  facet_wrap(~Kingdom, scale="free")+
+  scale_fill_brewer(palette = "Pastel2") +
+  theme(legend.key=element_blank(), panel.spacing.y = unit(3, "lines"), panel.spacing.x = unit(3, "lines"), 
+        axis.text.x = element_text(colour = "black", size = 16, angle = 90, vjust = 0.8, hjust = 0.9), axis.text.y = element_text(colour = "black", size = 16, vjust = 0.8, hjust = 0.9), 
+legend.text = element_text(size = 16, face ="bold", colour ="black"), 
+  legend.title = element_text(size = 16, face = "bold"), 
+        panel.background = element_blank(), panel.border = element_rect(colour = "black", fill = NA, size = 1.5), 
+        legend.position = c(0.9,0.1)) +
+  scale_y_continuous(labels = scientific) 
+ggsave("functional_analysis_active.tiff", units="in", width=15, height=10, dpi=600, compression = 'lzw')
+```
+  
+## Run non-parametric two-group comparisons
+```{r mann-whitney tests}
+  autotrophy <- filter(picrust_kingdom, Kingdom == "Autotrophy")
+wilcox.test(Abundance ~ Treatment, data=autotrophy)
+dnacons <- filter(picrust_kingdom, Kingdom == "DNA conservation")
+wilcox.test(Abundance ~ Treatment, data=dnacons)
+dnarep <- filter(picrust_kingdom, Kingdom == "DNA repair and degradation")
+wilcox.test(Abundance ~ Treatment, data=dnarep)
+energysource <- filter(picrust_kingdom, Kingdom == "Inorganic & gaseous energy sources")
+wilcox.test(Abundance ~ Treatment, data=energysource)
+nitrog <- filter(picrust_kingdom, Kingdom == "Nitrogen")
+wilcox.test(Abundance ~ Treatment, data=nitrog)
+organic <- filter(picrust_kingdom, Kingdom == "Organic energy source")
+wilcox.test(Abundance ~ Treatment, data=organic)
+phororoph <- filter(picrust_kingdom, Kingdom == "Photothrophy")
+wilcox.test(Abundance ~ Treatment, data=phororoph)
+ROS<- filter(picrust_kingdom, Kingdom == "ROS-damage prevention")
+wilcox.test(Abundance ~ Treatment, data=ROS)
+sensing <- filter(picrust_kingdom, Kingdom == "Sensing & motility")
+wilcox.test(Abundance ~ Treatment, data=sensing)
+sporul <- filter(picrust_kingdom, Kingdom == "Sporulation capsule & C-storage")
+wilcox.test(Abundance ~ Treatment, data=sporul)
+```
+
+```{r colophon, eval=T}
+sessioninfo::session_info() %>%
+  details::details(
+    summary = 'Current session info',
+    open    = TRUE
+  )
+```

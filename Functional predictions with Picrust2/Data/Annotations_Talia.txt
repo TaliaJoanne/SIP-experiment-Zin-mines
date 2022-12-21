@@ -1,0 +1,568 @@
+Feature_ID	Kingdom	Phylum	Class	Order	Family
+K00005	Sensing & motility	Gliding motility	GldA	Gliding motility-associated ABC transporter ATP-binding protein GldA	Unclassified
+K00218	Photothrophy	Chlorophyll synthesis	por	Light-dependent protochlorophyllide reductase (EC 1.3.1.33)	beta-carotene 9
+K00281	Sensing & motility	Gliding motility	GldC	Gliding motility-associated protein GldC	Unclassified
+K00404	ROS-damage prevention	Cytochrome C oxidase	ccoN	 cytochrome c oxidase cbb3-type subunit I [EC:7.1.1.9]	 member 7/8
+K00405	ROS-damage prevention	Cytochrome C oxidase	ccoO	 cytochrome c oxidase cbb3-type subunit II	 member 9
+K00406	ROS-damage prevention	Cytochrome C oxidase	ccoP	 cytochrome c oxidase cbb3-type subunit III	 member 10
+K00407	ROS-damage prevention	Cytochrome C oxidase	ccoQ	 cytochrome c oxidase cbb3-type subunit IV	 member 11
+K00424	ROS-damage prevention	Cytochrome bd ubiquinol oxidase	cydX	 cytochrome bd-I ubiquinol oxidase subunit X [EC:7.1.1.7]	 solute carrier family 32 (vesicular inhibitory amino acid transporter)
+K00425	ROS-damage prevention	Cytochrome bd ubiquinol oxidase	cydA	 cytochrome bd ubiquinol oxidase subunit I [EC:7.1.1.7]	 solute carrier family 25 (mitochondrial 2-oxodicarboxylate transporter)
+K00426	ROS-damage prevention	Cytochrome bd ubiquinol oxidase	cydB	 cytochrome bd ubiquinol oxidase subunit II [EC:7.1.1.7]	Unclassified
+K00428	ROS-damage prevention	Cytochrome C oxidase	E1.11.1.5	 cytochrome c peroxidase [EC:1.11.1.5]	 protein O-GlcNAcase / histone acetyltransferase [EC:3.2.1.169 2.3.1.48]
+K00437	Inorganic & gaseous energy sources	NiFe hydrogenase	hydB	 [NiFe] hydrogenase large subunit [EC:1.12.2.1]	Unclassified
+K00515	Light energy or sensing	Beta-carotene dioxygenase (Retinal synthesis)	BCMO1	 BCDO1	Unclassified
+K00531	Nitrogen	Nitrogen	anfG	Unclassified	Unclassified
+K00688	Sporulation capsule & C-storage	Glycogen	glgP	glycogen phosphorylase [EC:2.4.1.1]	Unclassified
+K00693	Sporulation capsule & C-storage	Glycogen synthesis	GYS	 glycogen synthase [EC:2.4.1.11]	Unclassified
+K00700	Sporulation capsule & C-storage	Glycogen	"GBE1, glgB"	"glgB; 1,4-alpha-glucan branching enzyme [EC:2.4.1.18]"	Unclassified
+K00703	Sporulation capsule & C-storage	Glycogen	glgA	starch synthase [EC:2.4.1.21]	Unclassified
+K00996	Sporulation capsule & C-storage	Exoploysaccharide synthesis	rfbP	Exopolysaccharide biosynthesis polyprenyl glycosylphosphotransferase (EC 2.7.8.6)	Unclassified
+K01141	DNA repair and degradation	Replication and repair	"sbcB, exoI"	exodeoxyribonuclease I [EC:3.1.11.1]	Unclassified
+K01142	DNA repair and degradation	Replication and repair	xthA	exodeoxyribonuclease III [EC:3.1.11.2]	Unclassified
+K01601	Autotrophy	RuBisCO	rbcL	 ribulose-bisphosphate carboxylase large chain [EC:4.1.1.39]	Unclassified
+K01637	ROS-damage prevention	Glyoxylate bypass		Isocitrate lyase (EC 4.1.3.1)	Unclassified
+K01638	ROS-damage prevention	Glyoxylate bypass	"aceB, glcB"	Malate synthase (EC 2.3.3.9)	Unclassified
+K01669	Photothrophy	Chlorophyll synthesis	phrB	 deoxyribodipyrimidine photo-lyase [EC:4.1.99.3]	 putative multiple sugar transport system substrate-binding protein
+K01791	Sporulation capsule & C-storage	Exoploysaccharide synthesis	wecB	UDP-N-acetylglucosamine 2-epimerase (non-hydrolysing) [EC:5.1.3.14]	Unclassified
+K01995	Organic energy source	Amino acid transporter	LivG	Branched-chain amino acid transport ATP-binding protein LivG (TC 3.A.1.4.1)	 sporulation sensor kinase B [EC:2.7.13.3]
+K01996	Organic energy source	Amino acid transporter	LivF	Branched-chain amino acid transport ATP-binding protein LivF (TC 3.A.1.4.1)	Unclassified
+K01997	Organic energy source	Amino acid transporter	LivH	Branched-chain amino acid transport system permease protein | (GenBank) High-affinity branched-chain amino acid transport system permease protein LivH (TC 3.A.1.4.1)	Unclassified
+K01998	Organic energy source	Amino acid transporter	LivM	Branched-chain amino acid transport system permease protein LivM (TC 3.A.1.4.1)	 sporulation sensor kinase C [EC:2.7.13.3]
+K01999	Organic energy source	Amino acid transporter		"ABC-type branched-chain amino acid transport systems, periplasmic component"	Unclassified
+K02025	Organic energy source	ABC sugar transporters	ABC.MS.P	 multiple sugar transport system permease protein	Unclassified
+K02026	Organic energy source	ABC sugar transporters	ABC.MS.P1	 multiple sugar transport system permease protein	Unclassified
+K02027	Organic energy source	ABC sugar transporters	ABC.MS.S	 multiple sugar transport system substrate-binding protein	Unclassified
+K02028	Organic energy source	Amino acid transporter	gltL	"Polar amino acid transport system ATP-binding protein [EC:7.4.2.1] | (GenBank) gltL; putative ABC-type polar amino acid transport system, ATPase component"	Unclassified
+K02031	Organic energy source	Peptide transporters		"Peptide/nickel transport system ATP-binding protein | (GenBank) ABC transporter, ATP-binding protein (cluster 5, nickel/peptides/opines)"	Unclassified
+K02032	Organic energy source	Peptide transporters		"Peptide/nickel transport system ATP-binding protein | (GenBank) ABC transporter, ATP-binding protein (cluster 5, nickel/peptides/opines)"	Unclassified
+K02033	Organic energy source	Peptide transporters		"Peptide/nickel transport system permease protein | (GenBank) ABC transporter, permease protein 1 (cluster 5, nickel/peptides/opines)"	Unclassified
+K02034	Organic energy source	Peptide transporters		"Peptide/nickel transport system permease protein | (GenBank) ABC transporter, permease protein 2 (cluster 5, nickel/peptides/opines)"	Unclassified
+K02047	Organic energy source	Sugar transporters	CysW	"sulfate/thiosulfate transport system permease protein | (RefSeq) sulfate ABC transporter, inner membrane subunit CysW"	Unclassified
+K02048	Organic energy source	Sugar transporters	CysP	 sulfate/thiosulfate transport system substrate-binding protein | (RefSeq) cysP; thiosulfate/sulfate ABC transporter periplasmic binding protein CysP	 response regulator aspartate phosphatase A (stage 0 sporulation protein L) [EC:3.1.-.-]
+K02049	Organic energy source	Sugar transporters	NitT/TauT	"NitT/TauT family transport system ATP-binding protein | (GenBank) putative ABC transporter, ATP-binding protein"	Unclassified
+K02056	Organic energy source	ABC sugar transporters	ABC.SS.A	 simple sugar transport system ATP-binding protein [EC:7.5.2.-]	Unclassified
+K02057	Organic energy source	ABC sugar transporters	ABC.SS.P	 simple sugar transport system permease protein	 lymphotoxin beta (TNF superfamily
+K02058	Organic energy source	ABC sugar transporters	ABC.SS.S	 simple sugar transport system substrate-binding protein	 lymphotoxin beta receptor TNFR superfamily member 3
+K02100	Organic energy source	Sugar transporters	araE	"transporter, SP family, arabinose:H+ symporter | (GenBank) araE; arabinose-proton symporter"	Unclassified
+K02256	ROS-damage prevention	Cytochrome C oxidase	COX1	 cytochrome c oxidase subunit 1 [EC:7.1.1.9]	Unclassified
+K02258	ROS-damage prevention	Cytochrome C oxidase	COX11	 ctaG	Unclassified
+K02259	ROS-damage prevention	Cytochrome C oxidase	COX15	 ctaA	Unclassified
+K02260	ROS-damage prevention	Cytochrome C oxidase	COX17	 cytochrome c oxidase assembly protein subunit 17	Unclassified
+K02261	ROS-damage prevention	Cytochrome C oxidase	COX2	 cytochrome c oxidase subunit 2	Unclassified
+K02262	ROS-damage prevention	Cytochrome C oxidase	COX3	 cytochrome c oxidase subunit 3	Unclassified
+K02263	ROS-damage prevention	Cytochrome C oxidase	COX4	 cytochrome c oxidase subunit 4	 DNA-directed RNA polymerase IV and V subunit 2 [EC:2.7.7.6]
+K02264	ROS-damage prevention	Cytochrome C oxidase	COX5A	 cytochrome c oxidase subunit 5a	 DNA-directed RNA polymerase IV and V subunit 7
+K02265	ROS-damage prevention	Cytochrome C oxidase	COX5B	 cytochrome c oxidase subunit 5b	Unclassified
+K02266	ROS-damage prevention	Cytochrome C oxidase	COX6A	 cytochrome c oxidase subunit 6a	Unclassified
+K02267	ROS-damage prevention	Cytochrome C oxidase	COX6B	 cytochrome c oxidase subunit 6b	Unclassified
+K02268	ROS-damage prevention	Cytochrome C oxidase	COX6C	 cytochrome c oxidase subunit 6c	Unclassified
+K02269	ROS-damage prevention	Cytochrome C oxidase	COX7	 cytochrome c oxidase subunit 7	Unclassified
+K02270	ROS-damage prevention	Cytochrome C oxidase	COX7A	 cytochrome c oxidase subunit 7a	Unclassified
+K02271	ROS-damage prevention	Cytochrome C oxidase	COX7B	 cytochrome c oxidase subunit 7b	Unclassified
+K02272	ROS-damage prevention	Cytochrome C oxidase	COX7C	 cytochrome c oxidase subunit 7c	Unclassified
+K02273	ROS-damage prevention	Cytochrome C oxidase	COX8	 cytochrome c oxidase subunit 8	Unclassified
+K02274	ROS-damage prevention	Cytochrome C oxidase	coxA	 ctaD	Unclassified
+K02275	ROS-damage prevention	Cytochrome C oxidase	coxB	 ctaC	Unclassified
+K02276	ROS-damage prevention	Cytochrome C oxidase	coxC	 ctaE	Unclassified
+K02277	ROS-damage prevention	Cytochrome C oxidase	coxD	 ctaF	Unclassified
+K02297	ROS-damage prevention	Cytochrome C oxidase	cyoA	 cytochrome o ubiquinol oxidase subunit II [EC:7.1.1.3]	Unclassified
+K02298	ROS-damage prevention	Cytochrome C oxidase	cyoB	 cytochrome o ubiquinol oxidase subunit I [EC:7.1.1.3]	Unclassified
+K02299	ROS-damage prevention	Cytochrome C oxidase	cyoC	 cytochrome o ubiquinol oxidase subunit III	Unclassified
+K02300	ROS-damage prevention	Cytochrome C oxidase	cyoD	 cytochrome o ubiquinol oxidase subunit IV	Unclassified
+K02320	DNA repair and degradation	DNA polymerase PolA (COG0258)	POLA1	 DNA polymerase alpha subunit A [EC:2.7.7.7]	Unclassified
+K02321	DNA repair and degradation	DNA polymerase PolA (COG0258)	POLA2	 DNA polymerase alpha subunit B	Unclassified
+K02335	DNA repair and degradation	DNA polymerase PolA (COG0258)	polA	 DNA polymerase I [EC:2.7.7.7]	Unclassified
+K02346	DNA repair and degradation	DNA polymerase IV	dinB	 DNA polymerase IV [EC:2.7.7.7]	Unclassified
+K02382	Sensing & motility	Flagella	flbA	 flagellar protein FlbA	 single-stranded DNA-binding protein
+K02383	Sensing & motility	Flagella	flbB	 flagellar protein FlbB	Unclassified
+K02384	Sensing & motility	Flagella	flbC	 flagellar protein FlbC	Unclassified
+K02385	Sensing & motility	Flagella	flbD	 flagellar protein FlbD	 interphotoreceptor matrix proteoglycan 1
+K02386	Sensing & motility	Flagella	flgA	 flagella basal body P-ring formation protein FlgA	 interphotoreceptor matrix proteoglycan 2
+K02387	Sensing & motility	Flagella	flgB	 flagellar basal-body rod protein FlgB	Unclassified
+K02388	Sensing & motility	Flagella	flgC	 flagellar basal-body rod protein FlgC	Unclassified
+K02389	Sensing & motility	Flagella	flgD	 flagellar basal-body rod modification protein FlgD	 UL29
+K02390	Sensing & motility	Flagella	flgE	 flagellar hook protein FlgE	Unclassified
+K02391	Sensing & motility	Flagella	flgF	 flagellar basal-body rod protein FlgF	Unclassified
+K02392	Sensing & motility	Flagella	flgG	 flagellar basal-body rod protein FlgG	Unclassified
+K02393	Sensing & motility	Flagella	flgH	 flagellar L-ring protein precursor FlgH	Unclassified
+K02394	Sensing & motility	Flagella	flgI	 flagellar P-ring protein precursor FlgI	Unclassified
+K02395	Sensing & motility	Flagella	flgJ	 flagellar protein FlgJ	Unclassified
+K02396	Sensing & motility	Flagella	flgK	 flagellar hook-associated protein 1 FlgK	Unclassified
+K02397	Sensing & motility	Flagella	flgL	 flagellar hook-associated protein 3 FlgL	Unclassified
+K02399	Sensing & motility	Flagella	flgN	 flagella synthesis protein FlgN	Unclassified
+K02400	Sensing & motility	Flagella	flhA	 flagellar biosynthesis protein FlhA	Unclassified
+K02401	Sensing & motility	Flagella	flhB	 flagellar biosynthetic protein FlhB	15-dioxygenase [EC:1.13.11.63]
+K02402	Sensing & motility	Flagella	flhC	 flagellar transcriptional activator FlhC	Unclassified
+K02403	Sensing & motility	Flagella	flhD	 flagellar transcriptional activator FlhD	 repressor of blue light- and temperature-responsive genes
+K02404	Sensing & motility	Flagella	flhF	 flagellar biosynthesis protein FlhF	Unclassified
+K02405	Sensing & motility	Flagella	fliA	 RNA polymerase sigma factor for flagellar operon FliA	Unclassified
+K02407	Sensing & motility	Flagella	fliD	 flagellar hook-associated protein 2	Unclassified
+K02408	Sensing & motility	Flagella	fliE	 flagellar hook-basal body complex protein FliE	Unclassified
+K02409	Sensing & motility	Flagella	fliF	 flagellar M-ring protein FliF	Unclassified
+K02410	Sensing & motility	Flagella	fliG	 flagellar motor switch protein FliG	Unclassified
+K02411	Sensing & motility	Flagella	fliH	 flagellar assembly protein FliH	Unclassified
+K02413	Sensing & motility	Flagella	fliJ	 flagellar FliJ protein	Unclassified
+K02414	Sensing & motility	Flagella	fliK	 flagellar hook-length control protein FliK	Unclassified
+K02415	Sensing & motility	Flagella	fliL	 flagellar FliL protein	Unclassified
+K02416	Sensing & motility	Flagella	fliM	 flagellar motor switch protein FliM	Unclassified
+K02417	Sensing & motility	Flagella	fliNY	 fliN	Unclassified
+K02418	Sensing & motility	Flagella	fliOZ	 fliO	Unclassified
+K02419	Sensing & motility	Flagella	fliP	 flagellar biosynthetic protein FliP	Unclassified
+K02420	Sensing & motility	Flagella	fliQ	 flagellar biosynthetic protein FliQ	 TAR DNA-binding protein 43
+K02421	Sensing & motility	Flagella	fliR	 flagellar biosynthetic protein FliR	Unclassified
+K02422	Sensing & motility	Flagella	fliS	 flagellar protein FliS	Unclassified
+K02423	Sensing & motility	Flagella	fliT	 flagellar protein FliT	Unclassified
+K02424	Organic energy source	Amino acid transporter		"ABC-type amino acid transport/signal transduction system, periplasmic component/domain"	Unclassified
+K02429	Organic energy source	Sugar transporters	GGP family	"MFS transporter, FHS family, L-fucose permease | (GenBank) Predicted mannose transporter, GGP family"	Unclassified
+K02438	Sporulation capsule & C-storage	Glycogen	glgX	glycogen debranching enzyme [EC:3.2.1.196]	Unclassified
+K02490	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spo0F	 two-component system	Unclassified
+K02491	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	kinA	 two-component system	Unclassified
+K02524	DNA conservation	Putative DNA-binding protein	K10	 DNA binding protein (fs(1)K10	Unclassified
+K02585	Nitrogen	Nitrogen	nifB	Unclassified	Unclassified
+K02586	Nitrogen	Nitrogen	nifD	Unclassified	Unclassified
+K02587	Nitrogen	Nitrogen	nifE	Unclassified	Unclassified
+K02588	Nitrogen	Nitrogen	nifH	Unclassified	Unclassified
+K02589	Nitrogen	Nitrogen	nifHD1	Unclassified	Unclassified
+K02590	Nitrogen	Nitrogen	nifHD2	Unclassified	Unclassified
+K02591	Nitrogen	Nitrogen	nifK	Unclassified	Unclassified
+K02592	Nitrogen	Nitrogen	nifN	Unclassified	Unclassified
+K02593	Nitrogen	Nitrogen	nifT	Unclassified	Unclassified
+K02595	Nitrogen	Nitrogen	nifW	Unclassified	Unclassified
+K02596	Nitrogen	Nitrogen	nifX	Unclassified	Unclassified
+K02597	Nitrogen	Nitrogen	nifZ	Unclassified	Unclassified
+K02689	Photothrophy	Chlorophyll synthesis	psaA	 photosystem I P700 chlorophyll a apoprotein A1	 putative multiple sugar transport system permease protein
+K02690	Photothrophy	Chlorophyll synthesis	PsaB	photosystem I P700 chlorophyll a apoprotein subunit Ib	Unclassified
+K02691	Photothrophy	Chlorophyll synthesis	psaC	 photosystem I subunit VII	Unclassified
+K02692	Photothrophy	Chlorophyll synthesis	psaD	 photosystem I subunit II	 DNA replication terminus site-binding protein
+K02693	Photothrophy	Chlorophyll synthesis	psaE	 photosystem I subunit IV	 CAF1
+K02694	Photothrophy	Chlorophyll synthesis	psaF	 photosystem I subunit III	Unclassified
+K02695	Photothrophy	Chlorophyll synthesis	psaH	 photosystem I subunit VI	Unclassified
+K02696	Photothrophy	Chlorophyll synthesis	psaI	 photosystem I subunit VIII	Unclassified
+K02697	Photothrophy	Chlorophyll synthesis	psaJ	 photosystem I subunit IX	Unclassified
+K02698	Photothrophy	Chlorophyll synthesis	psaK	 photosystem I subunit X	Unclassified
+K02699	Photothrophy	Chlorophyll synthesis	psaL	 photosystem I subunit XI	Unclassified
+K02700	Photothrophy	Chlorophyll synthesis	psaM	 photosystem I subunit XII	Unclassified
+K02701	Photothrophy	Chlorophyll synthesis	psaN	 photosystem I subunit PsaN	Unclassified
+K02702	Photothrophy	Chlorophyll synthesis	psaX	 photosystem I 4.8kDa protein	Unclassified
+K02703	Photothrophy	Chlorophyll synthesis	psbA	 photosystem II P680 reaction center D1 protein [EC:1.10.3.9]	Unclassified
+K02704	Photothrophy	Chlorophyll synthesis	psbB	 photosystem II CP47 chlorophyll apoprotein	Unclassified
+K02705	Photothrophy	Chlorophyll synthesis	psbC	 photosystem II CP43 chlorophyll apoprotein	 CTF14
+K02706	Photothrophy	Chlorophyll synthesis	psbD	 photosystem II P680 reaction center D2 protein [EC:1.10.3.9]	 centromere DNA-binding protein complex CBF3 subunit B
+K02707	Photothrophy	Chlorophyll synthesis	psbE	 photosystem II cytochrome b559 subunit alpha	 centromere DNA-binding protein complex CBF3 subunit C
+K02708	Photothrophy	Chlorophyll synthesis	psbF	 photosystem II cytochrome b559 subunit beta	 chromodomain-helicase-DNA-binding protein 3 [EC:3.6.4.12]
+K02709	Photothrophy	Chlorophyll synthesis	psbH	 photosystem II PsbH protein	 chromodomain-helicase-DNA-binding protein 4 [EC:3.6.4.12]
+K02710	Photothrophy	Chlorophyll synthesis	psbI	 photosystem II PsbI protein	Unclassified
+K02711	Photothrophy	Chlorophyll synthesis	psbJ	 photosystem II PsbJ protein	Unclassified
+K02712	Photothrophy	Chlorophyll synthesis	psbK	 photosystem II PsbK protein	 DctQ subunit
+K02713	Photothrophy	Chlorophyll synthesis	psbL	 photosystem II PsbL protein	 DctM subunit
+K02714	Photothrophy	Chlorophyll synthesis	psbM	 photosystem II PsbM protein	Unclassified
+K02716	Photothrophy	Chlorophyll synthesis	psbO	 photosystem II oxygen-evolving enhancer protein 1	Unclassified
+K02717	Photothrophy	Chlorophyll synthesis	psbP	 photosystem II oxygen-evolving enhancer protein 2	Unclassified
+K02718	Photothrophy	Chlorophyll synthesis	psbT	 photosystem II PsbT protein	Unclassified
+K02719	Photothrophy	Chlorophyll synthesis	psbU	 photosystem II PsbU protein	Unclassified
+K02720	Photothrophy	Chlorophyll synthesis	psbV	 photosystem II cytochrome c550	 Z-DNA binding protein 1
+K02721	Photothrophy	Chlorophyll synthesis	psbW	 photosystem II PsbW protein	Unclassified
+K02722	Photothrophy	Chlorophyll synthesis	psbX	 photosystem II PsbX protein	Unclassified
+K02723	Photothrophy	Chlorophyll synthesis	psbY	 photosystem II PsbY protein	 sporulation sensor kinase D [EC:2.7.13.3]
+K02724	Photothrophy	Chlorophyll synthesis	psbZ	 photosystem II PsbZ protein	 sporulation sensor kinase E [EC:2.7.13.3]
+K02770	Organic energy source	PTS systems	fruA	fructose PTS system EIIBC or EIIC component [EC:2.7.1.202] | (RefSeq) fruA; fructose-specific PTS multiphosphoryl transfer protein FruA	Unclassified
+K02777	Organic energy source	PTS sugar importers	crr	 sugar PTS system EIIA component [EC:2.7.1.-]	 AAT family
+K02779	Organic energy source	PTS systems	ptsG	"PTS system, glucose-specific IIC component / PTS system, glucose-specific IIB component (EC 2.7.1.199)"	Unclassified
+K02783	Organic energy source	PTS systems		"Glucitol/sorbitol PTS system EIIC component | (GenBank) srlA_1; PTS system, glucitol/sorbitol-specific IIC component, one of two; frag"	Unclassified
+K02800	Organic energy source	PTS systems	cmtA	Mannitol PTS system EIICBA or EIICB component [EC:2.7.1.197] | (RefSeq) cmtA; mannitol-specific PTS enzyme IICB component CmtA	Unclassified
+K02804	Organic energy source	PTS systems		N-acetylglucosamine PTS system EIICBA or EIICB component [EC:2.7.1.193] | (RefSeq) uncharacterized protein LOC111677972	Unclassified
+K02806	Nitrogen	Nitrogen	ptsN	Unclassified	Unclassified
+K02826	ROS-damage prevention	Cytochrome C oxidase	qoxA	 cytochrome aa3-600 menaquinol oxidase subunit II [EC:7.1.1.5]	Unclassified
+K02827	ROS-damage prevention	Cytochrome C oxidase	qoxB	 cytochrome aa3-600 menaquinol oxidase subunit I [EC:7.1.1.5]	Unclassified
+K02828	ROS-damage prevention	Cytochrome C oxidase	qoxC	 cytochrome aa3-600 menaquinol oxidase subunit III [EC:7.1.1.5]	Unclassified
+K02829	ROS-damage prevention	Cytochrome C oxidase	qoxD	 cytochrome aa3-600 menaquinol oxidase subunit IV [EC:7.1.1.5]	 other
+K02856	Organic energy source	Sugar transporters	rhaT	L-rhamnose-proton symporter	Unclassified
+K03083	Sporulation capsule & C-storage	Glycogen synthesis	GSK3B	 glycogen synthase kinase 3 beta [EC:2.7.11.26]	Unclassified
+K03091	Sporulation capsule & C-storage	Sporulation-related	sigH	RNA polymerase sporulation-specific sigma factor	Unclassified
+K03111	DNA conservation	Putative DNA-binding protein	ssb	 single-strand DNA-binding protein	Unclassified
+K03157	Photothrophy	Chlorophyll synthesis	LTB	 TNFC	 solute carrier family 38 (sodium-coupled neutral amino acid transporter)
+K03159	Photothrophy	Chlorophyll synthesis	TNFRSF3	 LTBR	 solute carrier family 25 (mitochondrial dicarboxylate transporter)
+K03305	Organic energy source	Peptide transporter	TC.POT	 proton-dependent oligopeptide transporter	 LIVCS family
+K03307	Organic energy source	Sugar transporters	SSS family	Predicted sodium-dependent galactose transporter	Unclassified
+K03311	Organic energy source	Amino acid transporter	BrnQ	"Branched-chain amino acid:cation transporter, LIVCS family | (RefSeq) brnQ; branched chain amino acid transporter BrnQ"	Unclassified
+K03326	Organic energy source	Carboxylate transporters	DcuC	Anaerobic C4-dicarboxylate transporter DcuC	Unclassified
+K03450	Organic energy source	Amino acid transporter	SLC7A	 solute carrier family 7 (L-type amino acid transporter)	Unclassified
+K03516	Sensing & motility	Flagella	flhE	 flagellar protein FlhE	Unclassified
+K03518	Inorganic & gaseous energy sources	CO-dehydrogenase CoxM & CoxS	coxS	 aerobic carbon-monoxide dehydrogenase small subunit [EC:1.2.5.3]	Unclassified
+K03519	Inorganic & gaseous energy sources	CO-dehydrogenase CoxM & CoxS	coxM	 cutM	Unclassified
+K03520	Inorganic & gaseous energy sources	CO-dehydrogenase large subunit (coxL) Form I	coxL	 cutL	Unclassified
+K03530	DNA conservation	Putative DNA-binding protein	hupB	 DNA-binding protein HU-beta	Unclassified
+K03541	Photothrophy	Chlorophyll synthesis	psbR	 photosystem II 10kDa protein	Unclassified
+K03542	Photothrophy	Chlorophyll synthesis	psbS	 photosystem II 22kDa protein	Unclassified
+K03581	DNA repair and degradation	Replication and repair	recD	exodeoxyribonuclease V alpha subunit [EC:3.1.11.5]	Unclassified
+K03582	DNA repair and degradation	Replication and repair	recB	exodeoxyribonuclease V beta subunit [EC:3.1.11.5]	Unclassified
+K03583	DNA repair and degradation	Replication and repair	recC	exodeoxyribonuclease V gamma subunit [EC:3.1.11.5]	Unclassified
+K03601	DNA repair and degradation	Exodeoxyribonuclease VII	xseA	 exodeoxyribonuclease VII large subunit [EC:3.1.11.6]	Unclassified
+K03602	DNA repair and degradation	Exodeoxyribonuclease VII	xseB	 exodeoxyribonuclease VII small subunit [EC:3.1.11.6]	Unclassified
+K03622	DNA conservation	Putative DNA-binding protein	ssh10b	 archaea-specific DNA-binding protein	Unclassified
+K03716	Photothrophy	Chlorophyll synthesis	splB	 spore photoproduct lyase [EC:4.1.99.14]	 solute carrier family 7 (L-type amino acid transporter)
+K03719	Organic energy source	Amino acid transporter	Lrp/AsnC family	"Leucine-responsive regulatory protein, regulator for leucine (or lrp) regulon and high-affinity branched-chain amino acid transport system"	Unclassified
+K03746	DNA conservation	Putative DNA-binding protein	hns	 DNA-binding protein H-NS	Unclassified
+K03781	ROS-damage prevention	 Manganese catalase	"CAT, catB, srpA"	Manganese catalase (EC 1.11.1.6)	10-cleaving dioxygenase [EC:1.13.11.68]
+K03782	ROS-damage prevention	Haem catalase	KatG	Catalase-peroxidase KatG (EC 1.11.1.21)	 peptide/bleomycin uptake transporter
+K04038	Photothrophy	Chlorophyll synthesis	chlN	Light-independent protochlorophyllide reductase subunit N (EC 1.18.-.-)	 solute carrier family 7 (L-type amino acid transporter)
+K04039	Photothrophy	Chlorophyll synthesis	chlB	Light-independent protochlorophyllide reductase subunit B (EC 1.18.-.-)	 solute carrier family 7 (L-type amino acid transporter)
+K04040	Photothrophy	Chlorophyll synthesis	ChlG	Chlorophyll a synthase ChlG (EC 2.5.1.62)	 solute carrier family 7 (cationic amino acid transporter)
+K04047	DNA conservation	Putative DNA-binding protein	dps	 starvation-inducible DNA-binding protein	Unclassified
+K04061	Sensing & motility	Flagella	flhB2	 flagellar biosynthesis protein	Unclassified
+K04479	DNA repair and degradation	DNA polymerase IV	dbh	 DNA polymerase IV (archaeal DinB-like DNA polymerase) [EC:2.7.7.7]	Unclassified
+K04488	Nitrogen	Nitrogen	iscU	Unclassified	Unclassified
+K04494	DNA conservation	Putative DNA-binding protein	CHD8	 HELSNF1	Unclassified
+K04562	Sensing & motility	Flagella	flhG	 fleN	Unclassified
+K04638	Sensing & motility	Flagella	IFT57	 HIPPI	Unclassified
+K04641	Light energy or sensing	Bacteriorhodopsin	bop	 bacteriorhodopsin	Unclassified
+K04643	Light energy or sensing	Sensory rhodopsin		Bacteriorhodopsin-like protein	Unclassified
+K04680	DNA conservation	Putative DNA-binding protein	ID1	 DNA-binding protein inhibitor ID1	Unclassified
+K04751	Nitrogen	Nitrogen	glnB	Unclassified	Unclassified
+K04752	Nitrogen	Nitrogen	glnK	Unclassified	Unclassified
+K04769	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVT	 AbrB family transcriptional regulator	Unclassified
+K04844	Organic energy source	Glycosyl hydrolases	ycjT	 hypothetical glycosyl hydrolase [EC:3.2.1.-]	Unclassified
+K05048	Organic energy source	Amino acid transporter	SLC6A15S	 solute carrier family 6 (neurotransmitter transporter	 aerobic carbon-monoxide dehydrogenase medium subunit [EC:1.2.5.3]
+K05468	Photothrophy	Chlorophyll synthesis	LTA	 TNFB	 solute carrier family 7 (cationic amino acid transporter)
+K05516	DNA conservation	Putative DNA-binding protein	cbpA	 curved DNA-binding protein	Unclassified
+K05521	Nitrogen	Nitrogen	draG	Unclassified	Unclassified
+K05563                      	Sporulation capsule & C-storage	Poly-hydroxy-alkanoates	PhaF	Polyhydroxyalkanoate granule-associated protein PhaF	Unclassified
+K05586	Inorganic & gaseous energy sources	NiFe hydrogenase	hoxE	 bidirectional [NiFe] hydrogenase diaphorase subunit [EC:7.1.1.2]	Unclassified
+K05587	Inorganic & gaseous energy sources	NiFe hydrogenase	hoxF	 bidirectional [NiFe] hydrogenase diaphorase subunit [EC:7.1.1.2]	Unclassified
+K05588	Inorganic & gaseous energy sources	NiFe hydrogenase	hoxU	 bidirectional [NiFe] hydrogenase diaphorase subunit [EC:7.1.1.2]	Unclassified
+K05615	Organic energy source	Amino acid transporter	SLC1A4	 SATT	 aerobic carbon-monoxide dehydrogenase large subunit [EC:1.2.5.3]
+K05616	Organic energy source	Amino acid transporter	SLC1A5	 solute carrier family 1 (neutral amino acid transporter)	Unclassified
+K05732	DNA conservation	Putative DNA-binding protein	ARHGAP35	 GRLF1	Unclassified
+K05787	DNA conservation	Putative DNA-binding protein	hupA	 DNA-binding protein HU-alpha	 beta-carotene 15
+K05946	Sporulation capsule & C-storage	Exoploysaccharide synthesis	tagA	N-acetylglucosaminyldiphosphoundecaprenol N-acetyl-beta-D-mannosaminyltransferase [EC:2.4.1.187]	Unclassified
+K05951	Nitrogen	Nitrogen	draT	Unclassified	Unclassified
+K06281	Inorganic & gaseous energy sources	Hydrogenases		"[Ni/Fe] hydrogenase, large subunit MSMEG_2719"	Unclassified
+K06282	Inorganic & gaseous energy sources	Hydrogenases		"[Ni/Fe] hydrogenase, small subunit MSMEG_2720"	Unclassified
+K06283	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIID	 putative DeoR family transcriptional regulator	Unclassified
+K06315	Photothrophy	Chlorophyll synthesis	splA	 transcriptional regulator of the spore photoproduct lyase operon	 solute carrier family 7 (cationic amino acid transporter)
+K06348	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	kapD	 sporulation inhibitor KapD	Unclassified
+K06359	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	rapA	 spo0L	Unclassified
+K06371	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	sda	 developmental checkpoint coupling sporulation initiation to replication initiation	Unclassified
+K06375	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spo0B	 stage 0 sporulation protein B (sporulation initiation phosphotransferase) [EC:2.7.-.-]	Unclassified
+K06376	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spo0E	 stage 0 sporulation regulatory protein	Unclassified
+K06377	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spo0M	 sporulation-control protein	Unclassified
+K06378	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIAA	 stage II sporulation protein AA (anti-sigma F factor antagonist)	Unclassified
+K06379	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIAB	 stage II sporulation protein AB (anti-sigma F factor) [EC:2.7.11.1]	Unclassified
+K06380	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIB	 stage II sporulation protein B	Unclassified
+K06381	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIID	 stage II sporulation protein D	Unclassified
+K06382	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIE	 stage II sporulation protein E [EC:3.1.3.16]	Unclassified
+K06383	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIGA	 stage II sporulation protein GA (sporulation sigma-E factor processing peptidase) [EC:3.4.23.-]	Unclassified
+K06384	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIM	 stage II sporulation protein M	Unclassified
+K06385	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIP	 stage II sporulation protein P	Unclassified
+K06386	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIQ	 stage II sporulation protein Q	Unclassified
+K06387	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIR	 stage II sporulation protein R	Unclassified
+K06388	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIISA	 stage II sporulation protein SA	Unclassified
+K06389	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIISB	 stage II sporulation protein SB	Unclassified
+K06390	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIIAA	 stage III sporulation protein AA	Unclassified
+K06391	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIIAB	 stage III sporulation protein AB	Unclassified
+K06392	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIIAC	 stage III sporulation protein AC	Unclassified
+K06393	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIIAD	 stage III sporulation protein AD	Unclassified
+K06394	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIIAE	 stage III sporulation protein AE	Unclassified
+K06395	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIIAF	 stage III sporulation protein AF	Unclassified
+K06396	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIIAG	 stage III sporulation protein AG	Unclassified
+K06397	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIIIAH	 stage III sporulation protein AH	Unclassified
+K06398	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIVA	 stage IV sporulation protein A	Unclassified
+K06399	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIVB	 stage IV sporulation protein B [EC:3.4.21.116]	Unclassified
+K06401	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIVFA	 stage IV sporulation protein FA	Unclassified
+K06402	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoIVFB	 stage IV sporulation protein FB [EC:3.4.24.-]	Unclassified
+K06403	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVAA	 stage V sporulation protein AA	Unclassified
+K06404	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVAB	 stage V sporulation protein AB	Unclassified
+K06405	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVAC	 stage V sporulation protein AC	Unclassified
+K06406	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVAD	 stage V sporulation protein AD	Unclassified
+K06407	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVAE	 stage V sporulation protein AE	Unclassified
+K06408	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVAF	 stage V sporulation protein AF	Unclassified
+K06409	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVB	 stage V sporulation protein B	Unclassified
+K06412	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVG	 stage V sporulation protein G	Unclassified
+K06413	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVK	 stage V sporulation protein K	Unclassified
+K06414	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVM	 stage V sporulation protein M	Unclassified
+K06415	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVR	 stage V sporulation protein R	Unclassified
+K06416	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVS	 stage V sporulation protein S	Unclassified
+K06417	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVID	 stage VI sporulation protein D	Unclassified
+K06437	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	yknT	 sigma-E controlled sporulation protein	Unclassified
+K06438	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	yqfD	 similar to stage IV sporulation protein	Unclassified
+K06601	Sensing & motility	Flagella	flbT	 flagellar protein FlbT	Unclassified
+K06602	Sensing & motility	Flagella	flaF	 flagellar protein FlaF	Unclassified
+K06603	Sensing & motility	Flagella	flaG	 flagellar protein FlaG	Unclassified
+K06604	Sensing & motility	Flagella	flaI	 flagellar rod protein FlaI	Unclassified
+K06876	Photothrophy	Chlorophyll synthesis	K06876	 deoxyribodipyrimidine photolyase-related protein	 member 4
+K07084	Organic energy source	Amino acid transporter	yuiF	 putative amino acid transporter	Unclassified
+K07217	ROS-damage prevention	Mn2+ catalase	K07217	 Mn-containing catalase	Unclassified
+K07518	Sporulation capsule & C-storage	Poly-hydroxy-alkanoates		hydroxybutyrate-dimer hydrolase [EC:3.1.1.22]	Unclassified
+K07649	Organic energy source	Carboxylate transporters	TctE	Tricarboxylate transport sensor protein TctE	Unclassified
+K07697	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	kinB	 two-component system	Unclassified
+K07698	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	kinC	 two-component system	Unclassified
+K07699	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spo0A	 two-component system	Unclassified
+K07708	Nitrogen	Nitrogen	glnL	Unclassified	Unclassified
+K07712	Nitrogen	Nitrogen	glnG	Unclassified	Unclassified
+K07791	Organic energy source	Carboxylate transporters	dcuA	 anaerobic C4-dicarboxylate transporter DcuA	Unclassified
+K07792	Organic energy source	Carboxylate transporters	dcuB	 anaerobic C4-dicarboxylate transporter DcuB	Unclassified
+K07793	Organic energy source	Carboxylate transporters	TctA	Tripartite tricarboxylate transporter TctA family	Unclassified
+K07794	Organic energy source	Carboxylate transporters	TctB	Tripartite tricarboxylate transporter TctB family	Unclassified
+K07795	Organic energy source	Carboxylate transporters	TctC	Tricarboxylate transport protein TctC	Unclassified
+K08293	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	SMK1	 sporulation-specific mitogen-activated protein kinase SMK1 [EC:2.7.11.24]	Unclassified
+K08384	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	spoVD	 stage V sporulation protein D (sporulation-specific penicillin-binding protein)	Unclassified
+K08822	Sporulation capsule & C-storage	Glycogen synthesis	GSK3A	 glycogen synthase kinase 3 alpha [EC:2.7.11.26]	Unclassified
+K08901	Photothrophy	Chlorophyll synthesis	psbQ	 photosystem II oxygen-evolving enhancer protein 3	 member 7
+K08902	Photothrophy	Chlorophyll synthesis	psb27	 photosystem II Psb27 protein	 solute carrier family 7 (L-type amino acid transporter)
+K08903	Photothrophy	Chlorophyll synthesis	psb28	 photosystem II 13kDa protein	 member 11
+K08904	Photothrophy	Chlorophyll synthesis	psb28-2	 photosystem II Psb28-2 protein	 solute carrier family 7 (L-type amino acid transporter)
+K08905	Photothrophy	Chlorophyll synthesis	psaG	 photosystem I subunit V	 member 14
+K08928	Photothrophy	Chlorophyll synthesis	pufL	 photosynthetic reaction center L subunit	 member 6
+K08929	Photothrophy	Chlorophyll synthesis	pufM	 photosynthetic reaction center M subunit	Unclassified
+K08940	Photothrophy	Chlorophyll synthesis	pscA	 photosystem P840 reaction center large subunit	Unclassified
+K08941	Photothrophy	Chlorophyll synthesis	pscB	 photosystem P840 reaction center iron-sulfur protein	Unclassified
+K08942	Photothrophy	Chlorophyll synthesis	pscC	 photosystem P840 reaction center cytochrome c551	 solute carrier family 15 (oligopeptide transporter)
+K08943	Photothrophy	Chlorophyll synthesis	pscD	 photosystem P840 reaction center protein PscD	 solute carrier family 38 (sodium-coupled neutral amino acid transporter)
+K09013	Organic energy source	Sugar transporters	RbsA	Fe-S cluster assembly ATP-binding protein | (RefSeq) ribose import ATP-binding protein RbsA 1-like	Unclassified
+K09061	DNA conservation	Putative DNA-binding protein	GCF	 C2orf3	Unclassified
+K09423	DNA conservation	Putative DNA-binding protein	BAS1	 Myb-like DNA-binding protein BAS1	Unclassified
+K09424	DNA conservation	Putative DNA-binding protein	REB1	 Myb-like DNA-binding protein REB1	Unclassified
+K09425	DNA conservation	Putative DNA-binding protein	K09425	 Myb-like DNA-binding protein FlbD	Unclassified
+K09426	DNA conservation	Putative DNA-binding protein	RAP1	 Myb-like DNA-binding protein RAP1	Unclassified
+K09720	Nitrogen	Nitrogen	nrpRI	Unclassified	Unclassified
+K09762	Sporulation capsule & C-storage	Sporulation-related	whiA	sporulation transcription regulator WhiA	Unclassified
+K09969	Organic energy source	Amino acid transporter	AapJ	"L-amino acid ABC transporter (Glu/Asp/His/...), substrate-binding protein AapJ"	Unclassified
+K09970	Organic energy source	Amino acid transporter	AspQ	"L-amino acid ABC transporter (Glu/Asp/His/...), permease protein 1 AapQ"	Unclassified
+K09971	Organic energy source	Amino acid transporter	AapM	"L-amino acid ABC transporter (Glu/Asp/His/...), permease protein 2 AapM"	 response regulator
+K09972	Organic energy source	Amino acid transporter	yhdZ	"General L-amino acid transport system ATP-binding protein [EC:7.4.2.1] | (GenBank) yhdZ; ABC-type polar amino acid transport system, ATPase component"	Unclassified
+K10010 	Organic energy source	Amino acid transporter	yecC	"L-cystine transport system ATP-binding protein [EC:7.4.2.1] | (GenBank) yecC; putative ABC-type polar amino acid transport system, ATPase component"	Unclassified
+K10015	Organic energy source	Sugar transporters	HisM	"histidine transport system permease protein | hisM; lysine/arginine/ornithine ABC transporter/histidine ABC transporter, membrane subunit HisM"	 stage III sporulation protein D
+K10016	Organic energy source	Sugar transporters	HisQ	"histidine transport system permease protein | (RefSeq) hisQ; lysine/arginine/ornithine ABC transporter/histidine ABC transporter, membrane subunit HisQ"	Unclassified
+K10108	Organic energy source	Sugar transporters	MalE	"Maltose/maltodextrin ABC transporter, substrate binding periplasmic protein MalE"	Unclassified
+K10109	Organic energy source	Sugar transporters	MalF	"Maltose/maltodextrin ABC transporter, permease protein MalF"	Unclassified
+K10111	Organic energy source	Sugar transporters	MalK	Maltose/maltodextrin transport ATP-binding protein MalK (EC 3.6.3.19)	Unclassified
+K10125	Organic energy source	Carboxylate transporters	DctB	C4-dicarboxylate transport sensor protein DctB	Unclassified
+K10140	DNA conservation	Putative DNA-binding protein	DDB2	 DNA damage-binding protein 2	Unclassified
+K10192	Organic energy source	Sugar transporters	togB	"Predicted rhamnose oligosaccharide ABC transport system, substrate-binding component"	Unclassified
+K10252	Light energy or sensing	Beta-carotene dioxygenase (Retinal synthesis)	BCDO2	 beta	Unclassified
+K10439	Organic energy source	Sugar transporters	RbsB	"Ribose ABC transport system, periplasmic ribose-binding protein RbsB (TC 3.A.1.2.1)"	Unclassified
+K10440	Organic energy source	Sugar transporters	RbsC	"Ribose ABC transport system, permease protein RbsC (TC 3.A.1.2.1)"	Unclassified
+K10441	Organic energy source	Sugar transporters	RbsA	ribose transport system ATP-binding protein [EC:7.5.2.7] | (RefSeq) rbsA; ribose ABC transporter ATP binding subunit	Unclassified
+K10537	Organic energy source	Sugar transporters	AraF	"L-arabinose ABC transporter, substrate-binding protein AraF"	Unclassified
+K10539	Organic energy source	Sugar transporters	AraG	"L-arabinose ABC transporter, ATP-binding protein AraG"	Unclassified
+K10543	Organic energy source	Sugar transporters	XylF	"Xylose ABC transporter, periplasmic xylose-binding protein XylF"	Unclassified
+K10544	Organic energy source	Sugar transporters	XylH	"Xylose ABC transporter, permease protein XylH"	Unclassified
+K10545	Organic energy source	Sugar transporters	XylG	D-xylose transport ATP-binding protein XylG	Unclassified
+K10546	Organic energy source	ABC sugar transporters	ABC.GGU.S	 chvE	Unclassified
+K10547	Organic energy source	ABC sugar transporters	ABC.GGU.P	 gguB	Unclassified
+K10548	Organic energy source	ABC sugar transporters	ABC.GGU.A	 gguA	Unclassified
+K10552	Organic energy source	Sugar transporters	FrcB	"Fructose ABC transporter, substrate-binding component FrcB"	Unclassified
+K10553	Organic energy source	Sugar transporters	FrcC	"Fructose ABC transporter, permease component FrcC"	Unclassified
+K10554	Organic energy source	Sugar transporters	FrcA	"Fructose ABC transporter, ATP-binding component FrcA"	Unclassified
+K10559	Organic energy source	Sugar transporters		"Predicted L-rhamnose ABC transporter, substrate-binding component"	Unclassified
+K10560	Organic energy source	Sugar transporters		"rhamnose transport system permease protein | (GenBank) Predicted L-rhamnose ABC transporter, transmembrane component 2"	Unclassified
+K10561	Organic energy source	Sugar transporters		"Rhamnose transport system permease protein | (GenBank) Predicted L-rhamnose ABC transporter, transmembrane component 1"	Unclassified
+K10610	DNA conservation	Putative DNA-binding protein	DDB1	 DNA damage-binding protein 1	Unclassified
+K10728	DNA conservation	Putative DNA-binding protein	TOPBP1	 topoisomerase (DNA) II binding protein 1	Unclassified
+K10748	DNA conservation	Putative DNA-binding protein	tus	 tau	Unclassified
+K10752	DNA conservation	Histone-like protein	RBBP4	 HAT2	Unclassified
+K10823	Organic energy source	Peptide transporters	OppF	Oligopeptide transport ATP-binding protein OppF (TC 3.A.1.5.1)	Unclassified
+K10851	Nitrogen	Nitrogen	nreA	Unclassified	Unclassified
+K10906	DNA repair and degradation	Exodeoxyribonuclease VII	recE	 exodeoxyribonuclease VIII [EC:3.1.11.-]	Unclassified
+K10979	DNA conservation	Putative DNA-binding protein	ku	 DNA end-binding protein Ku	Unclassified
+K10981	DNA repair and degradation	DNA polymerase IV	POL4	 DNA polymerase IV [EC:2.7.7.7]	Unclassified
+K11333	Photothrophy	Chlorophyll synthesis	bchX	Chlorophyllide reductase subunit BchX (EC 1.18.-.-)	 solute carrier family 36 (proton-coupled amino acid transporter)
+K11334	Photothrophy	Chlorophyll synthesis	bchY	Chlorophyllide reductase subunit BchY (EC 1.18.-.-)	 solute carrier family 3 (neutral and basic amino acid transporter)
+K11335	Photothrophy	Chlorophyll synthesis	bchZ	Chlorophyllide reductase subunit BchZ (EC 1.18.-.-)	Unclassified
+K11337	Photothrophy	Chlorophyll synthesis	bchC	2-desacetyl-2-hydroxyethyl bacteriochlorophyllide A dehydrogenase BchC	 solute carrier family 5 (sodium-coupled monocarboxylate transporter)
+K11367	DNA conservation	Putative DNA-binding protein	CHD1	 chromodomain-helicase-DNA-binding protein 1 [EC:3.6.4.12]	Unclassified
+K11495	DNA conservation	Histone-like protein	CENPA	 histone H3-like centromeric protein A	Unclassified
+K11524	Photothrophy	Chlorophyll synthesis	pixI	 positive phototaxis protein PixI	Unclassified
+K11574	DNA conservation	Putative DNA-binding protein	CBF2	 CBF3A	Unclassified
+K11575	DNA conservation	Putative DNA-binding protein	CEP3	 CBF3B	Unclassified
+K11576	DNA conservation	Putative DNA-binding protein	CTF13	 CBF3C	Unclassified
+K11642	DNA conservation	Putative DNA-binding protein	CHD3	 MI2A	Unclassified
+K11643	DNA conservation	Putative DNA-binding protein	CHD4	 MI2B	Unclassified
+K11659	DNA conservation	Histone-like protein	RBBP7	 histone-binding protein RBBP7	Unclassified
+K11685	DNA conservation	Putative DNA-binding protein	stpA	 DNA-binding protein StpA	Unclassified
+K11689	Organic energy source	Carboxylate transporters	dctQ	 C4-dicarboxylate transporter	Unclassified
+K11690	Organic energy source	Carboxylate transporters	dctM	 C4-dicarboxylate transporter	Unclassified
+K11939	Organic energy source	Sugar transporters	RhtA	Threonine/homoserine exporter RhtA	Unclassified
+K12369	Organic energy source	Peptide transporters	DppB	Dipeptide transport system permease protein DppB (TC 3.A.1.5.2)	Unclassified
+K12370	Organic energy source	Peptide transporters	DppC	Dipeptide transport system permease protein DppC (TC 3.A.1.5.2)	Unclassified
+K12371	Organic energy source	Peptide transporters	DppD	Dipeptide transport ATP-binding protein DppD (TC 3.A.1.5.2)	Unclassified
+K12576	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	SPO12	 sporulation-specific protein 12	Unclassified
+K12771	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	SPS1	 sporulation-specific protein 1 [EC:2.7.11.1]	Unclassified
+K12772	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	SPS4	 sporulation-specific protein 4	Unclassified
+K12773	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	SPR3	 sporulation-regulated protein 3	Unclassified
+K12783	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	SSP1	 sporulation-specific protein 1	Unclassified
+K12965	DNA conservation	Putative DNA-binding protein	ZBP1	 DAI	 cytochrome c oxidase assembly protein subunit 11
+K13102	DNA conservation	Putative DNA-binding protein	KIN	 DNA/RNA-binding protein KIN17	 cytochrome c oxidase assembly protein subunit 15
+K13211	DNA conservation	Putative DNA-binding protein	GCFC	 GC-rich sequence DNA-binding factor	Unclassified
+K13532	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	kinD	 two-component system	Unclassified
+K13533	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	kinE	 two-component system	Unclassified
+K13576	Organic energy source	Amino acid transporter	SLC38A3	 SNAT3	Unclassified
+K13577	Organic energy source	Carboxylate transporters	SLC25A10	 DIC	Unclassified
+K13598	Nitrogen	Nitrogen	ntrY	Unclassified	Unclassified
+K13599	Nitrogen	Nitrogen	ntrX	Unclassified	Unclassified
+K13780	Organic energy source	Amino acid transporter	SLC7A5	 LAT1	Unclassified
+K13781	Organic energy source	Amino acid transporter	SLC7A8	 LAT2	Unclassified
+K13782	Organic energy source	Amino acid transporter	SLC7A10	 ASC1	Unclassified
+K13863	Organic energy source	Amino acid transporter	SLC7A1	 ATRC1	Unclassified
+K13864	Organic energy source	Amino acid transporter	SLC7A2	 ATRC2	Unclassified
+K13865	Organic energy source	Amino acid transporter	SLC7A3	 ATRC3	Unclassified
+K13866	Organic energy source	Amino acid transporter	SLC7A4	 solute carrier family 7 (cationic amino acid transporter)	Unclassified
+K13867	Organic energy source	Amino acid transporter	SLC7A7	 solute carrier family 7 (L-type amino acid transporter)	Unclassified
+K13868	Organic energy source	Amino acid transporter	SLC7A9	 BAT1	Unclassified
+K13869	Organic energy source	Amino acid transporter	SLC7A11	 solute carrier family 7 (L-type amino acid transporter)	 chromodomain helicase DNA binding protein 8 [EC:3.6.4.12]
+K13870	Organic energy source	Amino acid transporter	SLC7A13	 AGT1	 flagellar biosynthesis protein FlhG
+K13871	Organic energy source	Amino acid transporter	SLC7A14	 solute carrier family 7 (cationic amino acid transporter)	 ESRRBL1
+K13872	Organic energy source	Amino acid transporter	SLC7A6	 solute carrier family 7 (L-type amino acid transporter)	Unclassified
+K13892	Organic energy source	Peptide transporters	GsiA	Oligopeptide transport ATP-binding protein; Glutathione ABC transporter ATP-binding protein GsiA	Unclassified
+K13895	Organic energy source	Peptide transporters	OppC	Oligopeptide transport system permease protein OppC (TC 3.A.1.5.1)	Unclassified
+K13991	Photothrophy	Chlorophyll synthesis	puhA	 photosynthetic reaction center H subunit	Unclassified
+K13992	Photothrophy	Chlorophyll synthesis	pufC	 photosynthetic reaction center cytochrome c subunit	Unclassified
+K13994	Photothrophy	Chlorophyll synthesis	pufX	 photosynthetic reaction center PufX protein	Unclassified
+K14206	Organic energy source	Peptide transporter	SLC15A1	 PEPT1	Unclassified
+K14207	Organic energy source	Amino acid transporter	SLC38A2	 SNAT2	Unclassified
+K14209	Organic energy source	Amino acid transporter	SLC36A	 PAT	Unclassified
+K14210	Organic energy source	Amino acid transporter	SLC3A1	 RBAT	Unclassified
+K14332	Photothrophy	Chlorophyll synthesis	psaO	 photosystem I subunit PsaO	 member 2/3/5
+K14388	Organic energy source	Carboxylate transporters	SLC5A8_12	 SMCT	 stage V sporulation protein T
+K14435	DNA conservation	Putative DNA-binding protein	CHD5	 chromodomain-helicase-DNA-binding protein 5 [EC:3.6.4.12]	Unclassified
+K14436	DNA conservation	Putative DNA-binding protein	CHD6	 chromodomain-helicase-DNA-binding protein 6 [EC:3.6.4.12]	Unclassified
+K14437	DNA conservation	Putative DNA-binding protein	CHD7	 chromodomain-helicase-DNA-binding protein 7 [EC:3.6.4.12]	Unclassified
+K14438	DNA conservation	Putative DNA-binding protein	CHD9	 chromodomain-helicase-DNA-binding protein 9 [EC:3.6.4.12]	Unclassified
+K14445	Organic energy source	Carboxylate transporters	SLC13A2_3_5	 solute carrier family 13 (sodium-dependent dicarboxylate transporter)	Unclassified
+K14507	DNA conservation	Putative DNA-binding protein	ORCA2_3	 AP2-domain DNA-binding protein ORCA2/3	Unclassified
+K14637	Organic energy source	Peptide transporter	SLC15A2	 PEPT2	 amino acid/orphan) member 15/16/17/18/20
+K14638	Organic energy source	Peptide transporter	SLC15A3_4	 PHT	 lymphotoxin alpha (TNF superfamily
+K14990	Organic energy source	Amino acid transporter	SLC38A1	 SNAT1	Unclassified
+K14991	Organic energy source	Amino acid transporter	SLC38A4	 SNAT4	Unclassified
+K14992	Organic energy source	Amino acid transporter	SLC38A5	 SNAT5	Unclassified
+K14993	Organic energy source	Amino acid transporter	SLC38A6	 SNAT6	Unclassified
+K14994	Organic energy source	Amino acid transporter	SLC38A7_8	 solute carrier family 38 (sodium-coupled neutral amino acid transporter)	Unclassified
+K14995	Organic energy source	Amino acid transporter	SLC38A9	 solute carrier family 38 (sodium-coupled neutral amino acid transporter)	Unclassified
+K14996	Organic energy source	Amino acid transporter	SLC38A10	 solute carrier family 38 (sodium-coupled neutral amino acid transporter)	 solute carrier family 1 (neutral amino acid transporter)
+K14997	Organic energy source	Amino acid transporter	SLC38A11	 solute carrier family 38 (sodium-coupled neutral amino acid transporter)	 member 5
+K15015	Organic energy source	Amino acid transporter	SLC32A	 VGAT	 glucocorticoid receptor DNA-binding factor 1
+K15110	Organic energy source	Carboxylate transporters	SLC25A21	 ODC	Unclassified
+K15408	ROS-damage prevention	Cytochrome C oxidase	coxAC	 cytochrome c oxidase subunit I+III [EC:7.1.1.9]	Unclassified
+K15580	Organic energy source	Peptide transporters	OppA	"Oligopeptide ABC transporter, periplasmic oligopeptide-binding protein OppA (TC 3.A.1.5.1)"	Unclassified
+K15581	Organic energy source	Peptide transporters	OppB	Oligopeptide transport system permease protein OppB (TC 3.A.1.5.1)	Unclassified
+K15583	Organic energy source	Peptide transporters	OppD	Oligopeptide transport ATP-binding protein OppD (TC 3.A.1.5.1)	 GC-rich sequence DNA-binding factor
+K15719	DNA conservation	Histone-like protein	NCOAT	 MGEA5	Unclassified
+K15790	Nitrogen	Nitrogen	nifQ	Unclassified	Unclassified
+K15861	Nitrogen	Nitrogen	fixK	Unclassified	Unclassified
+K15862	ROS-damage prevention	Cytochrome C oxidase	ccoNO	 cytochrome c oxidase cbb3-type subunit I/II [EC:7.1.1.9]	Unclassified
+K16150	Sporulation capsule & C-storage	Glycogen synthesis	K16150	 glycogen synthase [EC:2.4.1.11]	Unclassified
+K16157	Inorganic & gaseous energy sources	Methane monooxygenase	mmoX	Methane monooxygenase component A alpha chain (EC 1.14.13.25)	Unclassified
+K16158	Inorganic & gaseous energy sources	Methane monooxygenase	mmoY	methane monooxygenase component A beta chain [EC:1.14.13.25]	Unclassified
+K16161	Inorganic & gaseous energy sources	Methane monooxygenase	mmoC	Methane monooxygenase component C (EC 1.14.13.25)	Unclassified
+K16211	Organic energy source	Sugar transporters	MalT	Predicted maltose transporter MalT	Unclassified
+K16250	DNA repair and degradation	DNA polymerase IV	NRPD1	 DNA-directed RNA polymerase IV subunit 1 [EC:2.7.7.6]	Unclassified
+K16252	DNA repair and degradation	DNA polymerase IV	NRPD2	 NRPE2	Unclassified
+K16253	DNA repair and degradation	DNA polymerase IV	NRPD7	 NRPE7	Unclassified
+K16261	Organic energy source	Amino acid transporter	YAT	 yeast amino acid transporter	Unclassified
+K16263	Organic energy source	Amino acid transporter	yjeH	 amino acid efflux transporter	Unclassified
+K16326	Nitrogen	Nitrogen	yeiL	Unclassified	Unclassified
+K16364	Sensing & motility	Gliding motility	GldG	Gliding motility-associated ABC transporter substrate-binding protein GldG	Unclassified
+K16554	Sporulation capsule & C-storage	Exoploysaccharide synthesis	CpsD	"Capsular polysaccharide synthesis enzyme CpsD, exopolysaccharide synthesis"	Unclassified
+K16566	Sporulation capsule & C-storage	Exopolysaccharide synthesis	exoY	 exopolysaccharide production protein ExoY	Unclassified
+K16567	Sporulation capsule & C-storage	Exopolysaccharide synthesis	exoQ	 exopolysaccharide production protein ExoQ	Unclassified
+K16568	Sporulation capsule & C-storage	Exopolysaccharide synthesis	exoZ	 exopolysaccharide production protein ExoZ	Unclassified
+K16640	DNA conservation	Putative DNA-binding protein	ssh7	 DNA-binding protein 7 [EC:3.1.27.-]	Unclassified
+K16692	Sensing & motility	Gliding motility	EpsB	Protein involved in gliding motility EpsB	Unclassified
+K16947	Sporulation capsule & C-storage	Sporulation (Actinobacteria)	SPR28	 sporulation-regulated protein 28	Unclassified
+K16960	Organic energy source	Amino acid transporter	YxeO	L-cystine transport system ATP-binding protein [EC:7.4.2.1] | (GenBank) yxeO_1; Probable amino-acid import ATP-binding protein YxeO	Unclassified
+K17218	Inorganic & gaseous energy sources	SOX sulfur-oxidation system	sqr	 sulfide:quinone oxidoreductase [EC:1.8.5.4]	Unclassified
+K17222	Inorganic & gaseous energy sources	SOX sulfur-oxidation system	soxA	 L-cysteine S-thiosulfotransferase [EC:2.8.5.2]	Unclassified
+K17223	Inorganic & gaseous energy sources	SOX sulfur-oxidation system	soxX	 L-cysteine S-thiosulfotransferase [EC:2.8.5.2]	Unclassified
+K17224	Inorganic & gaseous energy sources	SOX sulfur-oxidation system	soxB	 S-sulfosulfanyl-L-cysteine sulfohydrolase [EC:3.1.6.20]	Unclassified
+K17225	Inorganic & gaseous energy sources	SOX sulfur-oxidation system	soxC	 sulfane dehydrogenase subunit SoxC	Unclassified
+K17226	Inorganic & gaseous energy sources	SOX sulfur-oxidation system	soxY	 sulfur-oxidizing protein SoxY	Unclassified
+K17227	Inorganic & gaseous energy sources	SOX sulfur-oxidation system	soxZ	 sulfur-oxidizing protein SoxZ	 flagellar motor switch protein FliN/FliY
+K17245	Organic energy source	Sugar transporters		"putative chitobiose transport system permease protein | (GenBank) ABC-type transporter, integral membrane subunit"	Unclassified
+K17246	Organic energy source	Sugar transporters		"putative chitobiose transport system permease protein | (GenBank) ABC-type transporter, integral membrane subunit"	Unclassified
+K17331	Organic energy source	Sugar transporters		"N,N-diacetylchitobiose transport system permease protein | (GenBank) Maltose/maltodextrin ABC transporter, permease protein MalG"	Unclassified
+K17693	DNA conservation	Putative DNA-binding protein	ID2	 DNA-binding protein inhibitor ID2	Unclassified
+K17694	DNA conservation	Putative DNA-binding protein	ID3	 DNA-binding protein inhibitor ID3	Unclassified
+K17695	DNA conservation	Putative DNA-binding protein	ID4	 DNA-binding protein inhibitor ID4	Unclassified
+K17696	DNA conservation	Putative DNA-binding protein	EMC	 DNA-binding protein inhibitor ID	Unclassified
+K17912	Light energy or sensing	Beta-carotene dioxygenase (Retinal synthesis)	CCD7	 9-cis-beta-carotene 9	Unclassified
+K17938	Organic energy source	Peptide transporter	sbmA	 bacA	Unclassified
+K18005	Inorganic & gaseous energy sources	NiFe hydrogenase	hoxF	 [NiFe] hydrogenase diaphorase moiety large subunit [EC:1.12.1.2]	 flagellar protein FliO/FliZ
+K18006	Inorganic & gaseous energy sources	NiFe hydrogenase	hoxU	 [NiFe] hydrogenase diaphorase moiety small subunit [EC:1.12.1.2]	Unclassified
+K18008	Inorganic & gaseous energy sources	NiFe hydrogenase	hydA	 [NiFe] hydrogenase small subunit [EC:1.12.2.1]	Unclassified
+K18173	ROS-damage prevention	Cytochrome C oxidase	COA1	 cytochrome c oxidase assembly factor 1	Unclassified
+K18174	ROS-damage prevention	Cytochrome C oxidase	COA2	 cytochrome c oxidase assembly factor 2	Unclassified
+K18175	ROS-damage prevention	Cytochrome C oxidase	CCDC56	 COA3	 cytochrome c oxidase assembly factor 3
+K18176	ROS-damage prevention	Cytochrome C oxidase	COA3	 cytochrome c oxidase assembly factor 3	 fungi type
+K18177	ROS-damage prevention	Cytochrome C oxidase	COA4	 cytochrome c oxidase assembly factor 4	Unclassified
+K18178	ROS-damage prevention	Cytochrome C oxidase	COA5	 PET191	 cytochrome c oxidase assembly factor 5
+K18179	ROS-damage prevention	Cytochrome C oxidase	COA6	 cytochrome c oxidase assembly factor 6	Unclassified
+K18180	ROS-damage prevention	Cytochrome C oxidase	COA7	 SELRC1	 RESA1
+K18181	ROS-damage prevention	Cytochrome C oxidase	COX14	 cytochrome c oxidase assembly factor 14	Unclassified
+K18182	ROS-damage prevention	Cytochrome C oxidase	COX16	 cytochrome c oxidase assembly protein subunit 16	Unclassified
+K18183	ROS-damage prevention	Cytochrome C oxidase	COX19	 cytochrome c oxidase assembly protein subunit 19	Unclassified
+K18184	ROS-damage prevention	Cytochrome C oxidase	COX20	 cytochrome c oxidase assembly protein subunit 20	Unclassified
+K18185	ROS-damage prevention	Cytochrome C oxidase	COX23	 cytochrome c oxidase assembly protein subunit 23	Unclassified
+K18189	ROS-damage prevention	Cytochrome C oxidase	TACO1	 translational activator of cytochrome c oxidase 1	Unclassified
+K18223	Inorganic & gaseous energy sources	Propane monooxygenase (soluble)	prmA	 propane 2-monooxygenase large subunit [EC:1.14.13.227]	Unclassified
+K18224	Inorganic & gaseous energy sources	Propane monooxygenase (soluble)	prmC	 propane 2-monooxygenase small subunit [EC:1.14.13.227]	Unclassified
+K18225	Inorganic & gaseous energy sources	Propane monooxygenase (soluble)	prmB	 propane monooxygenase reductase component [EC:1.18.1.-]	Unclassified
+K18226	Inorganic & gaseous energy sources	Propane monooxygenase (soluble)	prmD	 propane monooxygenase coupling protein	Unclassified
+K18710	DNA conservation	Histone-like protein	SLBP	 histone RNA hairpin-binding protein	Unclassified
+K18912	Sensing & motility	Gliding motility	GldJ	Gliding motility lipoprotein GldJ	Unclassified
+K18946	DNA conservation	Putative DNA-binding protein	gp32	 ssb	Unclassified
+K18955	Sporulation capsule & C-storage	Sporulation-related	WhiD	"WhiB family transcriptional regulator, redox-sensing transcriptional regulator | (GenBank) sporulation regulatory protein"	Unclassified
+K18958	Sporulation capsule & C-storage	Sporulation-related	whiB7	"WhiB family transcriptional regulator, redox-sensing transcriptional regulator"	Unclassified
+K19016	Photothrophy	Chlorophyll synthesis	IMPG1	 SPACR	Unclassified
+K19017	Photothrophy	Chlorophyll synthesis	IMPG2	 SPACRCAN	 solute carrier family 15 (oligopeptide transporter)
+K19073	Photothrophy	Chlorophyll synthesis	DVR	Divinyl protochlorophyllide a 8-vinyl-reductase (EC 1.3.1.75)	 solute carrier family 15 (peptide/histidine transporter)
+K19228	Organic energy source	Peptide transporters	sapC	Peptide transport system permease protein sapC (TC 3.A.1.5.5)	Unclassified
+K19229	Organic energy source	Peptide transporters	sapD	"Cationic peptide transport system ATP-binding protein | (GenBank) ABC-type antimicrobial peptide transport system, ATPase component"	Unclassified
+K19230	Organic energy source	Peptide transporters	SapF	"Cationic peptide transport system ATP-binding protein | (GenBank) sapF; peptide ABC transporter ATP-binding protein SapF,Glutathione import ATP-binding protein GsiA,antimicrobial peptide ABC system ATP-binding protein SapF,ABC-type antimicrobial peptide transport system, ATPase component,nickel import ATP-binding protein NikE,ABC transporter"	Unclassified
+K19338	Nitrogen	Nitrogen	nac	Unclassified	Unclassified
+K19442	DNA conservation	Putative DNA-binding protein	ICP8	 DBP	 cytochrome c oxidase subunit I [EC:7.1.1.9]
+K19799	DNA conservation	Histone-like protein	RPH1	 DNA damage-responsive transcriptional repressor / [histone H3]-trimethyl-L-lysine36 demethylase [EC:1.14.11.69]	 cytochrome c oxidase subunit II [EC:7.1.1.9]
+K20091	DNA conservation	Putative DNA-binding protein	CHD2	 chromodomain-helicase-DNA-binding protein 2 [EC:3.6.4.12]	 cytochrome c oxidase subunit III [EC:7.1.1.9]
+K20092	DNA conservation	Putative DNA-binding protein	CHD1L	 chromodomain-helicase-DNA-binding protein 1-like [EC:3.6.4.12]	 cytochrome c oxidase subunit IV [EC:7.1.1.9]
+K20405	Nitrogen	Nitrogen	NPRL2	Unclassified	Unclassified
+K20406	Nitrogen	Nitrogen	NPRL3	Unclassified	Unclassified
+K20715	Photothrophy	Chlorophyll synthesis	PHOT	 phototropin [EC:2.7.11.1]	 GLNT
+K20812	Sporulation capsule & C-storage	Glycogen synthesis	glgA	 glycogen synthase [EC:2.4.1.242]	Unclassified
+K21561	Nitrogen	Nitrogen	ntcA	Unclassified	Unclassified
+K21564	Nitrogen	Nitrogen	nnrR	Unclassified	Unclassified
+K21640	Nitrogen	Nitrogen	nrpRII	Unclassified	Unclassified
+K21817	Light energy or sensing	Beta-carotene dioxygenase (Retinal synthesis)	blh	 beta-carotene 15	Unclassified
+K21972	Sensing & motility	Blue light sensor	bluR	 MerR family transcriptional regulator	Unclassified
+K21973	Sensing & motility	Blue light sensor	bluF	 blue light- and temperature-responsive anti-repressor	Unclassified
+K22464	Photothrophy	Chlorophyll synthesis	FAP	 fatty acid photodecarboxylase [EC:4.1.1.106]	 solute carrier family 38 (sodium-coupled neutral amino acid transporter)
+K22501	ROS-damage prevention	Cytochrome bd ubiquinol oxidase	appX	 cytochrome bd-II ubiquinol oxidase subunit AppX [EC:7.1.1.7]	Unclassified
+K22592	DNA conservation	Putative DNA-binding protein	AHDC1	 AT-hook DNA-binding motif-containing protein 1	Unclassified
+K22619	Photothrophy	Chlorophyll synthesis	Aequorin	 calcium-regulated photoprotein [EC:1.13.12.24]	 solute carrier family 38 (sodium-coupled neutral amino acid transporter)
+K22622	Inorganic & gaseous energy sources	SOX sulfur-oxidation system	soxD	 S-disulfanyl-L-cysteine oxidoreductase SoxD [EC:1.8.2.6]	 response regulator
+K22896	Nitrogen	Nitrogen	vnfD	Unclassified	Unclassified
+K22897	Nitrogen	Nitrogen	vnfK	Unclassified	Unclassified
+K22898	Nitrogen	Nitrogen	vnfG	Unclassified	Unclassified
+K22899	Nitrogen	Nitrogen	vnfH	Unclassified	Unclassified
+K22903	Nitrogen	Nitrogen	vnfE	Unclassified	Unclassified
+K23225	DNA conservation	Putative DNA-binding protein	SATB1	 DNA-binding protein SATB1	Unclassified
+K23226	DNA conservation	Putative DNA-binding protein	SATB2	 DNA-binding protein SATB2	Unclassified
+K23306	Light energy or sensing	Bacteriorhodopsin	brz	 bacteriorhodopsin-regulating zinc finger protein	Unclassified
+K23600	DNA conservation	Putative DNA-binding protein	TARDBP	 TDP43	Unclassified
+K23776	Nitrogen	Nitrogen	tnrA	Unclassified	Unclassified
+K23916	Nitrogen	Nitrogen	nifL	Unclassified	Unclassified
+K24007	Inorganic & gaseous energy sources	SOX sulfur-oxidation system	soxD	 cytochrome aa3-type oxidase subunit SoxD	 sporulation sensor kinase A [EC:2.7.13.3]
+K24008	Inorganic & gaseous energy sources	SOX sulfur-oxidation system	soxC	 cytochrome aa3-type oxidase subunit III	 female sterile(1)K10)
+K24009	Inorganic & gaseous energy sources	SOX sulfur-oxidation system	soxB	 cytochrome aa3-type oxidase subunit I [EC:7.1.1.4]	Unclassified
+K24010	Inorganic & gaseous energy sources	SOX sulfur-oxidation system	soxA	 cytochrome aa3-type oxidase subunit II [EC:7.1.1.4]	Unclassified
+K24011	ROS-damage prevention	Cytochrome C oxidase	soxM	 cytochrome aa3-type oxidase subunit I/III [EC:7.1.1.4]	Unclassified
+K24105	Sensing & motility	Gliding motility	mglA	 mutual gliding-motility protein MglA	Unclassified
+K24165	Photothrophy	Chlorophyll synthesis	PCARE	 photoreceptor cilium actin regulator	 solute carrier family 38 (sodium-coupled neutral amino acid transporter)
+K99991	ROS-damage prevention	Glyoxate key enzymes	Unclassified	Unclassified	K18223
+K99992	ROS-damage prevention	DPS Ruberythrin	Unclassified	Unclassified	Unclassified
+K99993	ROS-damage prevention	Haem catalase	Unclassified	Unclassified	Unclassified
+K99994	DNA conservation	Histone protein Lsr2	Unclassified		Unclassified
+K99995	Sporulation capsule & C-storage	PHA synthesis	Unclassified	Unclassified	Unclassified
+K99996	Light energy or sensing	Heliorhodopsin	Unclassified	Unclassified	Unclassified
+K99997	Inorganic & gaseous energy sources	CO-dehydrogenase large subunit (coxL) Form II	Unclassified	Unclassified	Unclassified
+K99998	Inorganic & gaseous energy sources	CO-dehydrogenase large subunit (coxL) Homologue	Unclassified	Unclassified	Unclassified
+K99999	Organic energy source	Carbohydrate binding motifs	Unclassified	Unclassified	Unclassified
