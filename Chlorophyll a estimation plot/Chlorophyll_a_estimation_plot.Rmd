@@ -1,0 +1,33 @@
+---
+title: "Estimate plot chlorophyll a"
+author: "Talia Gabay"
+date: "2022-12-21"
+output: html_document
+---
+
+``` {r Load dabestr package}
+library("dabestr")
+```
+
+```{r Load data}
+## Load chlorophyll a concentrations table
+Incubation_comparison_all <- read.table("C:/Users/Talia Gabay/OneDrive - post.bgu.ac.il/PhD/SIP experiment/chlorophyl a extraction/Incubation_comparison_all.txt", header=TRUE, sep="\t") 
+```
+
+```{r estimation plot, fig.width=7, fig.height=5}
+## Make estimation plot
+multi_unpaired_mean_diff <- dabest(Incubation_comparison_all, Plot_type, Chla_gr_soil,
+                               idx = (c("Natural", "Post-mining")),
+                               paired = FALSE) %>% 
+mean_diff()
+multi_unpaired_mean_diff
+plot(multi_unpaired_mean_diff, color.column = Incubation)
+```
+
+```{r colophon, eval=T}
+sessioninfo::session_info() %>%
+  details::details(
+    summary = 'Current session info',
+    open    = TRUE
+  )
+```
